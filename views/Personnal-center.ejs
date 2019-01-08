@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+  <link rel="stylesheet" href="../css/Personal-center.css"/>
+  <link rel="stylesheet" href="../css/qiYe_model.css">
+  <link rel="stylesheet" href="../css/common.css"/>
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/home-page.css"/>
+</head>
+<body>
+<%-include('common/header.ejs')%>
+
+<section class="center">
+  <p class="geren">个人资料</p>
+  <div class="box">
+    <div class="box-title">
+      基本资料
+    </div>
+    <div id="dingshang">
+      <lable>姓名：</lable>
+      <input type="text" placeholder="最多可输入20个字符" value="" id="name"/>
+    </div>
+    <div>
+      <lable>性别：</lable>
+      <lable>
+        <input type="radio" name="sex" value="male" id="sex1"/>
+        男
+      </lable>
+      <lable>
+        <input type="radio" name="sex" value="female" id="sex2"/>
+        女
+      </lable>
+    </div>
+    <div>
+      <lable>手机：</lable>
+      <span id="phone"></span>
+      <button class="changephone">修改手机</button>
+    </div>
+    <div>
+      <lable>邮箱</lable>
+      <input type="text" name="email" placeholder="请输入邮箱地址" value="" id="email"/>
+    </div>
+    <div class="date">
+      <lable>出生日期</lable>
+      <select name="year" id="year">
+        <option value="">--</option>
+        <option value=1980>1980</option>
+        <option value=1981>1981</option>
+        <option value=1982>1982</option>
+        <option value=1983>1983</option>
+        <option value=1984>1984</option>
+        <option value=1985>1985</option>
+        <option value=1986>1986</option>
+        <option value=1987>1987</option>
+        <option value=1988>1988</option>
+        <option value=1989>1989</option>
+        <option value=1990>1990</option>
+        <option value=1991>1991</option>
+        <option value=1992>1992</option>
+        <option value=1993>1993</option>
+        <option value=1994>1994</option>
+        <option value=1995>1995</option>
+        <option value=1996>1996</option>
+        <option value=1997>1997</option>
+        <option value=1998>1998</option>
+        <option value=1999>1999</option>
+        <option value=2000>2000</option>
+      </select>
+      <span>年</span>
+      <select name="month" id="month">
+        <option value="">--</option>
+        <option value="01">1</option>
+        <option value="02">2</option>
+        <option value="03">3</option>
+        <option value="04">4</option>
+        <option value="05">5</option>
+        <option value="06">6</option>
+        <option value="07">7</option>
+        <option value="08">8</option>
+        <option value="09">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      <span>月</span>
+      <select name="day" id="day">
+        <option value="">--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+      </select>
+      <span>日</span>
+    </div>
+    <div class="data-detail">
+      <div id="border">
+        <lable>纪念日：</lable>
+        <a href="my-jinianri.html" class="text-button">去编辑</a>
+      </div>
+    </div>
+    <span class="text-span"></span>
+    <button type="button" class="submit">
+      保存
+    </button>
+  </div>
+  <!--================================修改手机====================================-->
+  <div class="address-phone">
+    <div class="changetitle">
+      <h4>修改手机</h4>
+      <img class="close" src="../images/closeover.png" alt=""/>
+    </div>
+    <form class="password-form">
+
+      <div>
+        <lable>手机号：</lable>
+        <input type="text" name="mobile" placeholder="请输入手机号码" id="mobile"/>
+        <i id="i-phone"></i>
+      </div>
+      <!--<div class="code-box">-->
+        <!--<lable>图形验证码</lable>-->
+        <!--<input type="text" name="code" placeholder="请输入图片字符" id="pic-code"/>-->
+        <!--<i id="i-pic"></i>-->
+        <!--<img src="../images/passport-1.png" alt="" class="pic-code" id="picture"/>-->
+      <!--</div>-->
+      <div class="code-box">
+        <lable>短信验证：</lable>
+        <input type="text" name="codetext" placeholder="请输入短信验证码" id="codetext"/>
+        <i id="i-msg"></i>
+        <button class="getCode" type="button">获取短信验证码</button>
+      </div>
+      <div>
+        <lable>登录密码</lable>
+        <input type="text" type="password" name="password" id="password" placeholder="请输入登录密码"/>
+        <i id="i-pwd"></i>
+
+      </div>
+      <div class="use-button">
+        <div class="error-mobile"></div>
+        <div>
+          <button type="button" class="cancel">取消</button>
+          <button type="button" class="mobile-button" id="sureChange">确定</button>
+        </div>
+      </div>
+      <!--================================/修改手机====================================-->
+
+    </form>
+  </div>
+
+
+</section>
+<div class="yinying"></div>
+
+
+<%-include('common/footer.ejs')%>
+<script src="//cdn1.lncld.net/static/js/2.3.2/av-min.js"></script>
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../js/qiYe_model.js"></script>
+<script src="../js/Personal-center.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="dengluZT.js"></script>
+<script>
+  $(function () {
+    var num=localStorage.getItem("u_phone")
+    $.ajax({
+      type:"get",
+      url:"/Personnal-center2.do",
+      data:{
+        num:num,
+      },
+      success:function (data) {
+        for(var i=0;i<data.length;i++){
+          var dataTime = (data[i].u_birthday).split("T")[0];
+          var dateI = parseInt(dataTime.split("-")[2]) + 1;
+          dataTime = dataTime.split("-")[0] + "-" + dataTime.split("-")[1] + "-" + dateI;
+        }
+
+      console.log(data)
+         $("#name").val(data[0].u_name)
+         $("#email").val(data[0].u_email)
+         $("#phone").text(data[0].u_phone)
+         var sex=data[0].u_sex
+        if(sex=='男'){
+          $("#sex1").attr('checked','true')
+        }else{
+          $("#sex2").attr('checked','true')
+        }
+        /*日期显示*/
+        var birthday=dataTime.split("T")[0].split("-");
+
+        $("#year option[value="+birthday[0]+"]").attr('selected','selected');
+        $("#month option[value="+birthday[1]+"]").attr('selected','selected');
+        $("#day option[value="+birthday[2]+"]").attr('selected','selected');
+      },
+    })
+  })
+
+
+
+
+
+
+  /*修改手机*/
+  $("#sureChange").click(function () {
+    var mobile=$("#mobile").val()
+    var msg=$("#codetext").val()
+    var password=$("#password").val()
+    var phone=$("#phone").text()
+
+    $.ajax({
+      url:"/checkCode.do",
+      type:"post",
+      data:{
+        mobile:mobile,
+        msg:msg,
+        password:password,
+        phone:phone,
+      },
+      success:function (data) {
+        $(".error-mobile").text(data)
+           localStorage.setItem("u_phone",mobile)
+        location.href="http://localhost:8888/Personnal-center.do"
+      },
+      err:function (data) {
+
+      }
+    })
+  })
+
+
+
+  // 获取短信验证码
+  $(".getCode").on("click",function () {
+    $.ajax({
+      url:"/sendMsgCode.do",
+      type:"post",
+      data:{
+        mobile:$("#mobile").val()
+      },
+      success:function (data) {
+        $(".error-mobile").text(data)
+
+      }
+    })
+  });
+
+
+
+
+
+
+
+  $(".submit").click(function () {
+    var year=$("#year").val()
+    var month=$("#month").val()
+    var day=$("#day").val()
+    var username=$("#name").val()
+    var useremail=$("#email").val()
+    var phone=$("#phone").text()
+    var birthday=year+"-"+month+"-"+day
+    if($("#sex1").is(':checked')){
+      var sex="男"
+    }else {
+      var sex="女"
+    }
+    // console.log(c)
+    $.ajax({
+      type:"post",
+      url:"/changeuser.do",
+      data:{
+        birthday:birthday,
+        username:username,
+        useremail:useremail,
+        phone:phone,
+        sex:sex,
+      },
+      success:function (data) {
+        location.href="http://localhost:8888/Personnal-center.do"
+      },
+    })
+  })
+</script>
+</body>
+</html>

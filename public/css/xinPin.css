@@ -1,0 +1,853 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'PingFang SC','Heiti SC','微软雅黑',Helvetica,Arial;
+    color: #684029;
+    font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+/*===========================================页头====================================*/
+/*===高度===*/
+header{
+    height: 80px;
+}
+/*===========================================中间内容区====================================*/
+/*<!--=============内容大图==================-->*/
+.xinpinda{
+    height: 400px;
+    background-image: url("../images/xinpinda.jpg");
+    background-position: center center;
+}
+/*<!--=============情侣大图==================-->*/
+.qinglvda{
+    height: 400px;
+    background-image: url("../images/qingLvDa.jpg");
+    background-position: center center;
+}
+/*<!--=============人气大图==================-->*/
+.renQiDa{
+    height: 400px;
+    background-image: url("../images/renQiDa.jpg");
+    background-position: center center;
+}
+/*<!--=============白色情人节大图==================-->*/
+.baiseqingrenjie{
+    height: 400px;
+    background-image: url("../images/yxl-5.jpg");
+    background-position: center center;
+}
+/*<!--=============年货买赠大图==================-->*/
+.nianhuo{
+    height: 400px;
+    background-image: url("../images/yxl-6.jpg");
+    background-position: center center;
+}
+/*<!--=============一人份大图==================-->*/
+.yirenfen{
+    height: 100%;
+    background-image: url("../images/yxl-7.jpg");
+    background-position: center center;
+}
+/*<!--=============企业定制大图==================-->*/
+.neirongda{
+    width: 100%;
+    height: 558px;
+    overflow: hidden;
+    min-width: 980px;
+}
+.qiyedingzhi{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/yxl-10.jpg");
+    background-position: center center;
+    background-repeat:no-repeat;
+    animation: fangdatexiao 5s forwards;
+}
+@-webkit-keyframes fangdatexiao {
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+/*<!--=============新品标题==================-->*/
+.xinpinBiaoTi h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+}
+/*======下划线======*/
+.xinpinBiaoTi i{
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #E6C5B8;
+    margin: 8px auto 14px;
+}
+.xinpinBiaoTi{
+text-align: center;
+}
+.xinpinBiaoTi p{
+    margin-top: -35px;
+    font-size: 14px;
+}
+/*======下划线下的小标题======*/
+.xinpinBiaoTi span{
+    display: block;
+    font-size: 14px;
+}
+.xinpinBiaoTi2 i{
+    width: 120px;
+}
+.xinpinBiaoTi3 i{
+    width: 98px;
+}
+.xinpinBiaoTi4 i{
+    width: 76px;
+}
+/*============================蛋糕展示区============================*/
+.neiRong{
+    padding-bottom: 50px;
+}
+.zhanShi li{
+    float: left;
+    margin: 0 18px;
+    padding: 0 18px;
+    position: relative;
+}
+.dangao-li{
+    width: 228px;
+    height: 364px;
+    text-align: center;
+    position: relative;
+}
+.dangao-li a{
+    color: #684029;
+    cursor: pointer;
+}
+.dangao-li img{
+    width: 228px;
+    height: 246px;
+    transition: all .2s linear;
+}
+.dangao-li .fangda{
+    overflow: hidden;
+}
+.dangao-li .fangda img{
+    width: 228px;
+    height: 246px;
+}
+.dangao-li h3{
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.dangao-li span{
+    display: block;
+    font-size: 13px;
+    color: #BB9772;
+    line-height: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/*============新品儿童标签=================*/
+.dangao-li .biaoqian a{
+    display: inline-block;
+    border:1px solid #D5BFA7;
+    border-radius: 100px;
+    padding: 0 6px 0 8px;
+    color: #D5BFA7;
+    margin: 8px 1px;
+}
+.dangao-li .biaoqian{
+    height: 34px;
+}
+/* ==========<!--加入购物车-->==============*/
+.dangao-li .xin-gouWuChe{
+    display: inline-block;
+    width: 107px;
+    line-height: 28px;
+    font-size: 13px;
+    z-index: 20;
+}
+.dangao-li .xin-gouWuChe i{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/icon.png");
+    background-position: -210px -40px;
+    background-size: 305px 120px;
+    height: 28px;
+    width: 27px;
+}
+/*<!--展示图上的新品-->*/
+.dangao-li .label{
+    text-align: left;
+    width: 100%;
+}
+.dangao-li .label img{
+    width: 65px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+/*======鼠标移入特效======*/
+.dangao-li h3:hover{
+    color: #D5BFA7;
+}
+.dangao-li .xin-gouWuChe:hover{
+    color: #D5BFA7;
+}
+.fangda:hover+h3{
+    color: #D5BFA7;
+}
+.dangao-li .xin-gouWuChe:hover i{
+    background-position: -243px -72px;
+}
+.dangao-li a img:hover{
+    transform: scale(1.05);
+}
+/*=====================透明层===================*/
+.touMing{
+    background-color: rgba(255,255,255,0.65);
+    /*background-color: red;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+.touMing span{
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 116px;
+    font-size: 14px;
+    width: 100%;
+    z-index: 10;
+    color: #684029;
+}
+.dangao-li .daoHuo{
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    line-height: 28px;
+    font-size: 13px;
+    z-index: 20;
+    width: 100%;
+}
+.dangao-li .daoHuo i{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/icon.png");
+    background-position: -132px -70px;
+    background-size: 310px 120px;
+    height: 22px;
+    width: 15px;
+}
+/*======透明层鼠标移入特效======*/
+.dangao-li .daoHuo:hover{
+    color: #c29772;
+}
+.dangao-li .daoHuo:hover i{
+    background-position: -233px -70px;
+}
+.dangao-li .touMing:hover span{
+    color: #c29772;
+}
+/*===================================================企业定制=============================================*/
+@media screen and (max-width: 1600px){
+    .qiyedz{
+        width: 1050px;
+    }
+}
+/*======================下划线大====================*/
+.qiyedz-2{
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: #D8D8D8 solid 1px;
+    height: 244px;
+}
+/*======================左div内容====================*/
+.qiyedz-3,.qiyedz-4{
+    float: left;
+}
+.qiyedz-3{
+    width: 484px;
+}
+.qiyedz-3-1{
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 20px;
+}
+.qiyedz-3-2{
+    width: 484px;
+    font-size: 12px;
+    line-height: 2em;
+    min-height: 30px;
+    margin-top: 20px;
+}
+/*======================右div内容====================*/
+.qiyedz-4{
+    width: 500px;
+    margin-left: 65px;
+    position: relative;
+}
+.qiyedz-4-1{
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    color: #C69C6D;
+    position: absolute;
+    left: 2px;
+    top: 115px;
+}
+.qiyedz-4-1 span{
+    font-size: 26px;
+}
+.qiyedz-4-2-2{
+    padding-top: 28px;
+    margin-bottom: 24px;
+    min-height: 80px;
+}
+.qiyedz-4-2-3{
+    padding-bottom: 30px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+/*左浮动*/
+.qiyedz-4-2-3 li{
+    float: left;
+    margin:5px 20px 5px 0;
+    height: 25px;
+    line-height: 25px;
+}
+/*小图标*/
+.qiyedz-4-2-3 li i{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    background-size: 310px 120px;
+    background-repeat:no-repeat;
+}
+.qiyedz-4-2-3one i{
+    background-image: url("../images/icon.png");
+    background-position: -210px -5px;
+}
+.qiyedz-4-2-3two i{
+    background-image: url("../images/icon.png");
+    background-position: -235px -5px;
+
+}
+.qiyedz-4-2-3 .qiyedz-4-2-3three i{
+    background-image: url("../images/icon.png");
+    background-position: -259px -5px;
+}
+.qiyedz-4-2-3four i{
+    background-image: url("../images/icon.png");
+    background-position: -285px -5px;
+}
+/*=======================蛋糕规格===================*/
+.guige p{
+    float: left;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+}
+.guige-ul li{
+    float: left;
+    min-width: 60px;
+    height: 30px;
+    margin-left: 15px;
+    margin-bottom: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.guige-ul li a{
+    display: block;
+    height: 28px;
+    line-height: 30px;
+    border: 1px solid #e7e0dd;
+    position: relative;
+    padding: 0 5px;
+    color: #684029;
+}
+.guige-ul li a:hover{
+    color: #BB9772;
+}
+.active i{
+    display: none;
+    background-image: url("../images/icon.png");
+    background-position: 0 80px;
+    background-size: 310px 120px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+.guige-ul li .active1{
+    border:1px solid #684029;
+}
+.active1 i{
+    display: block;
+
+}
+/*=========================购买按钮=====================*/
+.gouWuAnNiu{
+    width: 344px;
+    height: 40px;
+    font-size: 13px;
+}
+.gouWuAnNiu button{
+    width: 167px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    outline:none;
+}
+.gouWuAnNiu-gouMai{
+    float: left;
+    background-color: #F4F4F4;
+    color: #7A5844;
+}
+.gouWuAnNiu-gouWuC{
+    float: right;
+    background-color: #684029;
+    color: #fff;
+}
+/*<!--=============================购物车添加成功=============================-->*/
+.tianjia{
+    display: none;
+    position: absolute;
+    width: 238px;
+    height: 124px;
+    bottom: 45px;
+    left: 132px;
+    background-color: rgba(104,64,41,0.7);
+    z-index: 100;
+}
+.tianjia2 p{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    padding-top: 28px;
+}
+.tianjia2 a{
+    color: #684029;
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    height: 34px;
+    width: 160px;
+    line-height: 34px;
+    text-align: center;
+    margin: 15px auto 0;
+    font-size: 12px;
+}
+.tianjia2 p i{
+    display: inline-block;
+    height: 24px;
+    width: 20px;
+    background-image: url("../images/icon.png");
+    background-position: -133px -41px;
+    background-size: 310px 120px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+/*<!--=============================查看详情图=============================-->*/
+.xiangqingtu{
+    margin-top: 12px;
+}
+.xiangqingtu img{
+    max-width: 100%;
+}
+/*<!--=============================商品推荐=============================-->*/
+/*======================媒体查询器===================*/
+@media screen and (max-width: 1600px) {
+    .sec5 ul{
+        height: 285px;
+    }
+    .sec5 ul li{
+        margin: 20px 35px;
+    }
+}
+.sec5{
+    overflow: hidden;
+    margin: 40px auto 50px;
+    border: 1px solid #E1E1E1;
+}
+.sec5 h2{
+    background-color: #FBFBFB;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 18px;
+}
+.sec5 h2 span{
+    display: inline-block;
+    line-height: 40px;
+    float: right;
+    font-size: 28px;
+    color: #D8D8D8;
+    cursor: pointer;
+    padding: 0 20px;
+}
+.sec5 ul{
+    margin: 0 18px;
+}
+.sec5 ul li{
+    float: left;
+    width: 180px;
+    text-align: center;
+    position: relative;
+    height: 242px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.sec5 ul li a img{
+    max-width: 180px;
+}
+.sec5 ul li a h4{
+    font-size: 14px;
+    overflow: hidden;
+    color: #8B663C;
+}
+.sec5 ul li a p{
+    font-size: 14px;
+    color: #CBA375;
+}
+.recommend-cart{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(173, 149, 117,.6);
+    top: 126px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+
+}
+.recommend-cart p{
+    color: #fff;
+    font-size: 12px;
+    line-height: 17px;
+    width: 128px;
+    height: 34px;
+    padding-top:9px;
+    margin-left: 10px;
+    overflow: hidden;
+    float: left;
+    text-align: left;
+}
+.recommend-cart button{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    float: left;
+    margin-top: 10px;
+    margin-left: 4px;
+    border: none;
+    outline: none;
+}
+
+.recommend-cart button i{
+    display: inline-block;
+    background-color: #fff;
+    background-image:url(../images/icon.png);
+    background-position: -286px -76px;
+    background-size: 310px 120px;
+    height: 20px;
+    width: 20px;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+/*==============================鼠标移入特效============================*/
+.recommend-cart button:hover i,
+.recommend-cart button:hover {
+    background-color: #f5f2ee;
+}
+.recommend-list1:hover .recommend-cart1{
+    opacity: 1;
+}
+.recommend-list2:hover .recommend-cart2{
+    opacity: 1;
+}
+.recommend-list3:hover .recommend-cart3{
+    opacity: 1;
+}
+.recommend-list4:hover .recommend-cart4{
+    opacity: 1;
+}
+/*================================滚动条事件导航=============================*/
+.details-nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(196,196,196,0.50);
+    width: 100%;
+    backface-visibility:hidden;
+    z-index: 50;
+}
+.add-cart{
+    float: right;
+    cursor: pointer;
+}
+.add-cart i{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/icon.png");
+    background-position: -156px -38px;
+    background-size: 310px 120px;
+    /*margin-top: 20px;*/
+}
+.details-nav h2{
+    float: left;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.product-price{
+    width: 300px;
+    height: 80px;
+    text-align: right;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+}
+/*<!--==============================滚动条事件导航栏购物框========================================-->*/
+.daogou0{
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    padding: 0 20px 30px;
+    margin-left: 45px;
+    width: 515px;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0 2px 4px 0 rgba(237,237,237,0.50);
+    z-index: 30;
+}
+.daogou{
+    padding-top: 28px;
+    margin-bottom: 24px;
+    height: 80px;
+}
+.daogou ul{
+    overflow: hidden;
+    /*padding-bottom: 30px;*/
+    margin-top: 8px;
+}
+.gouWuAnNiu .gouWuAnNiu-gouMai2,
+.gouWuAnNiu .gouWuAnNiu-gouWuC2{
+    width: 238px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+}
+.gouWuAnNiu2{
+    width: 515px;
+}
+/*=============================成功添加购物车=========================*/
+.detailscart{
+    height: 230px;
+    width: 557px;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    margin-left: 45px;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0 2px 4px 0 rgba(237,237,237,0.50);
+    background-color: #fff;
+    display: none;
+    z-index: 50;
+}
+.detailscart p{
+    text-align: center;
+    font-size: 18px;
+    color: #B08C7E;
+    line-height: 25px;
+}
+.detailscart i{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-image: url("../images/icon.png");
+    vertical-align: middle;
+    background-position: -266px -40px;
+    background-size: 310px 120px;
+    margin-right: 6px;
+}
+.detailscart a{
+    display: block;
+    background-color: #684029;
+    color: #fff;
+    font-size: 18px;
+    margin:35px auto 0;
+    height: 34px;
+    width: 160px;
+    line-height: 34px;
+    text-align: center;
+}
+.detailscart div{
+    padding-top: 75px;
+}
+.details-nav div a i:hover{
+    background-position: -187px -38px;
+}
+/*=====================================加入购物车=====================================*/
+.inner-addBuy{
+    height: 173px;
+    width: 240px;
+    background-color: #F8F8F8;
+    padding: 12px 12px 20px 12px;
+    display: none;
+}
+.inner-addBuy .inner-addBuy-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #684029;
+    margin-bottom: 14px;
+}
+.inner-addBuy-chose a{
+    float: left;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 12px;
+    margin-bottom: 14px;
+    text-align: center;
+    color: #7A5844;
+    cursor: pointer;
+    outline: 1px solid #e7e0dd;
+}
+.inner-addBuy-chose a:nth-of-type(1),
+.inner-addBuy-chose a:nth-of-type(5)
+{
+    margin: 0 0 14px 0;
+}
+.inner-addBuy-chose .quan{
+    outline:1px solid #684029;
+}
+.inner-addBuy-chose a:nth-of-type(3) i{
+    display: block;
+}
+.inner-addBuy-btn{
+    height: 30px;
+    width: 240px;
+    margin-top: 5px;
+}
+.inner-addBuy-btn a{
+    font-size: 13px;
+}
+.inner-addBuy-btn button:nth-of-type(1){
+    background-color: #fff;
+    text-align: center;
+    border: none;
+    float: left;
+    width: 112px;
+    height: 28px;
+    line-height: 28px;
+    outline: 1px solid #684029;
+}
+.inner-addBuy-btn button:nth-of-type(1) a{
+    color: #7A5844;
+}
+.inner-addBuy-btn button:nth-of-type(2){
+    border: none;
+    text-align: center;
+    background-color: #684029;
+    float: right;
+    width: 112px;
+    height: 28px;
+    line-height: 28px;
+    outline: 1px solid #684029;
+}
+.inner-addBuy-btn button:nth-of-type(2) a{
+    color: #fff;
+}
+/*=====================================加入购物车成功=================================*/
+.inner-addBuy{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.inner-addBuySuccess{
+    display: none;
+    width: 240px;
+    background-color: #F8F8F8;
+    padding: 12px 12px 20px 12px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.inner-addBuy-title,.inner-addBuy-title2{
+    text-align: left;
+}
+.inner-addBuySuccess div p{
+    text-align: center;
+    font-size: 14px;
+    color: #B08C7E;
+    line-height: 25px;
+    padding: 26px 0 15px;
+}
+.iconfont{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-image: url("../images/icon.png");
+    vertical-align: middle;
+    background-position: -266px -40px;
+    background-size: 310px 120px;
+    margin-bottom: 6px;
+}
+.inner-addBuySuccess button{
+    background-color: #684029;
+    color: #fff;
+    font-size: 13px;
+    width: 148px;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    margin: 2px auto 0;
+    border: 0;
+    outline: none;
+}
+.inner-addBuy-chose a{
+    position: relative;
+}
+.inner-addBuy-chose a i{
+    display: none;
+    background-image: url("../images/icon.png");
+    background-position: 0 80px;
+    background-size: 310px 120px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -1px;
+    margin-left: -1px;
+}
+/*==============*/
+.details-nav .center{
+    margin: 7px auto;
+}

@@ -1,0 +1,35 @@
+h2.magazine-title {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px 15px 0;
+    background: #fff;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+p.publish-time {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+    background: #fff;
+    padding-bottom: 10px;
+    color: #8c8c8c;
+    border-bottom: 1px #eee solid;
+}
+
+.content-box {
+    background: #fff;
+    padding: 15px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.content-box img {
+    max-width: 100% !important;
+    display: block;
+}
+
+.content-box a{
+    font-size: 14px;
+    line-height: 22px;
+}

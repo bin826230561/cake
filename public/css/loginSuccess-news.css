@@ -1,0 +1,102 @@
+/*头部*/
+#section .news-hd ul li {
+    width: 120px;
+    height: 22px;
+    border-left: 2px solid #EFEFEF;
+    float: left;
+    text-align: center;
+    line-height: 22px;
+    color: #D5BFA7;
+    font-size: 15px;
+    margin: 44px auto;
+    cursor: pointer;
+}
+
+#section .news-hd ul li span {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+
+}
+
+#section .news-hd ul li:nth-child(1) span {
+    background: url("../images/L-tongzhi-0.png") no-repeat;
+}
+
+#section .news-hd ul li:nth-child(2) span {
+    background: url("../images/L-wuliu-0.png") no-repeat;
+}
+
+#section .news-hd ul li:nth-child(3) span {
+    background: url("../images/L-kefu-0.png") no-repeat;
+}
+
+/*内容区*/
+#section .news-bd-tongZhi {
+    padding-bottom: 100px;
+    display: none;
+}
+
+#section .news-bd-tongZhi .news-bd-tongZhi-left {
+    width: 35px;
+    height: 35px;
+    background: url("../images/L-jinianri.png") no-repeat;
+    background-size: 100%;
+}
+
+#section .news-bd-tongZhi .news-bd-tongZhi-right {
+    margin-left: 55px;
+}
+
+#section .news-bd-tongZhi .news-bd-tongZhi-right h4 {
+    font-size: 15px;
+    color: #000;
+    padding-bottom: 10px;
+    line-height: 24px;
+    font-weight: normal;
+    border-bottom: 2px solid #E6E6E6
+}
+
+#section .news-bd-tongZhi .news-bd-tongZhi-right span {
+    font-size: 13px;
+    color: #909090;
+    margin-left: 10px;
+}
+
+#section .news-bd-tongZhi .news-bd-tongZhi-right p {
+    font-size: 13px;
+    color: #8B572A;
+    margin-top: 5px;
+}
+
+#section .news-bd-wuLiu {
+    /*height: 300px;*/
+    text-align: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+#section .news-bd-wuLiu img {
+    width: 120px;
+}
+
+#section .news-bd-wuLiu p {
+    font-size: 12px;
+    color: #684029;
+}
+
+#section .show {
+    display: block;
+}
+
+#section .news-hd ul li.colorLi {
+    color: #71442A;
+}
+
+#section .news-hd ul li.colorLi span {
+    background: url('../images/L-tongzhi-1.png') no-repeat;
+}
+

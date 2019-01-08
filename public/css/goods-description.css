@@ -1,0 +1,748 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*===========================第一部分==============================*/
+.center1{
+    width: 1050px;
+    margin: 0 auto;
+    border:1px solid rgba(255, 255, 255, 0);
+}
+.sec1-left{
+    float: left;
+}
+.sec1-left img{
+    width: 924px;
+}
+.sec1-right{
+    margin-left: 35px;
+    float: left;
+    width: 90px;
+}
+.sec1-right li{
+    list-style: none;
+    margin-top: 8px;
+}
+.sec1-right li img{
+    width: 90px;
+    height: 50px;
+}
+.sec1-right li:nth-of-type(1){
+    margin-top: 342px;
+}
+/*=======================移入效果*/
+.sec1-right li img:hover{
+    outline: 1px solid #c69c6d;
+}
+
+
+
+
+/*======================================第二部分================================*/
+
+/*1)左边部分*/
+.sec2{
+    margin-top: 0;
+}
+
+/*左边浮动*/
+.sec2-left{
+    float: left;
+    width: 484px;
+    height: 371px;
+}
+
+/*三个小图标*/
+.left-content3 img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/*小图标旁边的span标签*/
+.left-content3 span{
+    font-size: 12px;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+    color: #684029;
+}
+
+.left-content1 span{
+    display: none;
+}
+/*P标签*/
+.left-content4 p{
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+    color: #684029;
+}
+
+/*设置button制作的小标签*/
+.left-content2 button{
+    border-radius: 10px;
+    background-color: white;
+    width: auto;
+    padding: 1px 12px;
+    border: 1px solid #D5BFA7;
+    color: #D5BFA7;;
+    font-size: 12px;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+    outline: none;
+}
+/*设置名称P标签*/
+.left-content1 p{
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+    font-size: 20px;
+    font-weight: normal;
+    color: #684029;
+}
+
+/*设置雪花图标*/
+.left-content5 li:nth-of-type(1) i{
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 240px auto;
+    background-image: url("../images/lmy-bg.png");
+    background-position: -356px -2px;
+    height: 20px;
+    width: 20px;
+}
+
+/*设置雪花旁边的字体*/
+.left-content5 li:nth-of-type(1) span {
+    font-size: 12px;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+    color: #684029;
+}
+
+/*设置离雪花的间距*/
+.left-content5 li:nth-of-type(1) span:nth-of-type(1) {
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+    color: #684029;
+}
+
+/*设置甜度图标栏的字体大小*/
+.left-content5 li:nth-of-type(2) span{
+    font-size: 12px;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+    color: #684029;
+}
+
+/*设置甜度图标*/
+.left-content5 li:nth-of-type(2) img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/*设置离甜度的间距*/
+.left-content5 li:nth-of-type(2) span:nth-of-type(2) {
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+}
+
+/*设置甜度与甜度图片间距*/
+.left-content5 li:nth-of-type(2) i img{
+    margin-left: 10px;
+}
+
+/*设置雪花和甜度的行间距*/
+.left-content5 li:nth-of-type(2){
+    margin-top: 10px;
+}
+
+/*设置left-content1*/
+.left-content1{
+    margin-top: 30px;
+}
+/*设置left-content2*/
+.left-content2{
+    margin-top: 40px;
+}
+
+/*设置left-content3*/
+.left-content3{
+    margin-top: 20px;
+}
+
+/*设置left-content4*/
+.left-content4{
+    margin-top: 15px;
+}
+
+/*设置left-content5*/
+.left-content5{
+    margin-top: 20px;
+}
+
+/*设置雪花和甜度行高*/
+.left-content5 ul li{
+    line-height: 2em;
+}
+
+/*2）右边部分*/
+
+.shopMall{
+    width: 239px;
+    height: 124px;
+    background: rgba(72, 38, 24, 0.71);
+    position: absolute;
+    top: 155px;
+    left: 145px;
+    text-align: center;
+    z-index: 999;
+    display: none;
+}
+.shopMall2{
+    position: fixed;
+    left: 710px;
+    top: 70px;
+    width: 558px;
+    height: 221px;
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(237,237,237,0.50);
+    border: 1px solid #F0F0F0;
+    /*display: none;*/
+}
+
+.shopMall p{
+    color: white;
+    font-size: 14px;
+    margin: 28px 0 0 20px;
+}
+.shopMall2 p{
+    display: block;
+    font-size: 18px;
+    color: #684029;
+    margin: 60px 0 0 30px;
+}
+.shopMall button{
+    background: #fff;
+    width: 160px;
+    height: 34px;
+    line-height: 34px;
+    margin: 25px auto 0;
+    outline: none;
+    color: #684029;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+.shopMall2 button{
+    background: #684029;
+    color: white;
+    height: 34px;
+    width: 160px;
+    font-size: 18px;
+    margin-top: 45px;
+
+}
+.shopMall i{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/lmy-bg.png");
+    background-repeat: no-repeat;
+    background-position: -130px -36px;
+    background-size: 310px 120px;
+    position: absolute;
+    top: 23px;
+    left: 55px;
+    /*display: none;*/
+}
+.shopMall2 i{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-image: url("../images/icon.png");
+    vertical-align: middle;
+    background-position: -266px -40px;
+    background-size: 310px 120px;
+    margin: 37px 0 0 145px;
+}
+.shopMall button:hover{
+    color: #BB9772;;
+}
+
+/*让右边浮动*/
+.sec2-right{
+    float: left;
+    margin: 30px 0 0 65px;
+    position: relative;
+    width: 500px;
+    height: 360px;
+}
+
+/*浮动右边的坐上部分的图片*/
+.sec2-tl{
+    float: left;
+}
+
+/*让右边文字浮动在图片右侧并设置距离*/
+.sec2-tr{
+    /*float: left;*/
+    margin: 8px 0 0 20px;
+}
+
+/*设置图片大小*/
+.sec2-tl img{
+    width: 300px;
+    height: 170px;
+}
+
+/*设置i标签背景图*/
+.sec2-tr div i{
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 310px 120px;
+    background-image: url("../images/lmy-bg.png");
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+}
+
+/*分别设置不同背景图*/
+.sec2-tr div:nth-of-type(1) i{
+    background-position: -210px -2px;
+}
+.sec2-tr div:nth-of-type(2) i{
+    background-position: -235px -2px;
+}
+.sec2-tr div:nth-of-type(3) i{
+    background-position: -260px -2px;
+}
+.sec2-tr div:nth-of-type(4) i{
+    background-position: -285px -2px;
+}
+
+/*设置每个div的间距*/
+.sec2-tr div{
+    margin-top: 4px;
+}
+
+/*设置字体大小及距离*/
+.sec2-tr span{
+    color: #684029;
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+}
+.price span:nth-of-type(2){
+    font-size: 18px;
+    color: #C69C6D;
+    font-family: 'PingFang SC', 'Heiti SC', '微软雅黑', Helvetica, Arial;
+}
+.price span:nth-of-type(1){
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 26px;
+    color: #C69C6D;
+}
+.sec2-tr div:last-of-type span:nth-of-type(2){
+    margin-left: 0;
+}
+/*设置点击更多之后的字体样式*/
+.more{
+    font-size: 12px;
+    color: #684029;
+}
+
+/*设置商品规格距离上面的距离*/
+.mid{
+    float: left;
+    margin-top: 20px;
+}
+
+/*设置选择商品规格*/
+.mid button{
+    background-color: white;
+    color: #684029;
+    font-size: 12px;
+    outline: 1px solid #e7e0dd;
+    padding: 0 10px;
+    height: 28px;
+    margin-left: 15px;
+    /*border: 1px solid #684029;*/
+    border: none;
+    position: relative;
+}
+
+/*设置选择磅数左上角的小勾勾*/
+.mid button i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background-image: url("../images/lmy-bg.png");
+    background-position: 0px -40px;
+    background-size: 310px 120px;
+    display: none;
+}
+/*设置商品规格标签*/
+.mid span{
+    font-size: 12px;
+    color: #684029;
+}
+
+/*设置换购商品*/
+.mid1{
+    float: left;
+    margin-top: 30px;
+    position: relative;
+}
+
+.mid1 i{
+    position: absolute;
+    top: -10px;
+    left: 65px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url("../images/lmy-bg.png");
+    background-position: 0px -40px;
+    background-size: 310px 120px;
+    display: none;
+}
+
+/*设置换购的图片*/
+.mid1 img{
+    width: 36px;
+    height: 36px;
+    margin-left: 12px;
+    position: absolute;
+    top: 0;
+    left: -12px;
+}
+
+/*设置换购图片的边框*/
+.exchangeImg{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    top: -30px;
+    left: 65px;
+}
+
+/*设置换购的文字*/
+.mid1 span{
+    font-size: 12px;
+    color: #684029;
+}
+
+/*设置换购旁边隐藏的文字*/
+.mid1 span:nth-of-type(2){
+    display: inline-block;
+    width: 300px;
+    position: absolute;
+    top: -10px;
+    left: 105px;
+    display: none;
+    transform: scale(.9);
+}
+
+/*设置两个按钮部分*/
+.bottom{
+    position: absolute;
+    top: 300px;
+    float: left;
+}
+
+/*设置按钮通用格式*/
+.bottom button{
+    width: 167px;
+    height: 30px;
+    font-size: 12px;
+    background: #F4F4F4;
+    color: #7A5844;
+    border: none;
+    outline: none;
+}
+
+/*单独设置第二个按钮*/
+.bottom button:nth-of-type(2){
+    margin-left: 10px;
+    background: #684029;
+    color: #fff;
+}
+
+
+
+/*移入效果*/
+.mid button:hover{
+    color: #BB9772;
+}
+
+.bottom button:nth-of-type(1):hover{
+    background: rgba(239,239,239);
+}
+.bottom button:nth-of-type(2):hover{
+    background: rgba(72,38,24);
+}
+/*========================分界线==============*/
+.divide{
+    border: 0.5px solid #D8D8D8;
+    width: 1050px;
+    margin: 910px auto 0;
+}
+
+
+/*==========================================第三部分============================*/
+.sec3{
+    margin-top: 15px;
+}
+.sec3 img{
+    width: 1050px;
+}
+
+
+
+/*======================分界线====================================*/
+.divide2{
+    border: 0.5px solid #D8D8D8;
+    width: 1050px;
+    margin: 5px auto 10px;
+}
+
+
+
+
+/*======================第四部分=================================*/
+/*设置左右的字体颜色大小*/
+.sec4 p,li,tr,td{
+    font-size: 12px;
+    color: #684029;;
+}
+
+/*设置表格格式*/
+.sec4 table{
+    margin-left: 19px;
+    width: 40%;
+}
+
+/*设置列的行高*/
+.sec4  table td{
+    line-height: 22px;
+}
+
+/*设置订购五磅那个P标签*/
+.sec4 li:nth-of-type(1) p{
+    margin-left: 19px;
+}
+
+/*设置li的行高*/
+.sec4 ul li{
+    line-height: 2em;
+}
+
+
+
+
+
+/*=============================第五部分==========================*/
+/*设置商品推荐整理上下间距*/
+.sec5{
+    margin: 45px auto 100px;
+    width: 1050px;
+    height: 337px;
+    border: 1px solid #E1E1E1;
+}
+
+/*设置推荐部分蛋糕的宽度*/
+.sec5 img{
+    width: 180px;
+}
+
+/*设置每个蛋糕大div的间距*/
+.floatL1{
+    float: left;
+    margin: 25px 0 0 67px;
+    position: relative;
+}
+.imgBox{
+    height: 387px;
+}
+
+/*设置商品推荐整个框格式*/
+.pBox{
+    width: 1031px;
+    height: 40px;
+    line-height: 40px;
+    background: #fbfbfb;
+    padding-left: 18px;
+}
+
+/*商品推荐四个字的样式设置*/
+.pBox span{
+    font-weight: normal;
+    color: #684029;
+    font-size: 14px;
+}
+设置模型盒子大小
+.center2{
+    height: 337px;
+}
+
+/*设n置每个蛋糕名字格式*/
+.floatL1 p{
+    height: 19px;
+    width: 180px;
+    text-align: center;
+    color: #8B663C;
+    font-size: 14px;
+    margin-top: 25px;
+}
+.floatL1>div:nth-of-type(2) span{
+    font-size: 14px;
+    color: #CBA375;
+    margin: 2px 0 0 40px;
+}
+.floatL1 div:nth-of-type(2){
+    height: 40px;
+}
+.floatL1>div:nth-of-type(1){
+    height: 180px;
+}
+
+.hidden{
+    width: 180px;
+    height: 50px;
+    background: rgba(173, 149, 117,.6);
+    position: absolute;
+    top:130px;
+    left: 0;
+    text-align: left;
+    display: none;
+}
+.hidden span{
+    font-size: 12px;
+    color: white;
+    /*width: 128px;*/
+    height: 43px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+.hidden i{
+    display: inline-block;
+    background: #fff url(../images/lmy-bg.png) no-repeat;
+    background-position: -286px -76px;
+    background-size: 310px 120px;
+    height: 20px;
+    width: 20px;
+    margin-left: 155px;
+    margin-top: 13px;
+}
+
+
+
+/*==========================设置导航栏========================*/
+.daohanglan{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 9999;
+    background: white;
+    box-shadow: 0 2px 2px 0 rgba(195, 195, 195, 0.50);
+    display: none;
+    top:0;
+}
+.content-middle{
+    width: 1200px;
+    margin: 0 auto;
+}
+.daohanglan i{
+    display: inline-block;
+    background: url(../images/lmy-bg.png) no-repeat;
+    background-position: -156px -38px;
+    background-size: 310px 120px;
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 19px;
+}
+.daohangLeft{
+    float: left;
+}
+.daohangLeft span{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+    color: #684029;
+}
+.daohangRight{
+    float: right;
+}
+.daohangRight span{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #684029;
+}
+.mid3{
+    margin-top: 20px;
+}
+.bottom2{
+    top: 1000px;
+    float: left;
+}
+.bottom2 button{
+    float: left;
+    height: 40px;
+    width: 240px;
+    margin-top: 15px;
+    /*display: none;*/
+    font-size: 12px;
+    background: #F4F4F4;
+    color: #7A5844;
+    border: none;
+    outline: none;
+}
+.bottom2 button:nth-of-type(2){
+    margin-left: 40px;
+}
+.sec2-right2{
+    background: white;
+    width: 537px;
+    height: 338px;
+    padding-left: 25px;
+    box-shadow: 0 2px 2px 0 rgba(195, 195, 195, 0.50);
+    position: fixed;
+    z-index: 9999;
+    top: 71px;
+    left: 710px;
+    display: none;
+}
+.top2{
+    margin-top: 30px;
+}
+.bottom2 button:nth-of-type(2){
+    margin-left: 10px;
+    background: #684029;
+    color: #fff;
+}
+.bottom2 button:nth-of-type(1):hover{
+    background: rgba(239,239,239);
+}
+.bottom2 button:nth-of-type(2):hover{
+    background: rgba(72,38,24);
+}
+
+.daohangRight i:hover{
+    background-position: -187px -38px;
+}
+.mid .addClass{
+    outline: 1px solid #684029;
+}
+.mid .addClass2{
+    outline: 1px solid #e7e0dd;
+}

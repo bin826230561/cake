@@ -1,0 +1,22 @@
+
+
+section p{
+    margin-top: 19px;
+    font-size: 24px;
+    color: #684029;
+    line-height: 26px;
+}
+section span{
+    color: #8c8c8c;
+    font-size: 12px;
+}
+
+section .line{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    height: 1px;
+    border-top: 1px solid #eee;
+}
+section .center {
+    margin-bottom: 11px;
+}

@@ -1,0 +1,129 @@
+/*通配选择*/
+/* 导航*/
+/*header{*/
+    /*height: 80px;*/
+/*}*/
+/*分类导航*/
+.center-2 {
+    width: 1200px;
+    margin: 0 auto;
+    /*background-color: green;*/
+}
+.fenlei{
+    width: 1200px;
+    margin: 0 auto;
+    height: 116px;
+    /*background-color: red;*/
+    border-top: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
+    margin-top: 20px;
+}
+.fenlei1{
+    width: 1100px;
+    height: 100px;
+    margin-top: 9px;
+    /*background-color: aqua;*/
+}
+.div1{
+    height: 50px;
+    line-height:50px ;
+    /*width: 100px;*/
+}
+.div1 p{
+    float: left;
+    color: #9B9B9B;
+    font-size: 13px;
+
+}
+.div1 ul{
+    float: left;
+    margin-left:1.5%;
+    cursor: pointer;
+}
+.div1 ul>li{
+    float: left;
+    color: #684029;
+    font-size: 13px;
+    margin-left:30px;
+    cursor: pointer;
+}
+.div1 ul>li>a{
+    color: #684029;
+    font-size: 13px;
+    cursor: pointer;
+}
+.one li>a:hover{
+    color: #bb9772;
+}
+.kw li>a:hover{
+    color: #bb9772;
+}
+
+
+
+
+
+
+/*===========内容区===============*/
+.cklr{
+    width: 1200px;
+    margin: 0 auto;
+    /*height: 500px;*/
+    /*background-color: red;*/
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    /*margin-top: 40px;*/
+
+}
+.rzck{
+    /*background-color: red;*/
+    margin: 0 auto;
+    width: 1200px;
+    margin-top: 40px;
+    /*height: 300px;*/
+
+}
+.size{
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: white;
+    border-left: 2px solid #684029 ;
+}
+.size h2{
+    font-weight:500;
+    font-size: 20px;
+    color: #684029;
+    margin-left: 15px;
+}
+.size .p2{
+    /*font-weight:500;*/
+    font-size: 13px;
+    color: #684029;
+    margin-left: 15px;
+}
+/*.clearfix{*/
+    /*margin-top: 40px;*/
+/*}*/
+.openme{
+    height: 40px;
+    width: 100%;
+}
+
+#tj1 li{
+    float: left;
+    margin: 0 18px;
+    padding: 0 18px;
+    position: relative;
+    /*margin-left: 50px;*/
+}
+.zdc{
+    width: 600px;
+    height: 20px;
+    position: absolute;
+    left: 240px;
+    top: 175px;
+    background-color: white;
+    display: none;
+    opacity: 0;
+}

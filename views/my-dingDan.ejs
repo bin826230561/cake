@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/my-dingDan.css">
+</head>
+<body>
+<!--=============页头=============-->
+<%- include('common/header.ejs') %>
+<!--/============页头=============-->
+
+<!--内容区-->
+<section id="section">
+    <div class="center">
+        <div class="dingDan-hd">
+            <ul class="clearfix">
+                <li class="colorLi floatLeft" id="bothDing">
+                    全部订单
+                </li>
+                <li class="floatLeft" id="timeClick">
+                    近一个月
+                </li>
+                <li class="floatLeft" id="noFinish">
+                   未完成
+                </li>
+                <li id="seacher">
+                    <input type="text" placeholder="请输入订单号查找订单" id="inputNum">
+                    <button id="checkNumber">点击</button>
+                </li>
+            </ul>
+        </div>
+        <div class="dingDan-bd-noSuccess none show" id="noneMoeny">
+           <div class="banXin" id="tableDiv">
+
+
+           </div>
+        </div>
+        <div class="dingDan-bd-now none">
+            没有相关订单...
+        </div>
+        <div class="dingDan-bd-ago none">
+            没有相关订单...
+        </div>
+
+    </div>
+</section>
+<!--/内容区-->
+
+
+<!--=============页脚=============-->
+<%- include('common/footer.ejs') %>
+<!--/============页脚=============-->
+
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/my-dingDan.js"></script>
+<script src="dengluZT.js"></script>
+</body>
+</html>

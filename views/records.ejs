@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/records.css">
+    <!--<link rel="stylesheet" href="../css/invest.css">-->
+
+</head>
+<body>
+<!--导航栏部分-->
+<%-include("common/header.ejs")%>
+<!--/导航栏部分-->
+
+<div class="content-box" style="min-height: 80px;">
+    <div class="balance-title">
+        果实币账户及购买
+        <span>
+            额果实币余额为：
+        </span>
+        <span class="money">
+            ￥0.00
+        </span>
+        <a href="/invest.do">
+            充值
+        </a>
+        <a class="download" href="../pages/downloadTrad.html">
+            下载交易记录 &gt;
+        </a>
+    </div>
+    <div class="balance-list">
+        <ul class="balance-list-title">
+            <li class="time">时间</li>
+            <li class="message">事件</li>
+            <li class="event">订单</li>
+            <li class="deposit">存入金额</li>
+            <li class="cost">支出金额</li>
+            <li class="current">当前余额</li>
+        </ul>
+        <ul class="balance-list-content">
+            <li class="loading">暂时没有交易记录</li>
+
+        </ul>
+    </div>
+    <div class="page-box"></div>
+</div>
+
+<!--页脚-->
+<%-include("common/footer.ejs")%>
+
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/footer.js"></script>
+<script src="dengluZT.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,252 @@
+/*头部*/
+#section .dingDan-hd ul .floatLeft {
+    width: 120px;
+    height: 22px;
+    border-left: 2px solid #EFEFEF;
+    float: left;
+    text-align: center;
+    line-height: 22px;
+    color: #D5BFA7;
+    font-size: 15px;
+    margin: 44px auto 0;
+    cursor: pointer;
+}
+
+
+#footer{
+    margin-top: 30px;
+}
+
+#section .dingDan-hd ul li span {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+
+}
+
+/*#section .dingDan-hd ul{*/
+    /*background-color: sienna;*/
+/*}*/
+#seacher{
+    float: right;
+    margin: 28px auto 0;
+}
+
+#seacher input{
+    width: 200px;
+    height: 35px;
+    border: 1px solid #ccc;
+}
+#seacher input::-webkit-input-placeholder{
+    color: #cccccc;
+}
+input,button:focus{
+    outline: none;
+}
+#seacher button{
+    height: 37px;
+    border: none;
+    width: 60px;
+    margin-left: -5px;
+    margin-top: -5px;
+    background-color: #71442A;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+/*待支付订单内容区*/
+
+#section .none {
+    display: none;
+}
+
+#section .show {
+    display: block;
+    color: #D5BFA7;
+    font-size: 12px;
+    text-align: center;
+}
+
+#section .dingDan-hd ul li.colorLi {
+    color: #71442A;
+    border-color: #71442A;: ;
+}
+
+.noDingdan{
+    padding: 100px 0;
+}
+.textCenter{
+    text-align: center;
+}
+
+/*订单设置*/
+.banXin{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#noneMoeny table{
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 30px;
+}
+
+#noneMoeny table thead tr{
+    color: #8e6a55;
+    line-height: 38px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    height: 38px;
+    font-size: 13px;
+}
+
+/*tbody设置阴影*/
+#noneMoeny table tbody{
+    border: 1px solid #ddd;
+}
+
+
+
+
+/*第一列的图片和文字设置*/
+#noneMoeny table tbody tr td:nth-of-type(1){
+    width: 440px;
+    padding: 30px 0;
+}
+
+/*装图片的div*/
+#noneMoeny table tbody tr td:nth-of-type(1) div{
+    margin: 13px 20px 0 40px;
+    float: left;
+    border: 1px solid #ddd;
+    width: 330px;
+}
+#noneMoeny table tbody tr td:nth-of-type(1) div img{
+    float: left;
+}
+
+/*文字描述*/
+#noneMoeny table tbody tr td:nth-of-type(1) div span{
+    /*margin: -70px 20px 10px 80px;*/
+    float: left;
+    font-size: 13px;
+    text-align: left;
+    color: #8e6a55;
+}
+
+
+
+/*第二列的图片和文字设置*/
+#noneMoeny table tbody tr td:nth-of-type(2) div{
+    font-size: 15px;
+    width: 80px;
+    color: #8e6a55;
+    text-align: center;
+    height: 82px;
+    line-height: 82px;
+}
+
+
+/*第三列的图片和文字设置*/
+#noneMoeny table tbody tr td:nth-of-type(3){
+    font-size: 15px;
+    width: 220px;
+    color: #8e6a55;
+}
+/*#noneMoeny table tbody tr td:nth-of-type(3) span{*/
+    /*display: block;*/
+    /*text-align: center;*/
+/*}*/
+#noneMoeny table tbody tr td:nth-of-type(3) div{
+    width: 170px;
+    height: 130px;
+    background-color: #f9f9f9;
+    padding: 20px 20px;
+    transition: all 1s;
+    margin-left: 0;
+    display: none;
+}
+
+#noneMoeny table tbody tr td:nth-of-type(3) div p:nth-of-type(1){
+    color: #6f513d;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+#noneMoeny table tbody tr td:nth-of-type(3) div p:nth-of-type(2){
+    color: #8e6a55;
+    margin: 5px;
+    text-align: left;
+}
+
+#noneMoeny table tbody tr td:nth-of-type(3) div p:nth-of-type(3){
+    color: #8e6a55;
+    margin: 5px;
+    text-align: left;
+}
+
+
+/*鼠标移入显示信息*/
+#noneMoeny table tbody tr td:nth-of-type(3) span:hover+div{
+    display: block;
+}
+
+#noneMoeny table tbody tr td:nth-of-type(3) div:hover{
+    display: block;
+}
+
+
+
+
+/*第四列的图片和文字设置*/
+#noneMoeny table tbody tr td:nth-of-type(4) h4{
+     border-bottom: 1px solid #ccc;
+     display: inline-block;
+     padding: 5px 0;
+     margin: 5px 0;
+    color: #8e6a55;
+    font-size: 14px;
+ }
+
+#noneMoeny table tbody tr td:nth-of-type(4) a{
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/*第五列的设置*/
+#noneMoeny table tbody tr td:nth-of-type(5) h4{
+    font-size: 14px;
+    color: #8e6a55;
+    margin: 0;
+    text-align: left;
+    padding: 0 0 0 20px;
+}
+
+#noneMoeny table tbody tr td:nth-of-type(5) a{
+    font-size: 13px;
+    color: #8e6a55;
+    margin: 0;
+}
+
+
+
+
+/*第六列的图片和文字设置*/
+#noneMoeny table tbody tr td:nth-of-type(6) a{
+    font-size: 14px;
+    color: #8e6a55;
+}

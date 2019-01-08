@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*版心设置*/
+.center1{
+    width: 1160px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #f6f5f3;
+    height: 420px;
+}
+
+.center1 h2{
+    height: 38px;
+    line-height: 38px;
+    font-size: 20px;
+    color: #8c6a52;
+    padding-left: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/*表格设置*/
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+
+
+table thead tr{
+    color: #8e6a55;
+    line-height: 38px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    height: 38px;
+    font-size: 13px;
+}
+
+
+/*tbody下的td*/
+tbody tr{
+    height: 35px;
+    background-color: #fff;
+    text-align: center;
+    color: #8e6a55;
+    font-size: 12px;
+    border: 1px solid #ddd;
+}
+
+tbody tr td{
+    border-right: 1px solid #ddd;
+}
+
+tbody tr td:nth-of-type(1){
+    width: 300px;
+}
+
+table:nth-of-type(2){
+    margin-top: 30px;
+}
+
+table:nth-of-type(2) img{
+    margin: 20px 0;
+}

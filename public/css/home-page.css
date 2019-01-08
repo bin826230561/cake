@@ -1,0 +1,578 @@
+/*导航栏部分开始*/
+#header {
+    height: 80px;
+}
+
+#header .header-fixed {
+    box-shadow: 0 2px 2px 0 rgba(195, 195, 195, 0.50);
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    z-index: 9999;
+}
+
+#header .nav-logo {
+    width: 120px;
+    padding: 18px 0;
+    cursor: pointer;
+}
+
+#header .nav-logo img {
+    width: 100%;
+    height: 44px;
+    vertical-align: top;
+}
+
+#header .nav-centerContent {
+    height: 80px;
+    margin-left: 30px;
+}
+
+#header .nav-centerContent ul,
+#header .nav-function > ul {
+    height: 100%;
+    line-height: 80px;
+}
+
+#header .nav-centerContent li,
+#header .nav-function li {
+    float: left;
+    padding: 0 15px;
+    height: 100%;
+    position: relative;
+}
+
+#header .nav-centerContent li a {
+    font-size: 14px;
+    color: #684029;
+    display: block;
+    transition: all .5s;
+}
+
+#header .nav-centerContent li span {
+    height: 3px;
+    width: 100%;
+    background-color: #fc9201;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 1px;
+    display: none;
+}
+
+#header .nav-centerContent li span.showSpan {
+    display: block;
+
+}
+#header .nav-centerContent a.changeColor {
+    color: #bb9772;
+}
+
+#header .nav-function li,
+#header .nav-function li a {
+    font-size: 14px;
+    color: #684029;
+    cursor: pointer;
+    position: relative;
+}
+
+#header .nav-function li:last-child {
+    padding-right: 0;
+}
+
+#header .nav-function li:last-child i {
+    display: block;
+    height: 23px;
+    width: 25px;
+    margin-top: 28px;
+    background: url("../images/xueBiTu.png") no-repeat -286px -73px;
+    background-size: 310px 120px;
+}
+
+#header .nav-function li:nth-child(2) i {
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    vertical-align: middle;
+    background: url("../images/xueBiTu.png") no-repeat -0px -59px;
+    background-size: 310px 120px;
+}
+
+#header .nav-function li .num {
+    background-color: #ba9978;
+    width: 12px;
+    height: 12px;
+    transform: scale(.01);
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 14px;
+    right: 3px;
+    border-radius: 50%;
+    color: #fff;
+}
+#header .nav-function li .num span {
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+    transform: scale(.8);
+    display: block;
+}
+
+#header .nav-function > ul > li span,
+#header .nav-function > ul > li a {
+    transition: all .5s;
+}
+
+#header .nav-function > ul > li:hover span,
+#header .nav-function li a:hover {
+    color: #bb9772;
+}
+
+#header .nav-function > ul > li:first-child {
+    margin-right: 10px;
+}
+
+/*优惠二维码*/
+#header .nav-function .youHuiErWeiMa {
+    width: 125px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65px;
+    border: 1px solid #EDEDED;
+    box-shadow: 0 2px 4px 0 #ededed;
+    text-align: center;
+    background-color: #fff;
+    padding: 13px 10px 6px;
+    box-sizing: border-box;
+    line-height: 1;
+    cursor: default;
+    display: none;
+}
+
+#header .nav-function .youHuiErWeiMa img {
+    width: 100px;
+}
+
+#header .nav-function .youHuiErWeiMa p {
+    font-size: 12px;
+    margin-top: 3px;
+}
+
+/*地区选择*/
+#header .nav-function .address-chose,
+#header .nav-function .news {
+    width: 100px;
+    line-height: 1.8;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65px;
+    border: 1px solid #EDEDED;
+    box-shadow: 0 2px 4px 0 #ededed;
+    text-align: center;
+    background-color: #fff;
+    display: none;
+    cursor: default;
+}
+
+#header .nav-function .address-chose a,
+#header .nav-function .news a {
+    font-size: 14px;
+    color: #bb9772;
+}
+
+#header .nav-function .address-chose a:hover,
+#header .nav-function .news a:hover {
+    color: #000;
+}
+
+/*消息处小点*/
+#header .nav-function .redDian {
+    position: absolute;
+    top: 31px;
+    right: 11px;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+}
+
+/*登录成功后个人信息处------需要处理*/
+#header .nav-function .ifDengLu-show-children .user {
+    padding: 15px 14px;
+}
+
+#header .nav-function .ifDengLu-show-children .dengLu-success {
+    display: none;
+}
+
+#header .nav-function .ifDengLu-show-children .dengLu-success img {
+    width: 18px;
+    height: 20px;
+    vertical-align: middle;
+    margin: -7px 12px 0 8px;
+}
+
+#header .nav-function > ul > li.buy-cart:hover span {
+    color: #fff;
+}
+
+/*导航栏部分结束*/
+
+/*轮播部分开始*/
+
+#broadcast .swiper-container {
+    width: 100%;
+    height: 480px;
+    cursor: pointer;
+}
+
+#broadcast .swiper-container .swiper-slide a {
+    display: block;
+    height: 100%;
+}
+
+.broadCast-imgBox {
+    width: 100%;
+    height: 480px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.broadCast-imgBox > div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.broadCast-imgBox > div > a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*分页器*/
+.broadCast-imgBox > ul {
+    position: absolute;
+    bottom: 25px;
+    height: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+
+.broadCast-imgBox > ul > li {
+    float: left;
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    line-height: 60px;
+    background-color: #fff;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+.broadCast-imgBox > .broadCast-img {
+    display: none;
+}
+
+.broadCast-imgBox > .show {
+    display: block;
+}
+
+.broadCast-imgBox > ul > li.black {
+    background-color: #684029;
+}
+
+/*轮播部分结束*/
+
+/*内容区开始*/
+
+#home-contents .contents-header {
+    width: 1124px;
+    margin: 26px auto 0;
+}
+
+#home-contents .contents-header a {
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06)
+}
+
+#home-contents .contents-header a:hover img {
+    opacity: 1;
+}
+
+#home-contents .contents-header a img {
+    vertical-align: top;
+    opacity: 0.9;
+    transition: all .3s;
+}
+
+#home-contents .contents-common {
+    width: 1100px;
+    margin: 60px auto 0;
+}
+
+#home-contents .contents-common .contents-common-hd {
+    margin-bottom: 30px;
+}
+
+#home-contents .contents-common .contents-common-banner {
+    margin-bottom: 20px;
+    height: 250px;
+}
+
+#home-contents .contents-common .contents-common-banner a {
+    display: block;
+    height: 100%;
+}
+
+#home-contents .contents-common .contents-common-hd span:nth-child(1) {
+    font-size: 26px;
+    color: #724228;
+}
+
+#home-contents .contents-common .contents-common-hd span:nth-child(2) {
+    font-size: 14px;
+}
+
+#home-contents .contents-common .contents-common-display li {
+    width: 263px;
+    height: 365px;
+    position: relative;
+    float: left;
+    margin-right: 16px;
+}
+
+#home-contents .contents-common .contents-common-display li:last-child {
+    margin-right: 0;
+}
+
+#home-contents .contents-common .contents-common-display li a {
+    display: inline-block;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-img {
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-img img {
+    transition: all .2s;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-img:hover img {
+    transform: scale(1.05);
+}
+
+#home-contents .contents-common .contents-common-display li .inner-title {
+    display: block;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-title h6 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000;
+    font-weight: normal;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-title p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #616161;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-label a {
+    font-size: 12px;
+    color: #D5BFA7;
+    border: 1px solid #D5BFA7;
+    border-radius: 100px;
+    padding: 0 6px 0 8px;
+    margin: 6px 2px;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-money .inner-money-left {
+    font-size: 14px;
+    color: #BB9772;
+    line-height: 20px;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-money {
+    border-top: 1px dashed #D5BFA7;
+    padding-top: 14px;
+    margin-top: 8px;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-money .inner-money-right {
+    font-size: 12px;
+    color: #fff;
+    background-color: #643E28;
+    line-height: 20px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-addBuy,
+#home-contents .contents-common .contents-common-display li .inner-addBuySuccess {
+    width: 100%;
+    background-color: #fafafa;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    left: 0;
+    z-index: 99;
+    padding: 12px 12px 20px;
+    box-sizing: border-box;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-title {
+    color: #684029;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-chose {
+    font-size: 12px;
+    margin: 15px 0 16px;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-chose a {
+    border: 1px solid #D0C3BB;
+    color: #7A5844;
+    padding: 6px 11px;
+    position: relative;
+    margin-left: 1px;
+    margin-right: 2px;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-chose a.border {
+    border: 1px solid #684029;
+    color: #684029;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-chose a i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #684029;
+    color: #fff;
+    font-size: 12px;
+    transform: scale(.85);
+    margin: -1px 0 0 -1px;
+    display: none;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-chose a i.showI {
+    display: block;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-btn button {
+    width: 115px;
+    height: 30px;
+    border: 0;
+    outline: none;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-btn button:nth-child(1) {
+    background-color: #fff;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-btn button:nth-child(1) a {
+    margin-right: 4px;
+    color: #7A5844;
+    display: block;
+}
+
+#home-contents .inner-addBuy .inner-addBuy-btn button:nth-child(2) {
+    color: #fff;
+    background-color: #684029;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-addBuySuccess {
+    /*display: block;*/
+    text-align: center;
+    padding-top: 34px;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-addBuySuccess i {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 22px;
+    background-color: #72cb69;
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-addBuySuccess span {
+    font-size: 16px;
+    color: #B08C7E;
+    vertical-align: top;
+    line-height: 30px;
+}
+
+#home-contents .contents-common .contents-common-display li .inner-addBuySuccess button {
+    width: 150px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    background-color: #684029;
+    color: #fff;
+    margin: 15px 0;
+}
+
+/*活动专区*/
+#home-contents .contents-activity .contents-common-banner {
+    height: auto;
+    margin-bottom: 105px;
+}
+
+#home-contents .contents-activity .contents-common-banner .activity-left,
+#home-contents .contents-activity .contents-common-banner .activity-right {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#home-contents .contents-activity .contents-common-banner .activity-left h3,
+#home-contents .contents-activity .contents-common-banner .activity-right h3 {
+    font-size: 24px;
+    color: #000;
+    margin-top: 14px;
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+#home-contents .contents-activity .contents-common-banner .activity-left .activity-news a,
+#home-contents .contents-activity .contents-common-banner .activity-right .activity-news a {
+    font-size: 14px;
+    color: #AD814B;
+    padding: 20px 10px 5px;
+}
+
+#home-contents .contents-activity .contents-common-banner img {
+    width: 540px;
+    height: 260px;
+}
+
+#home-contents .contents-activity .contents-common-banner .activity-news a {
+    float: none;
+}
+
+/*内容区结束*/
+
+
+
+

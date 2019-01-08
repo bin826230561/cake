@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加载的页面</title>
+</head>
+<body>
+
+<%- include('common/header.ejs') %>
+<!--<div>-->
+<!--<%= myTest[0].u_name %>-->
+<!--</div>-->
+
+<table border="1" cellpadding="1" cellspacing="0">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>用户名</th>
+        <th>密码</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for (var i = 0;i < myTest.length;i++){ %>
+    <tr>
+        <td><%= myTest[i].u_id %></td>
+        <td><%= myTest[i].u_name %></td>
+        <td><%= myTest[i].u_pwd %></td>
+        <td><button class="btn">删除</button></td>
+    </tr>
+    <% } %>
+    </tbody>
+</table>
+<script src="js/test.js"></script><!--里面有测试代码-->
+</body>
+</html>

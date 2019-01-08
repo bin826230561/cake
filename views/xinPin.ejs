@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新品_标签_生日蛋糕网上订购_生日蛋糕预订_心仪蛋糕官网</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/xinPin.css">
+
+</head>
+<body>
+<!--=========================================页头=======================================-->
+<%-include('common/header.ejs')%>
+<!--=========================================中间内容=======================================-->
+<!--=============内容大图==================-->
+<section class="xinpinda"></section>
+<!--=============内容新品标题================-->
+<div class="xinpinBiaoTi">
+    <h2>
+        新品
+        <!--下划线-->
+        <i></i>
+    </h2>
+</div>
+<!--=============内容蛋糕区==================-->
+<section>
+    <div class="center clearfix neiRong">
+        <!--======蛋糕展示=====-->
+        <div>
+            <ul class="zhanShi">
+                <!--======展示图1======-->
+                <li>
+                    <!--内容1-->
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/haizeiwang.do" name="<%=mydata[1].goods_id%>">
+                                <img src="../images/01.jpg" alt="">
+                                <!--黑白巧克力慕斯（千阳号-->
+                                <h3><%=mydata[1].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[1].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/xinPin">新品 ></a>
+                            <a href="/child">儿童 ></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/xinpin.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <!--======展示图2======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/goods-description.do" name="<%=mydata[9].goods_id%>">
+                                <img src="../images/02.jpg" alt="">
+                                <!--芒果奶油蛋糕-->
+                                <h3><%=mydata[9].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[1].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/qingLv">情侣 ></a>
+                            <a href="/child">儿童 ></a>
+                            <a href="/party">聚会 ></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/youhui.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <!--======展示图3======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do" name="<%=mydata[0].goods_id%>">
+                                <img src="../images/03.jpg" alt="">
+                                <!--浅草-->
+                                <h3><%=mydata[0].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[0].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/xinPin">新品 ></a>
+                            <a href="/renqi">人气 ></a>
+                            <a href="/birthday">生日 ></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/xinpin.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <!--======展示图4======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do" name="<%=mydata[20].goods_name%>">
+                                <img src="../<%=mydata[20].goods_img%>" alt="">
+                                <!--松仁淡奶（木糖醇）-->
+                                <h3><%=mydata[20].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[20].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/senior">长辈 ></a>
+                            <a href="/xinPin">新品 ></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/xinpin.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <!--======展示图5======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do" name="<%=mydata[16].goods_id%>">
+                                <img src="../<%=mydata[16].goods_img%>" alt="">
+                                <!--芒果慕斯-->
+                                <h3><%=mydata[16].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[16].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/child">儿童 ></a>
+                            <a href="/party">聚会 ></a>
+                            <a href="/xinPin">新品 ></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/xinpin.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <!--======展示图6======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do" name="<%=mydata[7].goods_id%>">
+                                <img src="../images/06.jpg" alt="">
+                                <!--枣儿-->
+                                <h3><%=mydata[7].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[7].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/xinPin">新品 ></a>
+                            <a href="/birthday">生日 ></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/xinpin.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <!--======展示图7======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/heibaiqiaokeli.do" name="<%=mydata[28].goods_id%>">
+                                <img src="../<%=mydata[28].goods_img%>" alt="">
+                                <!--摩卡-->
+                                <h3><%=mydata[28].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[28].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/yirenfen">一人份 ></a>
+                            <a href="/xinPin">新品 ></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <!--<div class="label">-->
+                            <!--<img src="../images/xinpin.png" alt="">-->
+                        <!--</div>-->
+                    </div>
+                </li>
+                <!--======展示图8======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/heibaiqiaokeli.do" name="<%=mydata[8].goods_id%>">
+                                <img src="../images/08.jpg" alt="">
+                                <!--黑白巧克力慕斯 彼尔德（Party）-->
+                                <h3><%=mydata[8].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[8].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/child">儿童 ></a>
+                            <a href="/xinPin">新品 ></a>
+                            <a href="/acquaintance">相识 ></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                    </div>
+                </li>
+                <!--======展示图9======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do" name="<%=mydata[29].goods_id%>">
+                                <img src="../<%=mydata[29].goods_img%>" alt="">
+                                <!--新卡-->
+                                <h3><%=mydata[29].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[8].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/yirenfen">一人份 ></a>
+                            <a href="/xinPin">新品 ></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                    </div>
+                </li>
+                <!--======展示图10======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do" name="<%=mydata[10].goods_id%>">
+                                <img src="../images/10.jpg" alt="">
+                                <!--百香果酸乳酪慕斯（木糖醇）-->
+                                <h3><%=mydata[10].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[10].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/qingLv">情侣 ></a>
+                            <a href="/low">低温 ></a>
+                            <a href="/xinPin">新品 ></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/xinpin.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <!--======展示图11======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do" name="<%=mydata[26].goods_id%>">
+                                <img src="../<%=mydata[26].goods_img%>" alt="">
+                                <!--深艾尔-->
+                                <h3><%=mydata[26].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[8].goods_price*2*0.75%>.00/1.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/qingLv">情侣 ></a>
+                            <a href="/low">低温 ></a>
+                            <a href="/xinPin">新品 ></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/xinpin.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <!--======展示图12======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/heibaiqiaokeli.do" name="<%=mydata[6].goods_id%>">
+                                <img src="../images/12.jpg" alt="">
+                                <!--黑白巧克力慕斯 彼尔德（生日）-->
+                                <h3><%=mydata[6].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[6].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/xinPin">新品 ></a>
+                            <a href="/birthday">生日 ></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                    </div>
+                </li>
+                <!--======展示图13======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do" name="<%=mydata[2].goods_id%>">
+                                <img src="../images/13.jpg" alt="">
+                                <!--清境-->
+                                <h3><%=mydata[2].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[2].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/xinPin">新品 ></a>
+                            <a href="/party">聚会 ></a>
+                            <a href="/acquaintance">相识 ></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                        <!--展示图上的新品-->
+                        <div class="label">
+                            <img src="../images/xinpin.png" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--=========================================页尾=======================================-->
+<%-include('common/footer.ejs')%>
+
+<!--jq插件-->
+<script src="../lib/jquery-1.12.4.js"></script>
+<script>
+    // 浅草
+    var qiancao="<%=mydata[0].goods_price%>"
+
+    /*=============================首页商品加入购物车==========================*/
+    console.log($(".addGoods").attr("done"))
+    $("body").on("click",".addGoods",function () {
+        var clickTime=1;
+        if ($(this).attr("done") == undefined) {
+            $(this).attr("done", "true");
+            var $index =$(this).parent().parent().parent().children(".dangao-li").children(".fangda").children().attr("name");
+            var $price =$(this).parent().parent().children(".inner-addBuy-title").text();
+            var $bang = $(this).parent().parent().children(".inner-addBuy-chose").children(".quan").text().trim();
+            var $allPrice=$price;
+            console.log($price)
+            $.ajax({
+                type: "post",
+                url: "/addGoods.do",
+                data: {
+                    goods_id: $index,//商品ID
+                    goods_bang: $bang,//商品规格
+                    goods_price: $price,//商品单价
+                    goods_num: clickTime,//商品数量
+                    goods_count: $allPrice,//商品总价
+                },
+                success: function (data) {
+                    /*这是为了刷新购物车的商品数量(无需刷新)*/
+                    $.ajax({
+                        url: "/getCount.do",
+                        success: function (data) {
+                            var goodsCount = data[0].num;
+                            if (goodsCount > 0) {
+                                $("#header .nav-function li .num").css({
+                                    transform: "scale(1)"
+                                })
+                                $(".buy-cart").children("span").show();
+                                $(".buy-cart").children("span").children("span").text(goodsCount);
+                            } else {
+                                $(".buy-cart").children("span").hide();
+                            }
+                        }
+                    })
+                }
+            })
+        } else{
+            clickTime++;
+            var $index ="<%=mydata[19].goods_id%>";
+            var $price = $(this).parent().parent().children(".inner-addBuy-title").text().split("￥")[1];
+            var $allPrice=parseInt($price)*clickTime;
+            var $allPrice="￥"+$price*clickTime+".00";
+            console.log($index,$price,$allPrice)
+            $.ajax({
+                type: "post",
+                url: "/changeGoodsNum.do",
+                data: {
+                    goods_id: $index,//商品ID
+                    goods_num: clickTime,//商品数量
+                    goods_count: $allPrice,//商品总价
+                },
+                success: function (data) {
+                    // cosnole.log(data)
+                }
+            })
+        }
+    })
+</script>
+<script src="dengluZT.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/xinPin.js"></script>
+<script src="../js/footer.js"></script>
+</body>
+</html>

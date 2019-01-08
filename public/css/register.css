@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*body的背景图*/
+body {
+    background-image: url("../images/passport-banner.jpg");
+    background-position: -300px 0;
+}
+
+/*form表单样式*/
+form{
+    border-left: 1px solid rgba(204, 204, 204, 0.58);
+    border-right: 1px solid rgba(204, 204, 204, 0.58);
+    border-top: 1px solid rgba(204, 204, 204, 0.58);
+    width: 320px;
+    height: 465px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 110px;
+    padding: 0 40px;
+}
+/*用户注册的设置*/
+form p{
+    font-size: 18px;
+    text-align: center;
+    /*padding: 30px;*/
+    cursor: pointer;
+    margin: 25px 0;
+}
+
+/*form 下的input框*/
+form input{
+    font-size: 12px;
+    width: 310px;
+    height: 36px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(204, 204, 204, 0.58);
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+/*短信验证码input框*/
+.msg{
+    width: 43%;
+}
+
+/*短信验证码点击按钮*/
+.msgBtn{
+    border: 1px solid rgba(204, 204, 204, 0.58);
+    background-color: #fafafa;
+    height: 35px;
+    width: 45%;
+    margin-left: 20px;
+}
+
+/*提交按钮*/
+.submit{
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    background-color: #442818;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+}
+
+.append{
+    border: 1px solid white;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    color:red;
+    border-radius: 3px;
+    font-size: 14px;
+}
+input,button:focus { outline:none; }
+
+
+.footer{
+    margin-top: 590px;
+}
+
+input::-webkit-input-placeholder{
+    color: #cccccc;
+}
+
+#dateBirth::-webkit-inner-spin-button { visibility: hidden; }
+
+
+
+.refresh-button{
+    background: url("../images/icon.png") no-repeat;
+    float: right;
+    height: 22px;
+    width: 26px;
+    display: block;
+    background-position: -15px -41px;
+    background-size: 310px 120px;
+    margin-top: 8px;
+}
+
+
+#imgShua{
+    width: 43%;
+    margin-top: -10px;
+
+}
+
+#img{
+    margin-left: 10px;
+    vertical-align: middle;
+    height: 38px;
+    width: 120px;
+}

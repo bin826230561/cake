@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="qiYe_model.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="goPay.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<!--=============页头=============-->
+<%- include('common/header.ejs') %>
+<!--/============页头=============-->
+
+<!--内容区-->
+<div class="content-box" style="min-height: 80px;">
+    <form action="/order-create.do" method="post" id="cart-submit-detail-form">
+        <!-- 配送信息 -->
+        <div class="delivery-info">
+            <h3 class="delivery-info-title" style=" color: #684029;">配送信息</h3>
+            <div id="address-info-content" class="delivery-info-content">
+                <!--========================地址信息==========================-->
+                <!--<div class="delivery-address2 clearfix">-->
+                <!--<div class="left-info2">-->
+                <!--<h3>伊卡洛斯</h3>-->
+                <!--<span class="phone-number2">-->
+                <!--<i></i>-->
+                <!--18982806671-->
+                <!--</span>-->
+                <!--<span class="address2">-->
+                <!--<i></i>-->
+                <!--上海市浦东新区宣黄公路5栋22楼(上海市浦东新区)-->
+                <!--</span>-->
+                <!--</div>-->
+                <!--<div class="right-button2" >-->
+                <!--<a id="select-address-btn2">-->
+                <!--切换地址(<span>3</span>)-->
+                <!--</a>-->
+                <!--<a id="add-address-btn2">-->
+                <!--+添加新地址-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--</div>-->
+                <div class="loadAddAddress">
+                    <!--<div id="cart-address-button" class="cart-address-button" style="">-->
+                    <!--<i></i>-->
+                    <!--添加新的地址-->
+                    <!--</div>-->
+                </div>
+                <div id="select-address-button" class="cart-address-button" style="display: none;">
+                    <i></i>
+                    选择新地址
+                </div>
+                <div class="delivery-address" id="delivery-address-detail" style="display: none;">
+                    <div class="left-info" id="action-ship-info-block">
+                        <input type="hidden" name="address_id" id="input-address-id">
+                        <h3></h3>
+                        <span class="phone-number">
+                            <i></i>
+                        </span>
+                        <span class="address">
+                            <i></i>
+                        </span>
+
+                    </div>
+                    <div class="right-button">
+                        <a href="#" id="select-address-btn">
+                            切换地址(<span>0</span>)
+                        </a>
+                        <a href="#" id="add-address-btn">
+                            +添加新地址
+                        </a>
+                    </div>
+                </div>
+
+                <div class="delivery-time">
+                    <span>配送时间</span>
+                    <input type="text" name="ship_date" id="ship-date" autocomplete="off" placeholder="请选择配送日期"
+                           class="hasDatepicker">
+                    <select name="ship_time_scope" id="ship-time-scop">
+                        <option>时间</option>
+                    </select>
+                    <span class="sendTime">配送时间有前后15分钟误差，奉贤地区10:40～16:30时段内配送</span>
+                </div>
+                <div class="delivery-mode">
+                    <span>配送方式</span>
+                    <label>
+                        <input type="radio" name="shipping_id" value="1" id="action-delivery-dispatch"
+                               checked="checked">
+                        &nbsp;21cake配送
+                    </label>
+                    <label>
+                        <input type="radio" name="shipping_id" value="2" id="action-delivery-self-pick">
+                        &nbsp;站点自提
+                        <span id="self-pick-address"></span>
+                    </label>
+                    <input type="hidden" name="distribution_id" id="distribution_id">
+                </div>
+            </div>
+        </div>
+        <!-- 商品信息 -->
+        <div class="cart-goods-info">
+            <ul class="thead-ul">
+                <li class="goods-ti">商品</li>
+                <li class="birthday-card-ti">生日牌</li>
+                <li class="unit-Price">单价</li>
+                <li class="number-ti">数量</li>
+                <li class="money-ti" colspan="2">金额</li>
+            </ul>
+            <div class="tbody-ul">
+                <table class="cart-detail">
+                    <tbody>
+                    <tr id="goods_1_2173" data-name="2173">
+                        <td class="goods-img" style="border: 0px;">
+                            <a href="#" target="_blank">
+                                <img src="../images/buy1.jpg">
+                            </a>
+                        </td>
+                        <td class="goods-cake" style="border: 0;">
+                            <div>
+                                <h4>
+                                    <a href="#" target="_blank" class="rum">
+                                        Rum Cheese Cake 朗姆芝士
+                                    </a>
+                                </h4>
+                                <span class="goods-spec">规格：<span>2.0磅</span></span>
+                                <span class="goods-laid">
+                                    <i></i>赠送10套餐具
+                                </span>
+                            </div>
+                        </td>
+                        <td style="border: 0px;">
+                            <div class="select-birthday">
+                            </div>
+                        </td>
+                        <td class="cart-unit-Price" style="border: 0px;">¥298.00</td>
+                        <td class="number-li" style="border: 0px;">
+                            1
+                        </td>
+                        <td class="money" style="border: 0px;">
+                            ¥298.00
+                        </td>
+                        <td class="delete" style="border: 0px;"></td>
+                    </tr>
+                    <tr class="item-order-promotion">
+                        <td colspan="6" class="order-sales" style="color: #684029;">
+                            <span>[送优惠券]</span>
+                            21cake注册未下单用户，首单订购298元及以上蛋糕类商品，订单配送完成后，赠送新客权益40元优惠券1张。
+                        </td>
+                    </tr>
+                    <tr class="item-order-promotion" style="color: #684029;">
+                        <td colspan="6" class="order-sales">
+                            <span>[送优惠券]</span>
+                            21cake注册未下单用户，首单订购298元及以上蛋糕类商品，订单配送完成后，赠送「新客权益牛乳冰淇淋/四口味挂耳咖啡兑换券」1张。
+                        </td>
+                    </tr>
+                    <tr class="item-order-promotion" style="color: #684029;">
+                        <td colspan="6" class="order-sales">
+                            <span>[送赠品]</span>
+                            21cake注册未下单用户，首单购买298元（实付）及以上蛋糕类商品，随单赠送：小切块蛋糕1份（口味随机）。
+                        </td>
+                    </tr>
+                    <tr class="order-cart-gift item-order-promotion">
+                        <td class="goods-img">
+                            <a href="#">
+                                <img src="../images/4cake.jpg" alt="小切块蛋糕1份（口味随机）">
+                            </a>
+                        </td>
+                        <td class="goods-cake" colspan="2">
+                            <div>
+                                <h4 class="smallCake">小切块蛋糕1份（口味随机）</h4>
+                                <span class="goods-spec">规格：<span>一份</span></span>
+                                <span class="goods-gift">赠品</span>
+                            </div>
+                        </td>
+                        <td class="cart-unit-Price">
+                            <span>¥0.00</span>¥0.00
+                        </td>
+                        <td class="number-li">
+                            1
+                        </td>
+                        <td class="money">¥0.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- 订单留言 -->
+        <div class="leave-message">
+            <label>订单留言：</label>
+            <textarea name="memo" id="action-add-memo" maxlength="200" placeholder="请留下您对订单或商品的特殊要求，200字以内"></textarea>
+        </div>
+        <div class="select-coupons-info">
+            <div class="action-add-invoice">
+                <label class="invoice" id="action-add-invoice">发票
+                    <input type="checkbox" id="input-invoice" name="f1">
+                </label>
+                <label>
+                    <span id="invoice-text"></span>
+                </label>
+                <input name="invoice" type="hidden" value="0" id="invoice-checkout">
+                <div class="invoice-show" style="display: none">
+                    <div class="invoice-show-title">
+                        <a herf="#" class="active electronic-invoice invoice-title" style="color: #684029;">电子发票</a>
+                        <a href="../pages/information.html" target="_blank" class="what-invoice"
+                           style=" color: #684029;">什么是电子发票？</a>
+                    </div>
+                    <div id="companyPersonal">
+                        <label><input type="radio" name="tax_type" value="company" checked="">公司发票</label>
+                        <label><input type="radio" name="tax_type" value="personal">个人发票</label>
+                    </div>
+                    <div id="electronic-invoice" class="rise-show">
+                        <input type="hidden" name="invoice_type" id="input-invoice_type" value="electronic">
+                        <input type="text" name="invoice_code" id="input-invoice-code" value=""
+                               placeholder="纳税人识别号或统一社会信用代码(必填)">
+                        <input type="text" name="invoice_title" id="input-invoice-title" value=""
+                               placeholder="发票抬头(必填)">
+                        <input type="text" name="invoice_mobile" id="input-invoice-mobile" value=""
+                               placeholder="收票人手机(必填)">
+                        <input type="text" name="invoice_email" id="input-invoice-email" value="" placeholder="收票人邮箱">
+                        <select name="invoice_content" id="input-invoice-content">
+                            <option value="蛋糕">蛋糕</option>
+                            <option value="冰淇淋">冰淇淋</option>
+                            <option value="咖啡">咖啡</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <ul class="select-coupons-title">
+                <li class="active">使用优惠券</li>
+                <li class="active1">添加优惠券/尊享卡</li>
+            </ul>
+            <div class="use-coupons">
+                <span class="coupons-empty">暂无可用优惠券。
+                    <a href="" target="_blank">查看全部优惠券</a>
+                </span></div>
+            <div class="add-coupons" style="display: none">
+                <div class="add-before" id="block-coupon-input">
+                    <input type="text" name="coupon_code" id="input-coupon-code" placeholder="请输入优惠券号/尊享卡卡密">
+                    <a href="#" class="add-button" id="action-add-coupon">添加</a>
+                </div>
+                <div class="add-after" id="block-coupon-add" hidden=""></div>
+                <span style="clear: both;font-size: 12px">*优惠券只能同时使用1张</span>
+            </div>
+            <input type="hidden" name="purchase[gift]" id="coupon-purchase-gift" value="">
+        </div>
+        <!-- 支付信息 -->
+        <div class="payment-info">
+            <div class="left-pay">
+                <h3>支付方式</h3>
+                <input type="hidden" name="payment[pay_app_id]" id="pay_app_id" value="alipay">
+                <input type="hidden" name="payment[payment_name]" id="payment_name" value="在线支付">
+                <input type="hidden" name="payment[cod_pay_type]" id="cod_pay_type" value="0">
+                <ul class="pay-ways" id="payments-list">
+                    <li>
+                        <a href="#" class="payment-item active" data-app_id="alipay" data-cod_pay_type="0"
+                           data-app_name="在线支付">在线支付</a>
+                    </li>
+                </ul>
+                <a class="fruit-coin" id="action-use-balance"><span></span>使用果实币（余额：0.00 元）</a>
+                <input type="hidden" name="balance_amount" value="0">
+                <label class="fruit-coin-show" id="input-use-balance" style="display: none;">
+                    <input name="use_balance" type="checkbox" value="1">抵扣¥
+                    <ins id="advance-to-use" data-advance="0">0.00</ins>
+                </label>
+                <a class="behalf-gold" id="action-use-card"><span></span>使用代金卡</a>
+                <div class="behalf-gold-show" style="display: none;">
+                    <a id="add-gift-card-btn">添加代金卡</a>
+                    <a class="cancel-use" id="action-card-use-cancel" hidden="">取消使用</a>
+                    <span style="font-size: 12px">＊不能与优惠券同时使用；抵扣金额不能开具发票</span>
+                </div>
+
+
+            </div>
+
+            <div class="right-pay">
+                <div class="pay-unmber" id="total-amount-detail">
+                    <ul>
+                        <li>
+                            <span>商品金额</span>
+                            <span>¥ 298.00</span>
+                        </li>
+                        <li>
+                            <span>配送费</span>
+                            <span>¥ 0.00</span>
+                        </li>
+                        <li>
+                            <span>优惠抵扣</span>
+                            <span class="redco">- ¥ 0.00</span>
+                        </li>
+                        <li>
+                            <span>果实币抵扣</span>
+                            <span class="redco">- ¥ 0.00</span>
+                        </li>
+                        <li>
+                            <span>代金卡抵扣</span>
+                            <span class="redco">- ¥ 0.00</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="total-amount">
+                    您总共需要支付<span id="total-amount">¥ 298.00</span>
+                </div>
+                    <a href="/zhiFuFangShi" >
+                        <input type="button" class="go-pay" name="go-pay" value="下单结算" id="goPayM">
+                    </a>
+
+                <div id="user-info-confirm">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+<!--=============页脚=============-->
+<%- include('common/footer.ejs') %>
+<!--/============页脚=============-->
+
+<!--<div class="chose_contents">-->
+<!--<div class="chose_contents_inner">-->
+<!--<div class="minute_address_show">-->
+<!--<h4>请选择收货地址</h4>-->
+<!--<h3>111<span class="true">默认地址</span></h3>-->
+<!--<div class="phoneNumber">-->
+<!--<i class="iconfont">&#xe61e;</i>-->
+<!--11111111111-->
+<!--</div>-->
+<!--<div class="address">-->
+<!--<i class="iconfont">&#xe641;</i>-->
+<!--上海市浦东新区世纪公园游泳健身卡啊啊啊操作(上海市浦东新区梅花路芳甸路交叉口)-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="add_address_button">+添加新地址</div>-->
+<!--<div class='promptText'></div>-->
+<!--</div>-->
+
+<script src="jquery/jquery.js"></script>
+<script src="qiYe_model.js"></script>
+<script src="home-page.js"></script>
+<script src="goPay.js"></script>
+<script src="footer.js"></script>
+<script src="success-home-page.js"></script>
+<script src="dengluZT.js"></script>
+<script src="my-dingDan.js"></script>
+<script>
+    $.ajax({
+        type: "get",
+        url: "/goPay",
+        data: {
+           username:localStorage.getItem("u_phone")
+        },
+        success: function (data) {
+
+        }
+    })
+
+
+    if ("<%= myGoPay.length %>" == 0) {
+        $(".loadAddAddress").html(" <div id=\"cart-address-button\" class=\"cart-address-button\" style=\"\">\n" +
+            "            <i></i>\n" +
+            "            添加新的地址\n" +
+            "          </div>")
+
+    } else {
+        /*循环判断是不是默认地址*/
+        <% for (var i = 0;i < myGoPay.length;i++){ %>
+        if ("<%= myGoPay[i].defaultaddressZT %>" == "true") {
+            $(".loadAddAddress").html("<div class=\"delivery-address2 clearfix\">\n" +
+                "                    <!--=============左=================-->\n" +
+                "                    <div class=\"left-info2\">\n" +
+                "                        <h3 id=\"hText\">" + "<%= myGoPay[i].address_user %>" + "</h3>\n" +
+                "                        <span class=\"phone-number2\">\n" +
+                "                            <i></i>\n" +
+                "                             " + "<%= myGoPay[i].phone %>" + "\n" +
+                "                        </span>\n" +
+                "                        <span class=\"address2\">\n" +
+                "                            <i></i>\n" +
+                "                          " + "<%= myGoPay[i].address_place %>" + "\n" +
+                "                        </span>\n" +
+                "                    </div>\n" +
+                "                    <!--================右===============-->\n" +
+                "                    <div class=\"right-button2\" >\n" +
+                "                        <a id=\"select-address-btn2\">\n" +
+                "                            切换地址(<span>" + "<%= myGoPay.length %>" + "</span>)\n" +
+                "                        </a>\n" +
+                "                        <a id=\"add-address-btn2\">\n" +
+                "                            +添加新地址\n" +
+                "                        </a>\n" +
+                "                    </div>\n" +
+                "                </div>")
+
+        }
+        <% } %>
+        changeAddress();
+    }
+
+    /*=======================切换地址===================*/
+    function changeAddress() {
+        var contentText = "<div class=\"chose_contents\">\n" +
+            "    <div class=\"chose_contents_inner\">\n" +
+            "    </div>\n" +
+            "    <div class=\"add_address_button\">+添加新地址</div>\n" +
+            "    <div class='promptText'></div>\n" +
+            "</div>";//传入内容content部分
+
+        $("body").on("click", "#select-address-btn2", function () {
+            var confirm = "使用";//按键名字自定义，如果不要按钮传入空值("")即可。
+            var cancel = "";//按键名字自定义，如果不要按钮传入空值("")即可。
+            popupDiv(contentText, confirm, cancel, 695, 525);
+            /*模态框中加入动态数据*/
+
+            <% for (var i = 0;i < myGoPay.length;i++){ %>
+            $(".chose_contents_inner")[0].innerHTML += "<div class=\"minute_address_show\" zt=<%= myGoPay[i].address_id %>>\n" +
+                "            <h4>请选择收货地址</h4>\n" +
+                "            <h3>" + "<%= myGoPay[i].address_user %>" + "<span class=<%= myGoPay[i].defaultaddressZT %>>默认地址</span></h3>\n" +
+                "            <div class=\"phoneNumber\">\n" +
+                "                <i class=\"iconfont\">&#xe61e;</i>\n" +
+                "                " + "<%= myGoPay[i].phone %>" + "\n" +
+                "            </div>\n" +
+                "            <div class=\"address\">\n" +
+                "                <i class=\"iconfont\">&#xe641;</i>\n" +
+                "                " + "<%= myGoPay[i].address_place %>" + "\n" +
+                "            </div>\n" +
+                "        </div>"
+            <% } %>
+            $("<i class=\"iconfont closeDiv\">&#xe628;</i>").appendTo("#pop-div");
+
+            $(".closeDiv").css({
+                fontSize: "20px",
+                fontWeight: "700",
+                color: "#9e9e9e",
+                position: "absolute",
+                top: "12px",
+                right: "12px",
+                cursor: "pointer"
+            });
+
+            /*判断DIV的奇偶*/
+            var arr = []
+            $(".minute_address_show").each(function (index, element) {
+                arr.push(index)
+                if (arr.length == 2 * index) {
+                    $(".chose_contents .minute_address_show").css({
+                        marginRight: "30px"
+                    });
+                    $(".chose_contents div:nth-of-type(even).minute_address_show").css({
+                        marginRight: "0"
+                    });
+                } else {
+                    $(".chose_contents .minute_address_show").css({
+                        marginRight: "30px"
+                    });
+                    $(".chose_contents div:nth-of-type(even).minute_address_show").css({
+                        marginRight: "0"
+                    });
+                }
+            })
+
+
+            $(".closeDiv").click(function () {
+                hideDiv("pop-div");
+            });
+            $("#pop-div").css({
+                padding: "65px 50px",
+                outline: "4px solid rgba(0,0,0,0.16)",
+                background: "#fafafa"
+            });
+            $(".chose_contents h4").css({
+                position: "absolute",
+                top: "12px",
+                left: "12px",
+                color: "#b3b3b3",
+                fontSize: "13px"
+            });
+            $(".chose_contents .minute_address_show").css({
+                width: "342px",
+                height: "122px",
+                border: "1px solid #e1e1e1",
+                float: "left",
+                marginBottom: "20px",
+                padding: "10px 15px",
+                boxSizing: "border-box",
+                cursor: "pointer"
+            });
+            $(".chose_contents .minute_address_show h3").css({
+                color: "#684029",
+                fontSize: "16px",
+                marginBottom: "5px"
+            });
+
+            $(".chose_contents .minute_address_show h3 span.true").css({
+                color: "#fff",
+                fontSize: "13px",
+                background: "#D5BFA7",
+                padding: "0 4px",
+                display: "inline-block",
+                lineHeight: "18px",
+                marginLeft: "30px",
+                opacity: "0"
+            });
+            $(".true").parent().parent(".minute_address_show").css({
+                outline: "3px solid #442818"
+            });
+            $(".chose_contents .minute_address_show h3 span.true").css({
+                opacity: "1"
+            });
+            $(".chose_contents .minute_address_show h3 span.false").css({
+                opacity: "0"
+            });
+
+            $(".chose_contents .minute_address_show .phoneNumber i").css({
+                marginRight: "10px"
+            });
+            $(".chose_contents .minute_address_show .phoneNumber").css({
+                color: "#684029",
+                fontSize: "13px",
+                marginBottom: "5px"
+            });
+            $(".chose_contents .minute_address_show .address i").css({
+                marginRight: "10px"
+            });
+            $(".chose_contents .minute_address_show .address").css({
+                color: "#684029",
+                fontSize: "12px",
+                lineHeight: "20px"
+            });
+
+            $(".chose_contents .add_address_button").css({
+                width: "341px",
+                height: "122px",
+                border: "1px dashed #e1e1e1",
+                cursor: "pointer",
+                textAlign: "center",
+                lineHeight: "122px",
+                color: "#80695B",
+                fontSize: "12px",
+                float: "left"
+            });
+
+            $(".chose_contents .promptText").css({
+                color: "#FF714D",
+                paddingLeft: "180px",
+                fontSize: "13px",
+                marginTop: "10px"
+
+            });
+
+            $("#confirm").css({
+                width: "130px",
+                height: "40px",
+                lineHeight: "40px",
+                padding: "0",
+                borderRadius: "0",
+                backgroundColor: "#684029",
+                marginBottom: "60px",
+                position: "absolute",
+                bottom: "0",
+                left: "50%",
+                transform: "translateX(-50%)"
+            });
+
+            //选择地址
+            $(".minute_address_show").each(function (index, element) {
+                $(element).click(function () {
+                    $(this).css({
+                        outline: "3px solid #442818"
+                    });
+                    $(this).siblings(".minute_address_show").css({
+                        outline: "1px solid #e1e1e1"
+                    });
+                    $(this).children("h3").children("span.true").css({
+                        opacity: "1"
+                    });
+
+                    var $this_address_id = $(this).attr("zt")
+                    $("#confirm").click(function () {
+                        $.ajax({
+                            url: "/deleteAddressZt.do",
+                            success: function (data) {
+                                $.ajax({
+                                    url: "/addDressZt.do",
+                                    success: function (data) {
+                                        console.log($this_address_id)
+                                        $.ajax({
+                                            url: "/defaultAddress.do",
+                                            data: {
+                                                address_id: $this_address_id
+                                            },
+                                            success: function (data) {
+                                                history.go(0)
+                                            }
+                                        })
+                                    }
+                                })
+                            }
+                        })
+                    })
+                })
+            });
+            // 使用按钮下的事件
+            $("#confirm").click(function () {
+                hideDiv("pop-div");
+            });
+
+            /*添加新地址*/
+            $(".add_address_button").click(function () {
+                addNewAddress3();
+
+                function addNewAddress3() {
+                    /*=====清除上一个弹框=====*/
+                    hideDiv("pop-div");
+                    var contentText = "<div class=\"add-contents\">\n" +
+                        "    <h4>添加地址</h4>\n" +
+                        "    <form action=\"#\">\n" +
+                        "        <label for=\"\">收货人:</label>\n" +
+                        "         <input type='text' name='receiver' id=\"receiver\" class=\"receiver\" placeholder =\"收货人姓名\">\n" +
+                        "        <br>\n" +
+                        "        <label for=\"\">联系方式:</label>\n" +
+                        "        <input type='text' name='phoneNumber' id=\"phoneNumber\" class=\"phoneNumber\" placeholder =\"收货人电话号码\">\n" +
+                        "        <br>\n" +
+                        "        <label for=\"\">城市:</label>\n" +
+                        "        <select name=\"city\" id=\"city\">\n" +
+                        "            <option value=\"0\">成都</option>\n" +
+                        "            <option value=\"1\">上海</option>\n" +
+                        "            <option value=\"2\">西安</option>\n" +
+                        "            <option value=\"3\">重庆</option>\n" +
+                        "        </select>\n" +
+                        "        <br>\n" +
+                        "        <label for=\"\">位置:</label>\n" +
+                        "        <input type=\"text\" name=\"address\" id=\"address\" placeholder =\"路号/写字楼/小区\">\n" +
+                        "        <br>\n" +
+                        "        <label for=\"\">详细地址:</label>\n" +
+                        "        <input type=\"text\" name=\"minute_address\" id=\"minute_address\" placeholder =\"楼号/门牌号\">\n" +
+                        "        <br>\n" +
+                        "        <input type=\"checkbox\" name=\"default_address\" id=\"default_address\">\n" +
+                        "        <label for=\"\">设置为默认地址</label>\n" +
+                        "        <div class='promptText'></div>\n" +
+                        "    </form>\n" +
+                        "</div>";//传入内容content部分
+
+
+                    /*=====添加新地址3=====*/
+                    var confirm = "确认";//按键名字自定义，如果不要按钮传入空值("")即可。
+                    var cancel = "取消";//按键名字自定义，如果不要按钮传入空值("")即可。
+                    popupDiv(contentText, confirm, cancel, 500, 510);
+
+                    $("<i class=\"iconfont closeDiv\">&#xe628;</i>").appendTo("#pop-div");
+                    $(".closeDiv").css({
+                        fontSize: "20px",
+                        fontWeight: "700",
+                        color: "#9e9e9e",
+                        position: "absolute",
+                        top: "12px",
+                        right: "12px",
+                        cursor: "pointer"
+                    });
+                    $(".closeDiv").click(function () {
+                        hideDiv("pop-div");
+                    });
+                    $("#pop-div").css({
+                        padding: "80px 120px",
+                        border: "4px solid rgba(0,0,0,0.16)",
+                        background: "#fafafa"
+                    });
+                    $(".add-contents h4").css({
+                        position: "absolute",
+                        top: "12px",
+                        left: "12px",
+                        color: "#b3b3b3",
+                        fontSize: "13px"
+                    });
+
+                    $(".add-contents label").css({
+                        color: "#b3b3b3",
+                        fontSize: "13px"
+                    });
+                    $(".add-contents #receiver").css({
+                        width: "280px",
+                        height: "30px",
+                        marginBottom: "20px",
+                        marginLeft: "40px",
+                        outline: "none"
+                    });
+                    $(".add-contents #phoneNumber").css({
+                        width: "280px",
+                        height: "30px",
+                        marginBottom: "20px",
+                        marginLeft: "26px",
+                        outline: "none"
+                    });
+                    $(".add-contents #city").css({
+                        width: "284px",
+                        height: "36px",
+                        marginBottom: "20px",
+                        marginLeft: "52px",
+                        outline: "none"
+                    });
+                    $(".add-contents #address").css({
+                        width: "280px",
+                        height: "30px",
+                        marginBottom: "20px",
+                        marginLeft: "52px",
+                        outline: "none"
+                    });
+                    $(".add-contents #minute_address").css({
+                        width: "280px",
+                        height: "30px",
+                        marginBottom: "20px",
+                        marginLeft: "26px",
+                        outline: "none"
+                    });
+                    $(".add-contents #default_address").css({
+                        width: "15px",
+                        height: "15px",
+                        marginLeft: "85px",
+                        verticalAlign: "middle"
+                    });
+                    $(".add-contents .promptText").css({
+                        marginTop: "10px"
+                    });
+
+
+                    $("#confirm").css({
+                        width: "130px",
+                        height: "40px",
+                        borderRadius: "0",
+                        backgroundColor: "#442818",
+                        marginTop: "15px",
+                        float: "left",
+                        marginLeft: "60px"
+                    });
+                    $("#cancel").css({
+                        width: "130px",
+                        height: "40px",
+                        borderRadius: "0",
+                        border: "1px solid #e1e1e1",
+                        marginRight: "27px",
+                        float: "left",
+                        marginTop: "15px",
+                        marginLeft: "20px"
+
+                    });
+
+                    $(".promptText").css({
+                        color: "#FF714D",
+                        fontSize: "13px",
+                        textAlign: "center"
+                    });
+
+                    /*添加地址*/
+                    $("#confirm").click(function () {
+                        /*正则判断*/
+                        var phoneNumber = /^[0-9]{11}$/;  //电话号码规则
+                        if ($("#receiver").val() == "") {
+                            $(".promptText").text("请输入收货人");
+                            return;
+                        } else if (phoneNumber.test($("#phoneNumber").val()) != true && $("#phoneNumber").val() != "") {
+                            $(".promptText").text("请输入正确的电话号码");
+                            return;
+                        } else if ($("#phoneNumber").val() == "") {
+                            $(".promptText").text("请输入电话号码");
+                            return;
+                        } else if ($("#address").val() == "") {
+                            $(".promptText").text("请填写你的地址");
+                            return;
+                        } else if ($("#default_address").val() == "") {
+                            $(".promptText").text("请填写详细地址");
+                            return;
+                        } else {
+                            var people = $("#receiver").val();
+                            var phone = $("#phoneNumber").val();
+                            var city = $("#city option:selected").text();
+                            var address = $("#address").val();
+                            var minute_address = $("#minute_address").val();
+                            var address = city + address + minute_address;
+                            var zt = $("#default_address:checked").length;
+                            if (zt == 0) {
+                                zt = false;
+                                $.ajax({
+                                    type: "post",
+                                    url: "/addAddress.do",
+                                    data: {
+                                        people: people,
+                                        phone: phone,
+                                        address: address,
+                                        zt: zt
+                                    },
+                                    success: function (data) {
+                                        history.go(0);
+                                        hideDiv("pop-div");
+                                    }
+                                })
+                            } else {
+                                zt = true;
+                                $.ajax({
+                                    type: "post",
+                                    url: "/changeAddressZT.do",
+                                    success: function (data) {
+                                        $.ajax({
+                                            type: "post",
+                                            url: "/addAddress.do",
+                                            data: {
+                                                people: people,
+                                                phone: phone,
+                                                address: address,
+                                                zt: zt
+                                            },
+                                            success: function (data) {
+                                                history.go(0);
+                                                hideDiv("pop-div");
+                                            }
+                                        })
+
+                                    }
+                                })
+                            }
+
+                        }
+                    });
+                }
+            })
+        });
+    }
+
+    /*加载购买商品*/
+    $(function () {
+        loadBuyGoods();
+
+        function loadBuyGoods() {
+            $.ajax({
+                type: "post",
+                url: "/loadGoodsCar.do",
+                success: function (data) {
+                    $("#goods_1_2173").hide();
+                    var $allMoeny = 0;
+                    for (var i = 0; i < data.length; i++) {
+                        $(".tbody-ul .cart-detail tbody tr").eq(i).before("<tr id=\"goods_1_2173\" data-name=\"2173\">\n" +
+                            "                        <td class=\"goods-img\" style=\"border: 0px;\">\n" +
+                            "                            <a href=\"#\" target=\"_blank\">\n" +
+                            "                                <img src=" + data[i].goods_img + ">\n" +
+                            "                            </a>\n" +
+                            "                        </td>\n" +
+                            "                        <td class=\"goods-cake\" style=\"border: 0;\">\n" +
+                            "                            <div>\n" +
+                            "                                <h4>\n" +
+                            "                                    <a href=\"#\" target=\"_blank\" class=\"rum\">\n" +
+                            "                                        " + data[i].goods_name + "\n" +
+                            "                                    </a>\n" +
+                            "                                </h4>\n" +
+                            "                                <span class=\"goods-spec\">规格：<span>" + data[i].goods_bang + "</span></span>\n" +
+                            "                                <span class=\"goods-laid\">\n" +
+                            "                                    <i></i>赠送10套餐具\n" +
+                            "                                </span>\n" +
+                            "                            </div>\n" +
+                            "                        </td>\n" +
+                            "                        <td style=\"border: 0px;\">\n" +
+                            "                            <div class=\"select-birthday\">\n" +
+                            "                            </div>\n" +
+                            "                        </td>\n" +
+                            "                        <td class=\"cart-unit-Price\" style=\"border: 0px;\">" + data[i].goods_price + "</td>\n" +
+                            "                        <td class=\"number-li\" style=\"border: 0px;\">\n" +
+                            "                            " + data[i].shopcar_num + "\n" +
+                            "                        </td>\n" +
+                            "                        <td class=\"money\" style=\"border: 0px;\">\n" +
+                            "                            " + data[i].goods_count + "\n" +
+                            "                        </td>\n" +
+                            "                        <td class=\"delete\" style=\"border: 0px;\"></td>\n" +
+                            "                    </tr>")
+
+                        $allMoeny += parseInt(data[i].goods_count.split("￥")[1]);
+                    }
+
+                    /*总价格*/
+                    $("#total-amount-detail li").eq(0).children("span").eq(1).text("￥" + $allMoeny + ".00");
+                    $("#total-amount-detail .total-amount #total-amount").text("￥" + $allMoeny + ".00");
+                    $(".right-pay .total-amount #total-amount").text("￥" + $allMoeny + ".00");
+                }
+            })
+        }
+    })
+
+</script>
+
+
+</body>
+</html>

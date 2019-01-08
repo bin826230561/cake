@@ -1,0 +1,189 @@
+/*页头下*/
+.bg{
+    background-image: url("../images/designerBg.jpg");
+    background-position: center center;
+    height: 400px;
+}
+
+/*大标签处*/
+.tag-list-title h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.tag-list-title i {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: #E6C5B8;
+    margin: 8px auto 14px;
+}
+
+.content-box {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.top-load-p {
+    background: url(../images/pro-list-empty.jpg) no-repeat center top;
+    padding-top: 90px;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 13px;
+}
+
+.pro-list-filter {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    width: 1200px;
+    border-top: #f2f2f2 solid 1px;
+    border-bottom: #f2f2f2 solid 1px;
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+.pro-list-pr {
+    overflow: hidden;
+}
+
+.pro-list-pr li {
+    float: left;
+    padding: 0 18px;
+    margin: 0 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro-list-pr .pro-list-su {
+    width: 228px;
+    text-align: center;
+    height: 364px;
+    position: relative;
+}
+
+.pro-list-pr .pro-list-su .goods-list {
+    display: block;
+}
+
+.pro-list-pr .pro-list-su img {
+    width: 228px;
+    height: 246px;
+}
+
+.pro-list-pr .pro-list-su h3 {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.pro-list-pr .pro-list-su span {
+    display: block;
+    color: #BB9772;
+    line-height: 18px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.pro-list-pr .pro-list-su .label-entrance a {
+    display: inline-block;
+    border: 1px solid #D5BFA7;
+    border-radius: 100px;
+    padding: 0 6px 0 8px;
+    color: #D5BFA7;
+    margin: 8px 3px;
+}
+
+.pro-list-pr .pro-list-su .pro-list-addcart {
+    position: absolute;
+    top: 315px;
+    display: inline-block;
+    width: 78px;
+    left: 60px;
+    line-height: 28px;
+    margin-top: 12px;
+    background: none;
+    font-size: 12px;
+}
+
+.pro-list-pr .pro-list-su .pro-list-addcart i {
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/icon.png) no-repeat;
+    background-position: -216px -40px;
+    background-size: 310px 120px;
+    height: 28px;
+    width: 28px;
+    margin-right: 2px;
+}
+
+.pro-specifications {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 240px;
+    background: #F8F8F8;
+    padding: 12px 12px 20px 12px;
+    display: none;
+    z-index: 20;
+}
+
+.pro-floridian span, .to-notify-btn {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.label-entrance a{
+    font-size: 12px;
+}
+
+.to-notify-btn {
+    top: 314px;
+    line-height: 22px;
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+.footer-nav a {
+    color: #fff;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+a:link, a {
+    color: #684029;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.pro-floridian span {
+    top: 112px;
+    font-size: 14px;
+}
+
+.pro-floridian span, .to-notify-btn {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.to-notify-btn:hover,.pro-list-addcart:hover{
+    color: grey;
+}
+
+.pro-list-addcart:hover pro-list-addcart>i{
+    color: grey;
+}
+
+.pro-list-su:hover .lazy{
+    transform: scale(1.05,1.05);
+}

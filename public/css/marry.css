@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'PingFang SC','Heiti SC','微软雅黑',Helvetica,Arial;
+    color: #684029;
+    font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+/*===========================================页头====================================*/
+/*===高度===*/
+header{
+    height: 80px;
+}
+/*===========================================中间内容区====================================*/
+/*<!--=============内容大图==================-->*/
+.xinpinda{
+    height: 400px;
+    background-image: url("../images/xinpinda.jpg");
+    background-position: center center;
+}
+/*<!--=============情侣大图==================-->*/
+.qinglvda{
+    height: 400px;
+    background-image: url("../images/qingLvDa.jpg");
+    background-position: center center;
+}
+/*<!--=============人气大图==================-->*/
+.renQiDa{
+    height: 400px;
+    background-image: url("../images/renQiDa.jpg");
+    background-position: center center;
+}
+/*<!--=============白色情人节大图==================-->*/
+.baiseqingrenjie{
+    height: 400px;
+    background-image: url("../images/yxl-5.jpg");
+    background-position: center center;
+}
+.birthday{
+    height: 400px;
+    background-image: url("../images/birthday.jpg");
+    background-position: center center;
+}
+
+.birthday{
+    height: 400px;
+    background-image: url("../images/birthday.jpg");
+    background-position: center center;
+}
+/*<!--=============新品标题==================-->*/
+.xinpinBiaoTi h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+}
+/*======下划线======*/
+.xinpinBiaoTi i{
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #E6C5B8;
+    margin: 8px auto 14px;
+}
+.xinpinBiaoTi{
+    text-align: center;
+}
+.xinpinBiaoTi p{
+    margin-top: -35px;
+    font-size: 14px;
+    margin-bottom: 65px;
+}
+/*======下划线下的小标题======*/
+.xinpinBiaoTi span{
+    display: block;
+    font-size: 14px;
+}
+.xinpinBiaoTi2 i{
+    width: 120px;
+}
+/*============================蛋糕展示区============================*/
+.neiRong{
+    padding-bottom: 50px;
+}
+.zhanShi li{
+    float: left;
+    margin: 0 18px;
+    padding: 0 18px;
+}
+.dangao-li{
+    width: 228px;
+    height: 364px;
+    text-align: center;
+    position: relative;
+}
+.dangao-li a{
+    color: #684029;
+    cursor: pointer;
+}
+.dangao-li img{
+    width: 228px;
+    height: 246px;
+    transition: all .2s linear;
+}
+.dangao-li .fangda{
+    overflow: hidden;
+}
+.dangao-li .fangda img{
+    width: 228px;
+    height: 246px;
+}
+.dangao-li h3{
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.dangao-li span{
+    display: block;
+    font-size: 13px;
+    color: #BB9772;
+    line-height: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/*============新品儿童标签=================*/
+.dangao-li .biaoqian a{
+    display: inline-block;
+    border:1px solid #D5BFA7;
+    border-radius: 100px;
+    padding: 0 6px 0 8px;
+    color: #D5BFA7;
+    margin: 8px 1px;
+}
+.dangao-li .biaoqian{
+    height: 34px;
+}
+/* ==========<!--加入购物车-->==============*/
+.dangao-li .xin-gouWuChe{
+    display: inline-block;
+    width: 107px;
+    line-height: 28px;
+    font-size: 13px;
+    z-index: 20;
+}
+.dangao-li .xin-gouWuChe i{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/icon.png");
+    background-position: -210px -40px;
+    background-size: 305px 120px;
+    height: 28px;
+    width: 27px;
+}
+/*<!--展示图上的新品-->*/
+.dangao-li .label{
+    text-align: left;
+    width: 100%;
+}
+.dangao-li .label img{
+    width: 65px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+/*======鼠标移入特效======*/
+.dangao-li h3:hover{
+    color: #D5BFA7;
+}
+.dangao-li .xin-gouWuChe:hover{
+    color: #D5BFA7;
+}
+.fangda:hover+h3{
+    color: #D5BFA7;
+}
+.dangao-li .xin-gouWuChe:hover i{
+    background-position: -243px -72px;
+}
+.dangao-li a img:hover{
+    transform: scale(1.05);
+}
+/*=====================透明层===================*/
+.touMing{
+    background-color: rgba(255,255,255,0.65);
+    /*background-color: red;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+.touMing span{
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 116px;
+    font-size: 14px;
+    width: 100%;
+    z-index: 10;
+    color: #684029;
+}
+.dangao-li .daoHuo{
+    position: absolute;
+    left: 0;
+    /*margin-top: 14px;*/
+    width: 100%;
+}
+.dangao-li .daoHuo i{
+    background-image: url("../images/icon.png");
+    background-position: -132px -70px;
+    background-size: 310px 120px;
+    height: 22px;
+    width: 15px;
+}
+/*======透明层鼠标移入特效======*/
+.dangao-li .daoHuo:hover{
+    color: #c29772;
+}
+.dangao-li .daoHuo:hover i{
+    background-position: -233px -70px;
+}
+.dangao-li .touMing:hover span{
+    color: #c29772;
+}

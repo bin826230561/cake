@@ -1,0 +1,28 @@
+.sec1-right li:nth-of-type(1){
+    margin-top: 278px;
+}
+.left-content4{
+     border: 1px solid white;
+     height: 55px;
+ }
+.left-content4 p{
+    color: rgb(250,0,0);
+    margin-top: 33px;
+}
+
+.mid button{
+    padding: 0 15px;
+}
+
+.bottom {
+    top: 245px;
+}
+.shopMall{
+    top: 108px;
+    left: 140px;
+}
+.shopMall2{
+    position: fixed;
+    left: 710px;
+    top: 70px;
+}

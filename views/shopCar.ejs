@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达!</title>
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="shopCar.css">
+    <link rel="stylesheet" href="shopsCart.css">
+</head>
+<body>
+<!--=============页头=============-->
+<%- include('common/header.ejs') %>
+<!--/============页头=============-->
+
+<!--中间内容区-->
+<div class="content-box" style="min-height: 80px;">
+
+    <!--<div class="cart-not-pro">-->
+    <!--<img src="../images/cartempty.png">-->
+    <!--<span>-->
+    <!--您的购物车里还没有商品-->
+    <!--</span>-->
+    <!--<a href="/caketext-1">-->
+    <!--去购物 &gt;&gt;-->
+    <!--</a>-->
+    <!--</div>-->
+    <div class="loadGoods">
+
+    </div>
+
+    <!--<div class="cart-goods-info cart-area cart-list">-->
+    <!--<ul class="thead-ul">-->
+    <!--<li class="goods-ti">商品</li>-->
+    <!--<li class="birthday-card-ti">生日牌</li>-->
+    <!--<li class="unit-Price">单价</li>-->
+    <!--<li class="number-ti">数量</li>-->
+    <!--<li class="money-ti" colspan="2">金额</li>-->
+    <!--</ul>-->
+    <!--<div class="tbody-ul">-->
+    <!--<table>-->
+    <!--&lt;!&ndash; 加价购开始 &ndash;&gt;-->
+    <!--&lt;!&ndash; 普通商品开始 &ndash;&gt;-->
+    <!--<tbody>-->
+    <!--<tr>-->
+    <!--<td colspan="7" class="tableware-list">-->
+    <!--<ul>-->
+    <!--<li class="tableware-row">-->
+    <!--<img src="../images/lazu.jpg" alt="方形蜡烛">-->
+    <!--<div class="right-title">-->
+    <!--<h5>-->
+    <!--方形蜡烛-->
+    <!--<span>-->
+    <!--配件-->
+    <!--</span>-->
+    <!--</h5>-->
+    <!--<span>-->
+    <!--￥5.00-->
+    <!--</span>-->
+    <!--<a href="#" class="action-add-to-cart" name="action-add-to-cart_1977" data-product_id="1977" title="加入购物车">-->
+    <!--<i></i>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li class="tableware-row">-->
+    <!--<img src="../images/daocha.jpg" alt="餐具套餐">-->
+    <!--<div class="right-title">-->
+    <!--<h5>-->
+    <!--餐具套餐-->
+    <!--<span>-->
+    <!--配件-->
+    <!--</span>-->
+    <!--</h5>-->
+    <!--<span>-->
+    <!--￥0.50-->
+    <!--</span>-->
+    <!--<a href="#" class="action-add-to-cart" name="action-add-to-cart_1965" data-product_id="1965" title="加入购物车">-->
+    <!--<i></i>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<img src="../images/lazhuLv.jpg" alt="拷贝蜡烛-爱尔兰咖啡">-->
+    <!--<div class="right-title">-->
+    <!--<h5>-->
+    <!--拷贝蜡烛-爱尔兰咖啡-->
+    <!--</h5>-->
+    <!--<span>-->
+    <!--￥8.00/个-->
+    <!--</span>-->
+    <!--<a href="#" class="action-add-to-cart" name="action-add-to-cart_10846" data-product_id="10846" title="加入购物车">-->
+    <!--<i></i>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--<img src="../images/bao4.jpg" alt="四口味挂耳咖啡混合装（4包入）">-->
+    <!--<div class="right-title">-->
+    <!--<h5>-->
+    <!--四口味挂耳咖啡混合装（4包入）-->
+    <!--</h5>-->
+    <!--<span>-->
+    <!--￥40.00/份-->
+    <!--</span>-->
+    <!--<a href="#" class="action-add-to-cart" name="action-add-to-cart_12799" data-product_id="12799" title="加入购物车">-->
+    <!--<i></i>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</td>-->
+    <!--</tr>-->
+    <!--</tbody>-->
+    <!--</table>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!-- 商品信息 -->
+
+    <!-- 下部banner -->
+
+    <!--  -->
+    <!-- 商品推荐 -->
+    <div class="details-recommend" style="">
+        <h2>商品推荐</h2>
+        <ul class="recommend-list">
+            <li>
+                <a href="#" target="_blank">
+                    <img src="<%= myshopCar[22].goods_img %>" alt="东方栗融">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="<%= myshopCar[26].goods_img %>" alt="深艾尔">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="<%= myshopCar[27].goods_img %>" alt="深爱百利甜情人蛋糕">
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank">
+                    <img src="<%= myshopCar[23].goods_img %>" alt="（新）栗蓉暗香">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--  -->
+</div>
+
+<!--=============页脚=============-->
+<%- include('common/footer.ejs') %>
+<!--/============页脚=============-->
+
+<script src="jquery/jquery.js"></script>
+<script src="footer.js"></script>
+<script src="home-page.js"></script>
+<script src="dengluZT.js"></script>
+<script src="loadShopCar.js"></script>
+<script src="my-dingDan.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.sec3 p:last-of-type{
+    width: 1050px;
+    margin: 30px auto 0;
+}
+.sec3 p{
+    line-height: 2em;
+    color: #684029;
+}
+.sec1-right li:nth-of-type(1){
+    margin-top: 335px;
+}
+.sec5{
+    margin: 60px auto 100px;
+}

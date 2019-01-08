@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*头部设置*/
+header{
+    height: 650px;
+    background-image: url("../images/fix-bg01.jpg");
+    animation: myMove 6s linear infinite ;
+}
+/*背景动画*/
+@keyframes myMove{
+    0%{
+    background-image: url("../images/fix-bg01.jpg");
+    }
+    33%{
+        background-image: url("../images/fix-bg02.jpg");
+    }
+    66%{
+        background-image: url("../images/fix-bg03.jpg");
+    }
+    100%{
+        background-image: url("../images/fix-bg04.png");
+    }
+
+}
+
+/*中间内容设置*/
+/*section背景*/
+section{
+    background-color: #555555;
+    padding: 80px 0;
+}
+/*版心宽度*/
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section p{
+    color: #ffffff;
+    font-size: 18px;
+    text-indent: 2em;
+    line-height: 40px;
+}
+
+section>div>p:nth-of-type(1){
+    padding: 50px 0 0 0;
+}
+
+section>div>p:nth-of-type(2){
+    padding: 0 0 50px 0;
+}
+.padding{
+    margin-bottom: 50px;
+}

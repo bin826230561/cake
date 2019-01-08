@@ -1,0 +1,360 @@
+
+/*对ul的设置*/
+.order-status {
+    width: 900px;
+    padding: 20px 150px;
+    background: #F8F8F8;
+    overflow: hidden;
+    margin: 30px 0;
+    height: 60px;
+}
+
+/*对ul下li的设置*/
+.order-status li {
+    position: relative;
+    height: 60px;
+    width: 225px;
+    float: left;
+    text-align: center;
+}
+
+/*图片浮动*/
+.order-status li img{
+    float: left;
+}
+
+/*两边的线设置*/
+.order-status li div{
+    height: 1px;
+    width: 95px;
+    border-bottom: 2px solid #e1e1e1;
+    float: left;
+    margin-top: 18px;
+    margin-right: 5px;
+}
+
+/*右边的线设置*/
+.order-status li div:nth-of-type(2){
+    margin-left: 145px;
+    margin-top: -24px;
+    width: 80px;
+}
+/*文字设置*/
+.order-status li p{
+    float: left;
+    display: block;
+    height: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #684029;
+    margin-left: 105px;
+}
+
+.tableDetail{
+    border: 1px solid #E1E1E1;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*订单详情的设置  */
+.tableDetail table{
+    width: 100%;
+    margin: 30px 0;
+    padding-right: 65px;
+}
+.tableDetail table tr td:nth-of-type(1){
+    width: 340px;
+}
+
+
+.tableDetail table tr td{
+    padding-left: 20px;
+}
+.tableDetail table thead tr td p{
+    font-size: 14px;
+    font-weight: bold;
+    height: 34px;
+    border-bottom: 1px solid #e1e1e1;
+    line-height: 34px;
+    color: #684029;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.tableDetail table tbody tr{
+    height: 30px;
+}
+
+.tableDetail table:nth-of-type(2) tr td:nth-of-type(1){
+    width: 32%;
+}
+
+
+
+.grayText{
+    color: #B3B3B3;
+    font-size: 13px;
+}
+
+.blackText{
+    font-size: 13px;
+    color: #684029;
+    margin-left: 10px;
+}
+
+
+.tableDetail table:nth-of-type(2) tr td div{
+    float: left;
+    width: 50%;
+}
+
+tr a{
+    color: #AE8C73;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-top: -3px;
+}
+
+tr button{
+    border-radius: 2px;
+    width: 70px;
+    height: 24px;
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    border: none;
+    /*background-color: inherit;*/
+}
+
+.tableDetail table tr:nth-of-type(1) button{
+    background: #fff;
+    border: 1px solid #979797;
+}
+
+.tableDetail table tr:nth-of-type(2) button{
+    background: #442818;
+    color: #fff;
+}
+.tableDetail table tr:nth-of-type(3) button{
+    background: #FFB042;
+    color: #fff;
+}
+
+
+
+/*需要用户填写信息隐藏的div  */
+.invoice-show {
+    background: #F8F8F8;
+    padding-top: 15px;
+    display: none;
+}
+
+/*单选按钮的div*/
+#companyPersonal{
+    margin: 5px auto 15px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/*单选按钮*/
+#companyPersonal label{
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #684029;
+}
+
+/*input输入框*/
+#electronic-invoice input{
+    width: 274px;
+    height: 38px;
+    background: #FFF;
+    border: 1px solid #E1E1E1;
+    padding-left: 10px;
+    margin-bottom: 14px;
+    margin-right: 10px;
+}
+
+/*取消默认样式*/
+input::-webkit-input-placeholder{
+    color: #ccc;
+    font-size: 13px;
+}
+
+input,select,button:focus{
+    outline: none;
+}
+#electronic-invoice input:nth-of-type(1){
+    margin-left: 20px;
+}
+#electronic-invoice input:nth-of-type(2){
+    margin-left: 20px;
+}
+
+/*下拉列表框的设置*/
+select {
+    height: 40px;
+    background: #FFF;
+    border: 1px solid #E1E1E1;
+    width: 128px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*装取消确定按钮的div*/
+.bottom-bar-button {
+    margin-top: 10px;
+}
+
+/*取消按钮*/
+.bottom-bar-button button:nth-of-type(1){
+    width: 80px;
+    height: 25px;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-left: 20px;
+    background: #fff;
+    border: 1px solid #442818;
+    color: #442818;
+}
+
+/*确定按钮*/
+.bottom-bar-button button:nth-of-type(2){
+    width: 80px;
+    font-size: 12px;
+    height: 25px;
+    color: #fff;
+    background: #442818;
+    margin-left: 15px;
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 18px;
+}
+
+
+/*提示信息呢的span*/
+#appendText{
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+
+/*购买商品详情*/
+
+#tableDing table{
+    width: 100%;
+    border-collapse:collapse;
+    margin: 0 0 30px 0;
+}
+
+#tableDing table thead tr{
+    height: 48px;
+    border: 1px solid #F1F1F1;
+    background: #FAFAFA;
+}
+
+#tableDing table thead tr th{
+    color: #684029;
+    font-size: 12px;
+}
+
+#tableDing table thead tr th:nth-of-type(1){
+    width: 20px;
+}
+
+
+
+/*下面表格的设置*/
+/*循环商品的tr*/
+.borderGray{
+    border-right: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+    padding: 30px 20px ;
+    border-bottom: 2px dashed #E1E1E1;
+}
+.borderGray td{
+    padding: 30px 0 ;
+}
+/*第一列图片与文字设置*/
+.borderGray td:nth-of-type(2){
+    width: 360px;
+}
+.borderGray td:nth-of-type(2)>div>a>div{
+    height: 78px;
+    width: 78px;
+    margin: 20px 0;
+    background: #FFF;
+    border: 1px solid #EFEFEF;
+    display: inline-block;
+    float: left;
+}
+.borderGray td:nth-of-type(2)>div>a>p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 6px;
+    color: #684029;
+    font-size: 14px;
+}
+
+
+
+/*第二列图片与文字设置*/
+.borderGray td:nth-of-type(3){
+    width: 150px;
+    text-align: center;
+    font-size: 12px;
+    color: #684029;
+}
+/*第三列图片与文字设置*/
+.borderGray td:nth-of-type(4){
+    width: 110px;
+    text-align: center;
+    font-size: 12px;
+    color: #684029;
+}
+/*第四列图片与文字设置*/
+.borderGray td:nth-of-type(5){
+    width: 300px;
+}
+/*第五列图片与文字设置*/
+.borderGray td:nth-of-type(6){
+    text-align: center;
+    font-size: 12px;
+    color: #684029;
+}
+
+
+/*算价格的tr*/
+.bothT{
+    border: 1px solid #E1E1E1;
+}
+
+.bothT td{
+    padding: 30px 50px;
+}
+
+.bothT span {
+    text-align: right;
+    color: #B3B3B3;
+    font-size: 13px;
+    float: right;
+}
+.bothT p{
+    text-align: right;
+    color: #B3B3B3;
+    font-size: 13px;
+    float: right;
+    margin-top: 20px;
+}
+.goldDiv{
+    font-size: 26px;
+    color: #AE8C73;
+    line-height: 33px;
+    margin-top: 10px;
+    float: right;
+}

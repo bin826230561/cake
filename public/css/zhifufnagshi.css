@@ -1,0 +1,109 @@
+button:focus{
+    outline: none;
+}
+
+/*高度总体*/
+.zhiFu{
+    height: 400px;
+}
+/*第一行文字*/
+.zhiFu h2{
+    font-size: 16px;
+    color: #383838;
+    line-height: 22px;
+    font-weight: bold;
+    margin-top: 36px;
+}
+
+/*订单号文字*/
+.zhiFu p{
+    float: left;
+    font-size: 14px;
+    color: #BDBDBD;
+    margin-top: 10px;
+}
+
+/*支付多少钱文字设置*/
+.zhiFu h2:nth-of-type(2){
+    float: right;
+    margin-top: 6px;
+}
+
+.zhiFu h2:nth-of-type(2) span{
+    color: red;
+}
+/*支付方式设置*/
+.pay-warys {
+    margin-top: 16px;
+    background: #FBFBFB;
+    border: 1px solid #E1E1E1;
+    height: 44px;
+    width: 1168px;
+    line-height: 44px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+/*付款方式图标设置*/
+.zhiFu ul{
+    border: 1px solid #E1E1E1;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.zhiFu ul li {
+    float: left;
+    margin-left: 24px;
+    height: 120px;
+    line-height: 120px;
+    width: 150px;
+}
+
+.zhiFu ul li input{
+   float: left;
+    margin-top: 55px;
+    margin-right: 10px;
+}
+
+.zhiFu ul li img{
+    float: left;
+    margin-top: 40px;
+}
+
+.zhiFu ul li span{
+    float: left;
+    margin-top: 0;
+    margin-left: 10px;
+    font-size: 12px;
+    color: #684029;
+}
+
+/*支付剩余时间和按钮设置*/
+
+.zhiFu .timePay{
+    float: right;
+    line-height: 40px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #684029;
+    margin-top: 21px;
+}
+
+.zhiFu .timePay span{
+    color: red;
+}
+
+.zhiFu button{
+    background: #684029;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    float: right;
+    border: none;
+    margin-top: 20px;
+}

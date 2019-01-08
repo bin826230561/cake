@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/senior.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/designer.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/password.css">
+</head>
+<body>
+<!--导航栏部分-->
+<!--头部导航-->
+<%-include("common/header.ejs")%>
+<!--头部导航结束-->
+
+<!--/导航栏部分-->
+
+
+<!--页头下-->
+<section class="ddxg">
+    <p class="biaoti">修改密码</p>
+    <form action="#">
+        <!-------旧密码---------->
+        <div class="jmm kuang">
+            <span>旧密码</span>
+            <input type="text" placeholder="输入旧密码">
+        </div>
+        <!------新密码------->
+        <div class="xmm kuang">
+            <span>新密码</span>
+            <input type="password" placeholder="输入新密码" class="srxmm">
+            <span id="tisi">密码由8～20个字符，需同时包含英文和数字</span>
+        </div>
+        <!---------------再次输入------------->
+        <div class="zcsr kuang">
+            <span>再次输入</span>
+            <input type="password" placeholder="再次输入密码"  onkeyup="mm()">
+            <div class="icon1"></div>
+        </div>
+        <p class="redts">两次密码输入不一致</p>
+        <button class="quer" type="button">确认</button>
+    </form>
+    <!--------忘记密码跳转--------->
+    <a href="/wjmima.do" class="wjmm">忘记密码</a>
+    <div class="mmqd"><img src="../images/mmts.png" alt=""></div>
+    <p class="ruoji">弱</p>
+    <p class="cdts">密码由数字组成</p>
+</section>
+<!--页尾-->
+<%-include("common/footer.ejs")%>
+
+
+<!--jq插件-->
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../js/designer.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/password.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>

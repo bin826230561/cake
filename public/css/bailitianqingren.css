@@ -1,0 +1,38 @@
+.divide{
+    margin: 980px auto 0;
+}
+.left-content4 p:nth-of-type(4),.left-content4 p:nth-of-type(5){
+    color: red;
+}
+
+.left-content3 {
+    margin-top: 15px;
+}
+.left-content4 {
+    margin-top: 10px;
+}
+.left-content1 {
+    margin-top: 20px;
+}
+.sec2-right{
+    margin: 20px 0 0 65px;
+}
+.bottom {
+    top: 245px;
+}
+.shopMall{
+    top: 108px;
+    left: 140px;
+}
+.shopMall2{
+    position: fixed;
+    left: 710px;
+    top: 70px;
+}
+.sec3 p{
+    width: 218px;
+    display: block;
+    margin: 0 auto 15px;
+    color: rgb(153, 153, 153);
+    font-size: x-small;
+}

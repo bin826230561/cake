@@ -1,0 +1,281 @@
+body{
+    background-color: #eff0f1;
+}
+.center-all{
+    width: 950px;
+    margin: 0 auto;
+}
+.top{
+    width: 100%;
+    height: 26px;
+    background-color: rgb(129,134,139);
+
+}
+.top-wrap{
+    background-color: rgb(129,134,139);
+    width: 950px;
+    margin: 0 auto;
+}
+.top-last{
+    float: right;
+    color: #fff;
+    padding: 4px 15px;
+    /*line-height: 18px;*/
+    font-size: 13px ;
+    cursor: pointer;
+}
+.top-last:hover{
+    text-decoration: underline;
+}
+.top-first{
+    float: right;
+    color: #fff;
+    padding: 4px 15px;
+    font-size: 13px;
+}
+/*========================/页头黑条=============================*/
+
+
+/*===================支付LOGO============================*/
+.header{
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+    margin-top: 0px;
+}
+.container{
+    width: 950px;
+    margin: 0 auto;
+}
+.title{
+    width: 250px;
+    height: 60px;
+    float: left;
+}
+.logo{
+    display: block;
+    width: 115px;
+    position: relative;
+    left: 0;
+    top: 10px;
+    float: left;
+    height: 50px;
+    background-position: -4px -4px ;
+    background-repeat: no-repeat;
+    background-image: url("../images/zhifubao.png");
+}
+
+.logo-title{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei",微软雅黑,"宋体";
+    border-left: 1px solid #676d70;
+    color: #676d70;
+    height: 20px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.first{
+    margin-top: 15px;
+    border-bottom: 3px solid #b3b3b3;
+    padding: 16px 23px;
+    position: relative;
+    height: 50px;
+}
+.dingdan{
+    height: 22px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #eff0f1;
+    width: 927px;
+    z-index: 99;
+    padding-left: 23px;
+    top: 150px;
+}
+.line-item-1{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    height: 22px;
+    padding: 2px 8px 1px;
+    font-weight: bold;
+    border-top: 0;
+    background: #b3b3b3;
+    z-index: 100;
+    color: #fff;
+    font-size: 13px;
+    line-height: 25px;
+}
+.line-item-2{
+    position: absolute;
+    right: 219px;
+    bottom: 306px;
+    height: 22px;
+    padding: 2px 8px 2px;
+    font-weight: bold;
+    border-top: 0;
+    background: #b3b3b3;
+    z-index: 99999;
+    color: #fff;
+    font-size: 13px;
+    line-height: 22px;
+    display: none;
+}
+.line-item-1:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.line-item-2:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.text-1{
+    font-size: 12px;
+}
+.text-2{
+    margin-left: 15px;
+}
+/*小问号*/
+.wenhao{
+    cursor: pointer;
+    color: #08c;
+}
+/*订单编号*/
+#order-Number{
+    font-weight: 700;
+    font-size: 14px;
+    float: left;
+    margin-bottom: 10px;
+}
+/*收款方*/
+.shoukuan{
+    font-size: 13px;
+    margin-left: 20px;
+    float: left;
+    margin-top: 1px;
+}
+/*下拉后显示订单详情表格*/
+.sub-th{
+    width: 66px;
+    text-align: left;
+}
+table{
+    font-size: 13px;
+}
+tr{
+    height: 22px;
+
+}
+/*订单价格*/
+#price{
+    font-size: 22px;
+    line-height: 22px;
+    color: #f60;
+    font-weight: 900;
+}
+/*订单详情上方的价格*/
+.price{
+    position: absolute;
+    right: 23px;
+    bottom: 36px;
+}
+/*订单详情内的价格*/
+#price-x{
+    font-size: 22px;
+    line-height: 22px;
+    color: #f60;
+    font-weight: 900;
+
+}
+.price-x{
+    position: absolute;
+    right: 23px;
+    bottom: 36px;
+}
+/*支付宝扫一扫二维码*/
+.second{
+    background-color: white;
+    border-bottom: 3px solid #b3b3b3;
+}
+.quickMark{
+    position: relative;
+    width: 168px;
+    height: auto;
+    min-height: 168px;
+    margin: 0 auto;
+    padding: 6px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 1px 1px 1px #ccc;
+}
+.saoma{
+    margin:  auto;
+    position: relative;
+    width: 300px;
+    text-align: center;
+    padding-top:80px;
+}
+.sao{
+    position: absolute;
+    right: -225px;
+    top: -80px;
+}
+.price-1{
+    font-size: 12px ;
+    margin-bottom: 4px;
+}
+#price-2{
+    font-size: 26px;
+    font-weight: 700;
+    color: #f60;
+    margin-bottom: 20px;
+}
+.text-3{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.text-3-2{
+    margin-left: -4px;
+}
+.idea>div{
+    float: left;
+}
+.idea{
+    height: 32px;
+    width: auto;
+    padding: 10px 0 6px;
+}
+.idea>div>img{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.qrcode-foot{
+    text-align: center;
+    height: 125px;
+    padding: 10px 0;
+}
+.qrcode-foot>a{
+    font-size: 12px;
+    color: #a6a6a6;
+    text-decoration: underline;
+}
+
+/*=================================================*/
+.footer{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    height: 36px;
+}
+.footer>a{
+    color: #808080;
+    text-decoration: none;
+    font-size: x-small;
+}
+.partner{
+    text-align: center;
+    margin-bottom: 16px;
+}

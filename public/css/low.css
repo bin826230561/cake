@@ -1,0 +1,121 @@
+.lowBg{
+    background-image: url(../images/lowBg.jpg);
+    background-position: center center;
+    height: 400px;
+}
+
+body{
+    font-family: 'PingFang SC','Heiti SC','微软雅黑',Helvetica,Arial;
+    color: #684029;
+    font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+/*===========================================页头====================================*/
+/*===高度===*/
+/*===========================================中间内容区====================================*/
+/*======下划线======*/
+.xinpinBiaoTi i{
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #E6C5B8;
+    margin: 8px auto 14px;
+}
+/*============================蛋糕展示区============================*/
+.neiRong{
+    padding-bottom: 50px;
+}
+.zhanShi li{
+    float: left;
+    margin: 0 18px;
+    padding: 0 18px;
+}
+.dangao-li{
+    width: 228px;
+    height: 364px;
+    text-align: center;
+    position: relative;
+}
+.dangao-li a{
+    color: #684029;
+    cursor: pointer;
+}
+.dangao-li img{
+    width: 228px;
+    height: 246px;
+    transition: all .2s linear;
+}
+.dangao-li .fangda{
+    overflow: hidden;
+}
+.dangao-li h3{
+    font-size: 13px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.dangao-li span{
+    display: block;
+    font-size: 13px;
+    color: #BB9772;
+    line-height: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/*============新品儿童标签=================*/
+.dangao-li .biaoqian a{
+    display: inline-block;
+    border:1px solid #D5BFA7;
+    border-radius: 100px;
+    padding: 0 6px 0 8px;
+    color: #D5BFA7;
+    margin: 8px 1px;
+}
+.dangao-li .biaoqian{
+    height: 34px;
+}
+/* ==========<!--加入购物车-->==============*/
+.dangao-li .xin-gouWuChe{
+    display: inline-block;
+    width: 107px;
+    line-height: 28px;
+    font-size: 13px;
+}
+.dangao-li .xin-gouWuChe i{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/icon.png");
+    background-position: -210px -40px;
+    background-size: 305px 120px;
+    height: 28px;
+    width: 27px;
+}
+/*<!--展示图上的新品-->*/
+.dangao-li .label{
+    text-align: left;
+    width: 100%;
+}
+.dangao-li .label img{
+    width: 65px;
+    height: 23px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+/*======鼠标移入特效======*/
+.dangao-li h3:hover{
+    color: #D5BFA7;
+}
+.dangao-li .xin-gouWuChe:hover{
+    color: #D5BFA7;
+}
+.fangda:hover+h3{
+    color: #D5BFA7;
+}
+.dangao-li .xin-gouWuChe:hover i{
+    background-position: -243px -72px;
+}
+.dangao-li a img:hover{
+    transform: scale(1.05);
+}

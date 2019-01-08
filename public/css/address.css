@@ -1,0 +1,229 @@
+.bbtt{
+    /*margin-left: 80px;*/
+    width: 1200px;
+
+    margin-top:40px;
+}
+.dzgl{
+    color: #383838;
+    /*line-height: 50px;*/
+    /*margin-top: 40px;*/
+    font-weight: bold;
+    font-size: 16px;
+}
+#ybc{
+    font-size: 14px;
+    /*font-weight: bold;*/
+    color: #383838;
+}
+.yynr{
+    margin-top: 18px;
+    /*margin-left: 80px;*/
+    /*display: block;*/
+    width: 1200px;
+}
+.biaoT{
+
+    height: 44px;
+    line-height: 44px;
+    background: #FBFBFB;
+    border: 1px solid #E1E1E1;
+}
+.Shr{
+    display: inline-block;
+    width: 145px;
+    /*padding-left: 40px;*/
+    text-align: center;
+    font-size: 14px;
+}
+.Add{
+    display: inline-block;
+    width: 435px;
+    /*padding-left: 200px;*/
+    text-align: center;
+    font-size: 14px;
+}
+.Tphone{
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    width: 268px;
+}
+.cczz{
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    width: 300px;
+}
+.neiR{
+    width: 1198px;
+    /*height: 70px;*/
+    border: 1px solid #E1E1E1;
+    margin-top: 18px;
+
+}
+.lxR{
+    width: 145px;
+    /*height: 70px;*/
+    float: left;
+    /*text-align: center;*/
+    color: #383838;
+    font-size: 14px;
+    line-height: 70px;
+}
+.ddzz{
+    width: 435px;
+    float: left;
+    text-align: center;
+    color: #383838;
+    font-size: 14px;
+    line-height: 70px;
+}
+.phone{
+    width: 268px;
+    float: left;
+    text-align: center;
+    color: #383838;
+    font-size: 14px;
+    line-height: 70px;
+}
+.czL{
+     width: 350px;
+     float: left;
+     text-align: center;
+     color: #383838;
+     font-size: 14px;
+     line-height: 70px;
+ }
+.czL2{
+    width: 344px;
+    float: left;
+    text-align: center;
+    color: #383838;
+    font-size: 14px;
+    line-height: 70px;
+}
+.bj{
+    color: #D5BFA7;
+    display: inline-block;
+    margin: 0 5px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+.Sc{
+    color: #D5BFA7;
+    display: inline-block;
+    margin: 0 5px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+.swmr{
+    color: #D5BFA7;
+    display: inline-block;
+    margin: 0 5px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+}
+.plsc{
+    width: 100px;
+    height: 30px;
+    background: #F7F7F7;
+    border: 1px solid #D2D2D2;
+    color: #684029;
+    /*font-size: 14px;*/
+    /*margin-left: 16px;*/
+}
+.xjdz{
+     width: 100px;
+     height: 30px;
+     background: #684029;
+     color: #fff;
+     border: none;
+     font-size: 14px;
+     margin-left: 16px;
+ }
+.qqrr{
+    width: 100px;
+    height: 30px;
+    background: #F7F7F7;
+    border: 1px solid #D2D2D2;
+    color: #684029;
+    /*font-size: 14px;*/
+    /*margin-left: 16px;*/
+    /*display: none;*/
+}
+.qqxx{
+    width: 100px;
+    height: 30px;
+    background: #684029;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    margin-left: 16px;
+    /*display: none;*/
+}
+/*.xjdz2{*/
+    /*width: 100px;*/
+    /*height: 30px;*/
+    /*background: #684029;*/
+    /*color: #fff;*/
+    /*border: none;*/
+    /*font-size: 14px;*/
+    /*margin-left: 16px;*/
+/*}*/
+.zCz{
+    margin-top: 18px;
+    margin-left: 980px;
+    /*margin-right: 0px;*/
+
+}
+.zCz2{
+    margin-top: -30px;
+    margin-left: 980px;
+    /*margin-right: 0px;*/
+    display: none;
+}
+.Dx{
+    display: inline-block;
+    height:12px;
+    width: 12px;
+    margin-top: -2px;
+    vertical-align: middle;
+    border: #D5BFA7 1px solid;
+    color: red;
+    margin-left: 30px;
+    /*margin-right: 10px;*/
+    /*display: none;*/
+    opacity: 0;
+}
+.xingM{
+    margin-left: 5px;
+}
+/*------------弹出框----------*/
+.tanchu{
+    position: absolute;
+    top: 30px;
+    height: 560px;
+    width: 578px;
+    padding: 0 24px;
+    background: #fafafa;
+    border: 4px solid rgba(0, 0, 0, 0.16);
+    box-shadow: 0 -1px 17px 0 rgba(0, 0, 0, 0.38)
+    
+}
+.zdc1{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    /*margin-top: -20px;*/
+    position: absolute;
+    top: 314px;
+    left: 78.2%;
+    opacity: 0.5;
+    display: none;
+    /*margin-left: 980px;*/
+
+}

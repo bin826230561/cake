@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/qiYe_model.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+<!--=============页头=============-->
+<%- include('common/header.ejs') %>
+<!--/============页头=============-->
+
+<div class="divBg">
+    <form action="#" id="passForm">
+        <p class="floatl">账号密码登录</p>
+        <p class="colorF">短信验证码登录</p>
+        <input type="text" placeholder="请输入您的账号" class="admin" name="username">
+        <input type="password" placeholder="输入密码" class="admin" name="password">
+        <div class="textAndPwd-prompt">
+            <i>!</i>
+            <p>用户名不能为空</p>
+        </div>
+        <button type="button">登录</button>
+        <div>
+            <input type="checkbox">
+            <span>记住账号</span>
+            <span class="register"><a href="/register.do" class="colorC">去注册</a></span>
+            <span class="forget"><a href="/forget.do" class="colorC">忘记密码</a></span>
+        </div>
+        <div class="clear"></div>
+        <div class="line"></div>
+        <div class="line1"></div>
+        <div class="clear"></div>
+        <div class="lineText">其他登录方式</div>
+        <img src="../images/weixin.png" alt="">
+    </form>
+
+
+    <!--第二个form表单-->
+    <form action="#" id="msgForm">
+        <p class="floatLl">账号密码登录</p>
+        <p class="colorFf">短信验证码登录</p>
+        <input type="text" placeholder="请输入您的电话" class="admin" id="telphone">
+        <input type="password" placeholder="输入验证码" class="admin msg" id="msg">
+        <button type="button" class="msgBtn" id="msgB">获取验证码</button>
+        <i id="append"></i>
+        <button class="submit" id="formSubmit" type="button">登录</button>
+        <div>
+            <input type="checkbox">
+            <span>记住账号</span>
+            <span class="/register.do"><a href="/register.do" class="colorC">去注册</a></span>
+            <span class="/forget.do"><a href="/forget.do" class="colorC">忘记密码</a></span>
+        </div>
+        <div class="clear"></div>
+        <div class="line"></div>
+        <div class="line1"></div>
+        <div class="clear"></div>
+        <div class="lineText">其他登录方式</div>
+        <img src="../images/weixin.png" alt="">
+    </form>
+</div>
+
+<!--=============页脚=============-->
+<%- include('common/footer.ejs') %>
+<!--/============页脚=============-->
+
+<script src="jquery-1.12.4.js"></script>
+<script src="home-page.js"></script>
+<script src="qiYe_model.js"></script>
+<script src="login.js"></script>
+<script src="footer.js"></script>
+<script src="dengluZT.js"></script>
+</body>
+</html>

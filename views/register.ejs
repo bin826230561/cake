@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+<!--头部导航-->
+<%-include("common/header.ejs")%>
+<!--头部导航结束-->
+
+<!--头部图片-->
+<form action="#">
+    <p>用户注册</p>
+    <input type="text" placeholder="电话号码" id="telphone">
+    <input type="password" placeholder="密码:请输入6~20位字符,须同时包含英文和数字" id="password">
+    <input type="password" placeholder="确认密码" id="surePassword">
+    <input type="text" placeholder="请输入图片字符" id="imgShua">
+    <img id="img">
+    <a class="refresh-button" id="refresh"></a>
+    <input type="text" placeholder="短信验证码" class="msg" id="msg">
+    <button class="msgBtn">获取验证码</button>
+    <input type="text" placeholder="请选择生日" id="dateBirth">
+    <span class="append" id="append"></span>
+    <button class="submit" type="button" id="submit">注册</button>
+</form>
+
+<!--页尾-->
+<%-include("common/footer.ejs")%>
+
+<script src="jquery-1.12.4.js"></script>
+<script src="//cdn1.lncld.net/static/js/2.3.2/av-min.js"></script>
+<script src="register.js"></script>
+<script src="home-page.js"></script>
+<script src="footer.js"></script>
+<script src="dengluZT.js"></script>
+</body>
+</html>

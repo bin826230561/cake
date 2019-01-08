@@ -1,0 +1,71 @@
+.center3{
+    width: 780px;
+    margin: 0 auto;
+}
+.sec3 img {
+    width: 780px;
+    margin-top: 30px;
+}
+.sec3 p{
+    font-size: 14px;
+    line-height: 2em;
+    color: #684029;
+}
+.sec3-top p:nth-of-type(1){
+    font-size: 14px;
+    font-weight: bold;
+}
+.sec3-mid {
+    margin-top: 30px;
+}
+.sec3-bottom{
+    font-size: 14px;
+    color: #684029;
+}
+.sec3-bottom p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.sec2-right .mid {
+    float: none;
+    margin-top: 45px;
+}
+.sec2-right2 .mid {
+    float: none;
+    margin-top: 75px;
+}
+.sec2-right .mid .bt10 {
+    width: 60px;
+    height: 30px;
+    padding: 0 5px;
+    outline: 1px solid #684029;
+}
+.sec2-right2 .mid3 .bt10 {
+    width: 60px;
+    height: 30px;
+    padding: 0 5px;
+}
+.mid .bt10 i{
+    display: block;
+}
+.bottom{
+    top: 250px;
+}
+.divide{
+    margin: 855px auto 5px;
+}
+.sec2-right{
+    height: 310px;
+}
+.sec2-left{
+    height: 341px;
+}
+.shopMall{
+    top: 113px;
+}
+.shopMall2{
+    top: 70px;
+}
+.sec1-right li:nth-of-type(1) {
+    margin-top: 467px;
+}

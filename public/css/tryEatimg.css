@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*版心设置*/
+.center1{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+input:focus{
+    outline: none;
+}
+/*第一张图片*/
+.bgColor{
+    margin-top: -6px;
+    /*margin-bottom: -6px;*/
+    background-color: #fbf2e1;
+    padding-bottom: 20px;
+}
+
+/*td设置*/
+table tr td{
+    width: 50%;
+    padding-left: 100px;
+}
+/*左边设置*/
+table tr td:nth-of-type(1){
+    padding-right: 50px;
+}
+
+table tr td:nth-of-type(1) p{
+    font-size: 12px;
+    color: #878787;
+    width: 320px;
+    margin-bottom: 10px;
+    margin-top: 23px;
+}
+table tr td:nth-of-type(1) span{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #000;
+    text-align: right;
+    width: 150px;
+}
+
+table tr:nth-of-type(1) input{
+    border: 0;
+    outline: 0;
+    resize: none;
+    font-size: inherit;
+    height: 28px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+table tr:nth-of-type(1) select{
+    width: 65px;
+    height: 28px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+span i{
+    color: red;
+    margin-right: 5px;
+}
+
+
+
+.submit {
+    width: 73px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    background-color: #ff4001;
+    border-radius: 3px;
+}
+
+
+
+/*第二个td里面的内容*/
+table tr td:nth-of-type(2) h5{
+   margin: 10px 0;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+table tr td:nth-of-type(2) p{
+    line-height: 20px;
+}
+/*=======================选择文件样式====================*/
+.bgColor .filess{
+    /*background-color: rgb(255, 255, 255);*/
+    /*!*border: 1px solid red;*!*/
+
+}
+#texts{
+    width: 250px;
+    height: 28px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.filess{
+    width:80px;
+    height:28px;
+    line-height:28px;
+    background-color: #3091d1;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    bottom: 28px;
+    left: 240px;
+    font-size: 12px;
+    color: #fff;
+}
+#input{
+    width:80px;
+    height:28px;
+    opacity:0;/*设置此控件透明度为零，即完全透明*/
+    filter:alpha(opacity=0);/*设置此控件透明度为零，即完全透明针对IE*/
+    font-size:100px;
+    position:absolute;/*绝对定位，相对于 .input */
+    top:0;
+    right:0;
+    margin: 0;
+}
+.bgColor .fanHui{
+    display: block;
+    height: 28px;
+    margin-top: -28px;
+    margin-left: 70px;
+    line-height: 28px;
+    font-size: 12px;
+    text-align: left;
+}

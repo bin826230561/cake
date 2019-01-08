@@ -1,0 +1,73 @@
+.sec2-tr div{
+    display: inline;
+    margin-left: 10px;
+}
+.sec2-right {
+    margin: 20px 0 0 40px;
+}
+.sec2-tr div i{
+    margin-left: 0;
+}
+.sec2-tr  span{
+    margin-left: 0;
+}
+.left-content1 span{
+    font-size: 12px;
+    color: red;
+}
+.left-content2 {
+    margin-top: 20px;
+}
+.sec2-right {
+    margin: 35px 0 0 40px;
+}
+.sec2-tr div:nth-of-type(5){
+    display: inline-block;
+    margin-top: 20px;
+}
+.price span:nth-of-type(1){
+    margin-left: 0;
+}
+.mid {
+    margin: 10px 0 0 30px;
+}
+.bottom {
+    top: 140px;
+    left: 30px;
+}
+.mid .bt10{
+    outline: 1px solid #684029;
+}
+.mid .bt10 i{
+    display: block;
+}
+.left-content5 {
+    margin-top: 15px;
+}
+.divide{
+    margin: 875px auto 0;
+}
+.sec5{
+    margin: 35px auto 100px;
+}
+.top2 {
+    margin-top: 50px;
+}
+.mid3 {
+    margin: 40px 0 0 30px;
+}
+.bottom2 button{
+    margin: 35px 0 0 30px;
+}
+.sec2-right2{
+    width: 557px;
+    height: 247px;
+}
+.shopMall{
+    top: 3px;
+    left: 170px;
+}
+.shopMall2{
+    top: 70px;
+    left: 710px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="loginSuccess-news.css">
+    <link rel="stylesheet" href="logistics.css">
+    <!--<link rel="stylesheet" href="../css/shopsCart.css">-->
+</head>
+<body>
+<!--=============页头=============-->
+<%- include('common/header.ejs') %>
+<!--/============页头=============-->
+
+<!--内容区-->
+
+
+<section id="section">
+    <div class="center">
+        <div class="news-hd">
+            <ul class="clearfix">
+                <li>
+                    通知
+                    <span></span>
+                </li>
+                <li class="colorLi">
+                    物流
+                    <span class="colorLi"></span>
+                </li>
+                <li>
+                    客服
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="news-bd-tongZhi">
+            <a href="/my-jinianri.do" class="clearfix">
+                <div class="news-bd-tongZhi-left floatL"></div>
+                <div class="news-bd-tongZhi-right">
+                    <h4>您还未开启过纪念日提醒<span>星期一</span></h4>
+                    <p>去开启吧>></p>
+                </div>
+            </a>
+        </div>
+        <div class="news-bd-wuLiu show" style="padding: 0 0;text-align: left">
+            <div class="order-detail">
+                <div class="detail-title">
+                    <span class="indent">包裹信息</span>
+                </div>
+                <div class="detail-complaint" id="complaintDiv"></div>
+                <div class="detail-content">
+                    <div id="progressbar">
+                        <ul class="detail-progressbar">
+                            <li class="step-1-done"></li>
+                            <li class="step-2-done"></li>
+                            <li class="step-3-done"></li>
+                            <li class="last step-4-current">
+                                <div class="arrow"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail-panel">
+                        <div class="panel-package">
+                            <div class="package-title">
+                                <h3 class="title-text">
+                                    已签收
+                                </h3>
+                                <div class="title-en">
+                                </div>
+                            </div>
+                            <div class="package-status">
+                                <div class="status-box" id="status_list">
+                                    <ul id="J_listtext2" class="status-list">
+                                        <li>
+                                            <span class="date">2018-10-14</span>
+                                            <span class="week">周日</span>
+                                            <span class="time">14:17:57</span>
+                                            <span class="text">卖家发货</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">2018-10-15</span>
+                                            <span class="week">周一</span>
+                                            <span class="time">18:19:55</span>
+                                            <span class="text">在浙江永康市公司进行揽件扫描</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-15</span>
+                                            <span class="week hidden">周一</span>
+                                            <span class="time">18:35:24</span>
+                                            <span class="text">在浙江永康市公司进行下级地点扫描，发往：四川成都网点包</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">2018-10-17</span>
+                                            <span class="week">周三</span>
+                                            <span class="time">07:26:43</span>
+                                            <span class="text">在分拨中心四川成都分拨中心进行卸车扫描</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-17</span>
+                                            <span class="week hidden">周三</span>
+                                            <span class="time">07:42:30</span>
+                                            <span class="text">从四川成都分拨中心发出，本次转运目的地：四川成都国际广场公司</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-17</span>
+                                            <span class="week hidden">周三</span>
+                                            <span class="time">13:11:33</span>
+                                            <span class="text">到达目的地网点四川成都国际广场公司，快件很快进行派送</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-17</span>
+                                            <span class="week hidden">周三</span>
+                                            <span class="time">14:02:24</span>
+                                            <span class="text">【成都市】四川成都国际广场公司派件员 刘建建 18428334075正在为您派件</span>
+                                        </li>
+                                        <li class="latest">
+                                            <span class="date hidden">2018-10-17</span>
+                                            <span class="week hidden">周三</span>
+                                            <span class="time">16:37:14</span>
+                                            <span class="text">快件已被  36号院友邻有家(合作便利店)  代签收,如有问题请电联业务员：刘建建【18428334075】,。相逢是缘,如果您对我的服务感到满意,给个五星好不好?【请在评价小件员处给予五星好评】。</span>
+                                        </li>
+                                    </ul>
+                                    <ul id="J_listtext1" style="display:none" class="status-list">
+                                        <li>
+                                            <span class="date">2018-10-14</span>
+                                            <span class="week">周日</span>
+                                            <span class="time">14:17:57</span>
+                                            <span class="text">卖家发货</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">2018-10-15</span>
+                                            <span class="week">周一</span>
+                                            <span class="time">18:19:55</span>
+                                            <span class="text">在浙江永康市公司进行揽件扫描</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-15</span>
+                                            <span class="week hidden">周一</span>
+                                            <span class="time">18:35:24</span>
+                                            <span class="text">在浙江永康市公司进行下级地点扫描，发往：四川成都网点包</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">2018-10-17</span>
+                                            <span class="week">周三</span>
+                                            <span class="time">07:26:43</span>
+                                            <span class="text">在分拨中心四川成都分拨中心进行卸车扫描</span>
+                                        </li>
+                                        <li><span class="date hidden">2018-10-17</span><span
+                                                    class="week hidden">周三</span><span class="time">07:42:30</span><span
+                                                    class="text">从四川成都分拨中心发出，本次转运目的地：四川成都国际广场公司</span></li>
+                                        <li><span class="date hidden">2018-10-17</span><span
+                                                    class="week hidden">周三</span><span class="time">13:11:33</span><span
+                                                    class="text">到达目的地网点四川成都国际广场公司，快件很快进行派送</span></li>
+                                        <li><span class="date hidden">2018-10-17</span><span
+                                                    class="week hidden">周三</span><span class="time">14:02:24</span><span
+                                                    class="text">在四川成都国际广场公司进行派件扫描；派送业务员：刘建建；联系电话：<em>18428334075</em></span>
+                                        </li>
+                                        <li class="latest"><span class="date hidden">2018-10-17</span><span
+                                                    class="week hidden">周三</span><span class="time">16:37:14</span><span
+                                                    class="text">快件已被  36号院友邻有家(合作便利店)  代签收,如有问题请电联业务员：刘建建【18428334075】,。相逢是缘,如果您对我的服务感到满意,给个五星好不好?【请在评价小件员处给予五星好评】。</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="status-info">
+                                <div class="info-inner" id="J_tipinfo">
+                                    以上信息已经过优化处理，如需查看快递公司原文信息
+                                    <a class="J_textchage" data-text="J_listtext1" href="javascript:void(0)">请点击</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--/内容区-->
+
+<!--=============页脚=============-->
+<%- include('common/footer.ejs') %>
+<!--/============页脚=============-->
+<script src="jquery-1.12.4.js"></script>
+<script src="home-page.js"></script>
+<script src="js/footer.js"></script>
+<script src="loginSuccess-news.js"></script>
+<script src="dengluZT.js"></script>
+<script>
+    if (localStorage.getItem("show") == 0) {
+        $("#section .news-hd li").eq(0).children("span").addClass("colorLi");
+        $("#section .news-hd li").eq(0).addClass("colorLi");
+        $("#section .news-hd li").eq(1).children("span").removeClass("colorLi");
+        $("#section .news-hd li").eq(1).removeClass("colorLi");
+        $("#section .news-hd li").eq(2).children("span").removeClass("colorLi");
+        $("#section .news-hd li").eq(2).removeClass("colorLi");
+        $(".news-bd-tongZhi").addClass("show");
+        $(".news-bd-wuLiu").removeClass("show");
+    } else {
+        $("#section .news-hd li").eq(1).children("span").addClass("colorLi");
+        $("#section .news-hd li").eq(1).addClass("colorLi");
+        $("#section .news-hd li").eq(0).children("span").removeClass("colorLi");
+        $("#section .news-hd li").eq(0).removeClass("colorLi");
+        $("#section .news-hd li").eq(2).children("span").removeClass("colorLi");
+        $("#section .news-hd li").eq(2).removeClass("colorLi");
+
+        $(".news-bd-tongZhi").removeClass("show");
+        $(".news-bd-wuLiu").addClass("show");
+    }
+</script>
+</body>
+</html>

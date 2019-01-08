@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*=======================头部=================*/
+/*头部背景图*/
+header{
+    background-image: url("../images/black.png");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+    /*border: 1px solid black;*/
+}
+
+#header{
+    background-image: url("../images/header.png");
+    /*background-size: cover;*/
+    height: 650px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*头部h1标签*/
+header h1{
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 36px;
+}
+/*头部标签p*/
+header p{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/*===================中间内容区=================*/
+section{
+    background-color: #555555;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 50px;
+}
+/*#section1 {*/
+    /*padding-bottom: 50px;*/
+/*}*/
+#section1 p{
+   text-align: center;
+    color: #ffffff;
+}
+
+#section1 p:nth-of-type(1){
+    line-height: 45px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#section1 p:nth-of-type(2){
+    line-height: 35px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/*清除浮动*/
+.clear{
+    clear: both;
+}
+
+/*版心宽度*/
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+

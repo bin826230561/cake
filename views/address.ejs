@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/senior.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/designer.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/qiYe_model.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/address.css">
+    <style>
+        a:link, a{
+            color: white;
+        }
+        .tianjia{
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 16px;
+            display: none;
+        }
+    </style>
+<body>
+<!--导航栏部分-->
+<%-include('common/header.ejs')%>
+<!--/导航栏部分-->
+
+
+<!--页头下-->
+<section class="center">
+    <div class="bbtt"><span class="dzgl">地址管理 </span><span id="ybc">已保存<span class="dzsz"><%=myadd.length%></span>个收货地址（最多添加10条）</span></div>
+    <div class="yynr">
+        <!--表头-->
+        <div class="biaoT">
+            <span class="Shr">收货人</span>
+            <span class="Add">地址</span>
+            <span class="Tphone">联系电话</span>
+            <span class="cczz">操作</span>
+        </div>
+        <div class="neiR tianjia">暂无地址，请添加</div>
+            <table class="neiR">
+                <%for(var i=0;i<myadd.length;i++){%>
+                <tr>
+                    <td class="lxR" name="<%=myadd[i].address_id%>">
+                        <input type="checkbox" class="Dx">
+                        <span class="xingM"><%=myadd[i].address_user%></span>
+                    </td>
+                    <td class="ddzz">
+                        <span class="Xxdz"><span class="Xxdz1">成都市</span><span class="Xxdz2">高新区</span><span class="Xxdz3"><%=myadd[i].address_place%></span></span>
+                        <span class="Xcz">[默认地址]</span>
+                    </td>
+                    <td class="phone">
+                        <span><%=myadd[i].phone%></span>
+                    </td>
+                    <td class="czL2">
+                        <button class="bj" onclick="bianj(this)"> 编辑</button>
+                        <button class="Sc" onclick="scpd(this)" >删除</button>
+                        <button class="swmr">设为默认地址</button>
+                    </td>
+                </tr>
+                <%}%>
+            </table>
+
+
+
+        </div>
+        <div class="zCz">
+            <button class="plsc">批量删除</button>
+            <button class="xjdz" onclick="tianjia()">+新建地址</button>
+        </div>
+        <div class="zCz2">
+            <button class=" qqrr" onclick="scpd1()">确认</button>
+            <button class="qqxx">取消</button>
+
+        </div>
+
+    </div>
+    <div style="height: 140px"></div>
+</section>
+<!--<div class="zdc1"></div>-->
+<!-------------------页脚--------->
+<%-include('common/footer.ejs')%>
+
+<!--jq插件-->
+<script src="../lib/jquery/jquery.js"></script>
+
+<script src="dengluZT.js"></script>
+<script src="../js/designer.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/qiYe_model.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/password.js"></script>
+<script src="../js/address.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!--导航栏部分-->
+<header id="header">
+    <div class="header-fixed">
+        <nav class="center clearfix">
+            <!--logo-->
+            <a href="/home" class="nav-logo floatL">
+                <img src="images/logo.png" alt="廿一客">
+            </a>
+            <!--/logo-->
+
+            <!--菜单-->
+            <div class="nav-centerContent floatL">
+                <ul class="clearfix">
+                    <li>
+                        <a href="/home">首页</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="/caketext-1">蛋糕</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="/caketext-2">冰淇淋</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="/caketext-3">咖啡下午茶</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="/caketext-4">面包</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="/send">咖啡全国送</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="enterprise-zone.do">企业专区</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <!--/菜单-->
+
+            <!--功能-->
+            <div class="nav-function floatR">
+                <ul class="clearfix">
+                    <li class="show-children">
+                        <span>APP下载</span>
+                        <div class="youHuiErWeiMa">
+                            <img src="images/erweima2.png" alt="">
+                            <p>下载享更多优惠</p>
+                        </div>
+                    </li>
+                    <li class="show-children">
+                        <span class="address-chose-default">成都</span>
+                        <i></i>
+                        <div class="address-chose">
+                            <a href="javascript:void(0);">成都</a>
+                            <a href="javascript:void(0);">重庆</a>
+                            <a href="javascript:void(0);">西安</a>
+                            <a href="javascript:void(0);">北京</a>
+                        </div>
+                    </li>
+                    <li class="show-children">
+                        <span>消息</span>
+                        <div class="news">
+                            <a href="javascript:void(0);">通知</a>
+                            <a href="javascript:void(0);">物流</a>
+                        </div>
+                        <i class="redDian"></i><!--==========注意：登陆后会根据情况显示的===========-->
+                    </li>
+                    <li class="ifDengLu-show-children"><!--==========注意：登陆后加show-children属性========-->
+                        <nav id="loginAndReg">
+                            <a href="/loginPage.do">登录</a>/<a href="/register.do">注册</a>
+                        </nav>
+                        <p class="dengLu-success">
+                            <img src="images/user.png" alt="">
+                        </p>
+                        <div class="news user">
+                            <a href="/personalCenter.do">个人中心</a>
+                            <a href="/my-dingDan.do">我的订单</a>
+                            <a href="/liucoupan.do">我的优惠券</a>
+                            <a href="/my-jinianri.do">我的纪念日</a>
+                            <a href="javascript:void(0);">退出登录</a>
+                        </div>
+
+
+                    </li>
+                    <li class="buy-cart">
+                        <a href="/shopCar">
+                            <i></i>
+                        </a>
+                        <span class="num">
+                            <span></span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <!--/功能-->
+        </nav>
+    </div>
+</header>
+<!--/导航栏部分-->
+
+<script src="jquery-1.12.4.js"></script>
+<script>
+    $(function () {
+        /*页面加载时商品在购物车的数量*/
+        $.ajax({
+            url: "/getCount.do",
+            success: function (data) {
+                var goodsCount = data[0].num;
+                if (goodsCount > 0) {
+                    $("#header .nav-function li .num").css({
+                        transform:"scale(1)"
+                    })
+                    $(".buy-cart").children("span").show();
+                    $(".buy-cart").children("span").children("span").text(goodsCount);
+                } else {
+                    $(".buy-cart").children("span").hide();
+                }
+            }
+        })
+
+        /*通知*/
+        $(".news a").eq(0).click(function () {
+            if (localStorage.getItem("u_id") != null || localStorage.getItem("u_id") != undefined) {
+                $(this).prop("href", "/logistics.do");
+                localStorage.show="0";
+            }else{
+                $(this).prop("href", "/loginPage.do");
+            }
+        })
+
+        /*物流*/
+        $(".news a").eq(1).click(function () {
+            if (localStorage.getItem("u_id") != null || localStorage.getItem("u_id") != undefined) {
+                $(this).prop("href", "/logistics.do");
+                localStorage.show="1";
+            }else{
+                $(this).prop("href", "/loginPage.do");
+            }
+        })
+
+
+    })
+</script>
+
+

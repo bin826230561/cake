@@ -1,0 +1,37 @@
+.sec1-right li:nth-of-type(1){
+     margin-top: 265px;
+}
+.sec1-right li{
+    margin-top: 15px;
+}
+.mid button{
+    padding: 0 15px;
+}
+
+.bottom {
+    top: 245px;
+}
+.shopMall{
+    top: 108px;
+    left: 140px;
+}
+.shopMall2{
+    position: fixed;
+    left: 710px;
+    top: 70px;
+}
+.left-content1{
+    margin-top: 20px;
+}
+
+.divide{
+    border: 0.5px solid #F4F4F4;
+    width: 1050px;
+    margin: 940px auto 20px;
+}
+.sec2-right{
+    margin: 20px 0 0 65px;
+}
+.sec5{
+    margin: 35px auto 100px;
+}

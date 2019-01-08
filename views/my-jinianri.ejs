@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/qiYe_model.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/my-jinianri.css">
+</head>
+<body>
+<!--导航栏部分-->
+<%- include("common/header.ejs") %>
+<!--/导航栏部分-->
+
+<!--内容区-->
+<section id="section">
+    <div class="center">
+        <div class="important_day_title">
+            <span>纪念日管理</span>
+            <span>开启提醒后，将提前2天发短信提醒至您的绑定手机:</span>
+            <span></span>
+        </div>
+        <div class="important_day_button important_day_title-button">+新纪念日</div>
+        <div class="contentsBox">
+            <div class="important_day_button">
+                +新纪念日
+            </div>
+            <div class="important_day_tiShi">
+                <img src="../images/aixin.png" alt="">
+                <p>去添加纪念日获取奖励吧~ <br>(最多可获得5次)</p>
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0" id="myJiNian">
+            <thead>
+            <tr>
+                <th>纪念日</th>
+                <th>关系</th>
+                <th>日期</th>
+                <th>对方手机</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody class="noContent">
+            <tr></tr>
+            </tbody>
+            <tbody class="marginBottom">
+
+            <!--<tr>-->
+            <!--<td>$value_important_day</td>-->
+            <!--<td>$value_relationship</td>-->
+            <!--<td>$value_date</td>-->
+            <!--<td>$value_tel</td>-->
+            <!--<td class="small_model_parent_td">-->
+            <!--<span class='changeContents'>编辑</span>-->
+            <!--<span class='deleteContents'>删除</span>-->
+            <!--<span>-->
+            <!--<label for="">短信通知</label>-->
+            <!--<input type="checkbox">-->
+            <!--</span>-->
+            <!--<div class="small_model">-->
+            <!--<p>确认删除?</p>-->
+            <!--<button>取消</button>-->
+            <!--<button>确认</button>-->
+            <!--<i></i>-->
+            <!--</div>-->
+
+            <!--</td>-->
+            <!--</tr>-->
+
+            </tbody>
+        </table>
+    </div>
+</section>
+<!--/内容区-->
+
+<!--页脚-->
+<%- include("common/footer.ejs") %>
+<!--/页脚-->
+
+
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/qiYe_model.js"></script>
+<script src="../js/footer.js"></script>
+<script src="dengluZT.js"></script>
+<script>
+    $(function () {
+        if (parseInt("<%= myJn.length %>") == 0) {
+            $(".contentsBox").show();
+            $("#myJiNian").hide();
+        } else {
+            $(".contentsBox").hide();
+            $("#myJiNian").show();
+            $(".important_day_button").show();
+
+            /*加载动态数据*/
+            <% for(var i = 0;i < myJn.length;i++){ %>
+            if ("<%= myJn[0].memorial_zt %>" == "true") {
+                var memorial_zt = "checked";
+            }
+            $(".marginBottom")[0].innerHTML += "<tr>\n" +
+                "                <td>" + "<%= myJn[i].memorial_name %>" + "</td>\n" +
+                "                <td>" + "<%= myJn[i].memorial_relative %>" + "</td>\n" +
+                "                <td>" + "<%= myJn[i].memorial_date %>" + "</td>\n" +
+                "                <td>" + "<%= myJn[i].memorial_phone %>" + "</td>\n" +
+                "                <td class=\"small_model_parent_td\">\n" +
+                "                    <span class='changeContents' change_id=<%= myJn[i].memorial_id %>>编辑</span>\n" +
+                "                    <span class='deleteContents' del_id=<%= myJn[i].memorial_id %>>删除</span>\n" +
+                "                    <span>\n" +
+                "                        <label for=\"\">短信通知</label>\n" +
+                "                        <input type=\"checkbox\" " + memorial_zt + ">\n" +
+                "                    </span>\n" +
+                "                    <div class=\"small_model\">\n" +
+                "                        <p>确认删除?</p>\n" +
+                "                        <button class='no_del'>取消</button>\n" +
+                "                        <button class='yes_del'>确认</button>\n" +
+                "                        <i></i>\n" +
+                "                    </div>\n" +
+                "                </td>\n" +
+                "            </tr>"
+            <% } %>
+
+        }
+    })
+
+
+</script>
+<script src="../js/my-jinianri.js"></script>
+
+</body>
+</html>

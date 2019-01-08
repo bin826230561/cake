@@ -1,0 +1,316 @@
+.content-box{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.balance-title{
+    font-size: 16px;
+    color: #684029;
+    line-height: 24px;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.balance-title span {
+    font-size: 14px;
+    color: #442818;
+    margin-left: 13px;
+}
+
+.balance-title .money {
+    color: #FF4A2D;
+    margin-left: -4px;
+}
+
+.tips-box {
+    opacity: 0.69;
+    background: #684029;
+    box-shadow: 0 2px 4px 0 rgba(237,237,237,0.50);
+    border-radius: 2px;
+    height: 60px;
+    width: 166px;
+    line-height: 20px;
+    padding: 12px 0;
+    color: #fff;
+    position: absolute;
+    font-size: 13px;
+    text-align: center;
+    left: 80px;
+    top: 30px;
+    display: none;
+}
+
+.tips-box>i {
+    background: url(../images/icon.png) no-repeat;
+    background-position: 0 -52px;
+    background-size: 310px 120px;
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    top: -7px;
+    right: 10px;
+}
+
+.tips-box span {
+    color: #fff;
+    display: inline;
+}
+
+.balance-title a {
+    font-size: 14px;
+    color: #AE8C73;
+    float: right;
+}
+
+.recharge-box {
+    border: 1px solid #E1E1E1;
+}
+
+.recharge-title {
+    background: #FBFBFB;
+    border-bottom: 1px solid #E1E1E1;
+    height: 46px;
+    font-size: 14px;
+    line-height: 46px;
+    padding-left: 18px;
+    color: #684029;
+}
+
+.recharge-form{
+    padding: 18px;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.recharge-form div{
+    padding: 8px 0;
+}
+
+.recharge-form label{
+    width: 50px;
+    display: inline-block;
+    color: #684029;
+}
+
+.recharge-form input {
+    height: 30px;
+    border: 1px solid #E1E1E1;
+    width: 232px;
+    padding-left: 8px;
+}
+
+input{
+    outline: none;
+}
+
+.password-box{
+    position: relative;
+}
+
+.eye-box {
+    position: absolute;
+    left: 250px;
+    top: 10px;
+    background: url(../images/eye.png) center no-repeat;
+    background-size: auto 12px;
+    display: block;
+    width: 40px;
+    height: 25px;
+}
+
+.recharge-form .text-red {
+    line-height: 20px;
+    height: 20px;
+    font-size: 11px;
+    color: #FF4A2D;
+    padding-left: 50px;
+    padding-top: 0;
+}
+
+.button-box{
+    text-align: right;
+    margin: 15px auto 50px;
+}
+
+.button-box button {
+    background: #684029;
+    color: #fff;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+    border: none;
+}
+
+.line-recharge {
+    border-bottom: 2px dashed #E1E1E1;
+    padding: 18px 0;
+    margin: 0 18px;
+}
+
+.line-recharge>div{
+    position: relative;
+}
+
+.line-recharge div{
+    padding: 4px 0;
+}
+
+.line-recharge label{
+    width: 165px;
+    display: inline-block;
+    color: #684029;
+}
+
+.line-recharge input{
+    width: 160px;
+}
+
+.line-recharge .change-box {
+    position: absolute;
+    left: 318px;
+    height: 30px;
+    width: 20px;
+    top: 5px;
+    padding: 0;
+    background: #fff;
+}
+
+.change-box .plus.active {
+    border-bottom-color: #D5BFA7;
+}
+
+.change-box i {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    cursor: pointer;
+}
+
+.plus {
+    border-bottom: 8px solid #E5E5E5;
+    margin-bottom: 3px;
+    margin-top: 6px;
+}
+
+.minus {
+    border-top: 8px solid #E5E5E5;
+}
+
+.line-recharge span {
+    font-weight: bold;
+    color: #FF4A2D;
+}
+
+.pay-way{
+    margin: 0 18px;
+}
+
+.pay-way div{
+    line-height: 22px;
+    margin: 15px 0;
+}
+
+.pay-way ul{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+.pay-way li{
+    float: left;
+    margin-left: 24px;
+    height: 120px;
+    line-height: 120px;
+    width: 150px;
+}
+
+.pay-way input{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pay-way li img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 42px;
+    margin-left: 10px;
+}
+
+.bomb-background {
+    display: block;
+    background: url(../images/bomb-bj.png);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.paying-bomb-box {
+    z-index: 20;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 360px;
+    margin-left: -350px;
+    margin-top: -180px;
+    background: #FAFAFA;
+    box-shadow: 0 -1px 17px 0 rgba(0,0,0,0.50);
+}
+
+.paying-pay-button {
+    overflow: hidden;
+    width: 600px;
+    margin: 65px auto 0;
+}
+
+.paying-pay-button li:first-child {
+    border-right: 1px solid #ECECEC;
+}
+.paying-pay-button li {
+    font-size: 14px;
+    float: left;
+    width: 298px;
+    text-align: center;
+}
+
+.paying-pay-button li:first-child a{
+    background: #ECECEC;
+    color: #442818;
+}
+
+.paying-pay-button li a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 190px;
+    margin: 20px auto 0;
+}
+
+.paying-pay-button li a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    width: 190px;
+    margin: 20px auto 0;
+    background: #673F2B;
+    color: #fff;
+}
+
+:-ms-input-placeholder{
+    color: #c5d6ee;
+}
+

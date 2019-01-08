@@ -1,0 +1,38 @@
+/*找回密码的图片*/
+.body{
+    padding: 0 475px;
+}
+.search{
+    position: absolute;
+    top: 150px;
+    left: 180px;
+}
+
+.body p{
+    margin-top: 220px;
+    color: #442818;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 50px;
+    background-color: #491903;
+    border: none;
+}
+
+button a{
+    font-size: 18px;
+    color: #684029;
+}
+button:hover{
+    background-color: #7f2800;
+}
+button:hover a{
+    color: #bb9772;
+    text-decoration: underline;
+}

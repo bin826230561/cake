@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+<!--头部导航-->
+
+<!--头部导航结束-->
+<%- include('common/header.ejs') %>
+<!--中间内容区-->
+<section>
+    <div class="center">
+
+        <!--第一行状态-->
+        <ul class="order-status">
+            <li>
+                <div></div>
+                <img src="../images/order-status-12.png" alt="">
+                <div></div>
+                <p>已下单</p>
+            </li>
+            <li>
+                <div></div>
+                <img src="../images/order-status-2.png" alt="">
+                <div></div>
+                <p>代付款</p>
+            </li>
+            <li>
+                <div></div>
+                <img src="../images/order-status-3.png" alt="">
+                <div></div>
+                <p>待配送</p>
+            </li>
+            <li>
+                <div></div>
+                <img src="../images/order-status-4.png" alt="">
+                <div></div>
+                <p>已收货</p>
+            </li>
+        </ul>
+
+
+        <!--下面的信息-->
+        <div class="tableDetail">
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <p>订单详情</p>
+                    </td>
+                    <td>
+                        <p>收货信息</p>
+                    </td>
+                    <td>
+                        <p>配送方式</p>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <span class="grayText">订单号:</span>
+                        <span class="blackText ordsNum"><%=mydata[0].ords_num%></span>
+                        <button>取消订单</button>
+                    </td>
+                    <td>
+                        <span class="grayText">订单号:</span>
+                        <span class="blackText"><%=mydata[0].ords_num%></span>
+                    </td>
+                    <td>
+                        <span class="grayText">配送方式 :</span>
+                        <span class="blackText">21廿快递</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="grayText">订单金额:</span>
+                        <span class="blackText money3"></span>
+                        <button id="btnQu">取消并重订</button>
+                    </td>
+                    <td>
+                        <span class="grayText">收货人电话:</span>
+                        <span class="blackText"><%=mydata[0].phone%></span>
+                    </td>
+                    <td>
+                        <span class="grayText">配送时间 :</span>
+                        <span class="blackText">2018-11-22 10:30</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="grayText">订单状态 :</span>
+                        <span class="blackText"><%=mydata[0].state_name%></span>
+                        <button id="payMoney">付款</button>
+                    </td>
+                    <td>
+                        <span class="grayText">收货地址:</span>
+                        <span class="blackText"><%=mydata[0].address_place%></span>
+                        <!--<a href="#">修改地址></a>-->
+                    </td>
+                    <td>
+                        <span class="grayText">运费 :</span>
+                        <span class="blackText">0.00</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <p>
+                            付款方式
+                        </p>
+                    </td>
+                    <td>
+                        <p>发票信息</p>
+                    </td>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            <span class="grayText">付款方式:</span>
+                            <span class="blackText">支付宝支付</span>
+                        </div>
+                        <div>
+                            <span class="grayText">配送费:</span>
+                            <span class="blackText">0.00</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <span class="grayText">发票类型:</span>
+                            <span class="blackText" id="faPiaoType"></span>
+                        </div>
+                        <div>
+                            <span class="grayText">发票抬头</span>
+                            <span class="blackText" id="faPiao"></span>
+                        </div>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div>
+                            <span class="grayText">订单金额:</span>
+                            <span class="blackText money3"></span>
+                        </div>
+                        <div>
+                            <span class="grayText">商品金额:</span>
+                            <span class="blackText money3"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <span class="grayText">纳税人识别号:</span>
+                            <span class="blackText" id="personNumA"></span>
+                        </div>
+                        <div>
+                            <span class="grayText">收票人手机号:</span>
+                            <span class="blackText" id="phoneShou"></span>
+                        </div>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <div>
+                            <span class="grayText" >优惠券:</span>
+                            <span class="blackText">0.00</span>
+                        </div>
+                        <div>
+                            <span class="grayText">余额抵扣:</span>
+                            <span class="blackText">0.00</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <span class="grayText">个人/公司:</span>
+                            <span class="blackText" id="company"></span>
+                            <span class="blackText"><a id="editFaPiao">编辑 ></a></span>
+                        </div>
+                        <div>
+                            <span class="grayText">收票人邮箱:</span>
+                            <span class="blackText" id="emailP"></span>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <span class="grayText">代金卡:</span>
+                        <span class="blackText">0.00</span>
+
+                    </td>
+                    <td>
+                        <span class="grayText">下载地址:</span>
+                        <span class="blackText"></span>
+
+                    </td>
+
+                </tr>
+                </tbody>
+            </table>
+
+
+            <div class="invoice-show">
+                <div id="companyPersonal">
+                    <label>
+                        <input type="radio" name="taxType" checked="checked">
+                        公司发票
+                    </label>
+                    <label>
+                        <input type="radio" name="taxType">
+                        个人发票
+                    </label>
+                </div>
+                <div id="electronic-invoice">
+                    <input type="text" placeholder="纳税人识别号或统一社会信用代码(必填)" id="personNum">
+                    <br>
+                    <input type="text" placeholder="发票抬头（必填）" id="headFa">
+                    <input type="text" placeholder="收票人手机（必填）" id="phoneE">
+                    <input type="text" placeholder="收票人邮箱" id="email">
+                    <select name="" id="">
+                        <option value="0">蛋糕</option>
+                        <option value="1">冰淇淋</option>
+                        <option value="2">咖啡</option>
+                    </select>
+                </div>
+                <div class="bottom-bar-button">
+                    <span id="appendText"></span>
+                    <br>
+                    <button id="quXiao">取消</button>
+                    <button id="queDing">确定</button>
+                </div>
+            </div>
+        </div>
+
+        <!--订单东西-->
+        <div id="tableDing">
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>商品</th>
+                    <th>销售价</th>
+                    <th>数量</th>
+                    <th>生日牌</th>
+                    <th>小计</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <%for(var i=0;i<mydata.length;i++){%>
+                    <tr class="borderGray">
+                        <td></td>
+                        <td>
+                            <div>
+                                <a href="<%=mydata[i].shop_address%>">
+                               <div>
+                                   <img src="<%=mydata[i].goods_img%>" alt="" width="78">
+                               </div>
+                                </a>
+                                <a href="<%=mydata[i].shop_address%>">
+                                <p><%=mydata[i].goods_description%>(<%=mydata[i].goods_bang%>)</p>
+                                </a>
+                            </div>
+                        </td>
+                        <td>
+                                <%=mydata[i].shop_money%>
+                        </td>
+                        <td>
+
+                                <%=mydata[i].shop_count%>
+                        </td>
+                        <td></td>
+                        <td><%=mydata[i].shop_count%>*<%=mydata[i].shop_money%></td>
+                    </tr>
+                     <%}%>
+                 <tr class="bothT">
+                     <td colspan="6">
+
+                         <div>
+                             <span>￥：00&nbsp;&nbsp;</span>
+                             <span>代金卡</span>
+                             <span>￥：00&nbsp;&nbsp;</span>
+                             <span>余额抵扣</span>
+                             <span>￥：00&nbsp;&nbsp;</span>
+                             <span>优惠金额</span>
+                             <span>￥：00&nbsp;&nbsp;</span>
+                             <span>配送费</span>
+                             <span id="moneyC"> &nbsp;&nbsp;</span>
+                             <span>商品金额￥：</span>
+                         </div>
+                         <br>
+                         <div class="goldDiv">￥233</div>
+                         <p>总额：</p>
+
+                     </td>
+                 </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<!--/中间内容区-->
+
+
+
+
+<!--页尾部分-->
+<%- include('common/footer.ejs') %>
+<!--页尾部分-->
+
+
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/dingDandetail.js"></script>
+<script src="dengluZT.js"></script>
+<script>
+
+     var num=0;
+     var money3=0;
+    <%for (var i=0;i<mydata.length;i++){ %>
+    var money=("<%=mydata[i].shop_money%>".split("￥"))[1];
+    var money1=money*("<%=mydata[i].shop_count%>")
+    $(".borderGray td:nth-of-type(6)")[num].innerHTML="￥:"+money1+".00"
+    num++;
+     money3+=money1
+    <%}%>
+
+    $("#moneyC").html(+money3+".00")
+    $(".goldDiv").html("￥"+money3+".00")
+    $(".money3").html("￥"+money3+".00")
+
+</script>
+</body>
+</html>

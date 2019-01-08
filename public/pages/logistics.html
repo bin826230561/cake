@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>21Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/loginSuccess-news.css">
+    <link rel="stylesheet" href="../css/logistics.css">
+    <!--<link rel="stylesheet" href="../css/shopsCart.css">-->
+</head>
+<body>
+<!--导航栏部分-->
+<header id="header">
+    <div class="header-fixed">
+        <nav class="center clearfix">
+            <!--logo-->
+            <a href="../home-page.html" class="nav-logo floatL">
+                <img src="../images/logo.png" alt="廿一客">
+            </a>
+            <!--/logo-->
+
+            <!--菜单-->
+            <div class="nav-centerContent floatL">
+                <ul class="clearfix">
+                    <li>
+                        <a href="../home-page.html">首页</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="../pages/caketext-1.html">蛋糕</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="../pages/caketext-2.html">冰淇淋</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="../pages/caketext-3.html">咖啡下午茶</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="../pages/caketext-4.html">面包</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="../pages/send.html">咖啡全国送</a>
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="../pages/enterprise-zone.html">企业专区</a>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>
+            <!--/菜单-->
+
+            <!--功能-->
+            <div class="nav-function floatR">
+                <ul class="clearfix">
+                    <li class="show-children">
+                        <span>APP下载</span>
+                        <div class="youHuiErWeiMa">
+                            <img src="../images/erweima2.png" alt="">
+                            <p>下载享更多优惠</p>
+                        </div>
+                    </li>
+                    <li class="show-children">
+                        <span class="address-chose-default">成都</span>
+                        <i></i>
+                        <div class="address-chose">
+                            <a href="javascript:void(0);">成都</a>
+                            <a href="javascript:void(0);">重庆</a>
+                            <a href="javascript:void(0);">西安</a>
+                            <a href="javascript:void(0);">北京</a>
+                        </div>
+                    </li>
+                    <li class="show-children">
+                        <span>消息</span>
+                        <div class="news">
+                            <a href="loginSuccess-news.html">通知</a>
+                            <a href="loginSuccess-news-wuliu.html">物流</a>
+                        </div>
+                        <i class="redDian"></i><!--==========注意：登陆后会根据情况显示的===========-->
+                    </li>
+                    <li class="ifDengLu-show-children show-children"><!--==========注意：登陆后加show-children属性========-->
+                        <!--<a href="../pages/login.html">登录</a>/<a href="../pages/register.html">注册</a>-->
+                        <p class="dengLu-success" style="display: block">
+                            <img src="../images/user.png" alt="">
+                        </p>
+                        <div class="news user">
+                            <a href="personalCenter.html">个人中心</a>
+                            <a href="my-dingDan.html">我的订单</a>
+                            <a href="liucoupan.html">我的优惠券</a>
+                            <a href="my-jinianri.html">我的纪念日</a>
+                            <a href="#">退出登录</a>
+                        </div>
+                    </li>
+                    <li class="buy-cart">
+                        <a href="../pages/shopsCart.html">
+                            <i></i>
+                        </a>
+                        <span class="num">3</span>
+                    </li>
+                </ul>
+            </div>
+            <!--/功能-->
+        </nav>
+    </div>
+</header>
+<!--/导航栏部分-->
+
+<!--内容区-->
+<section id="section">
+    <div class="center">
+        <div class="news-hd">
+            <ul class="clearfix">
+                <li >
+                    通知
+                    <span></span>
+                </li>
+                <li class="colorLi">
+                    物流
+                    <span class="colorLi"></span>
+                </li>
+                <li>
+                    客服
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="news-bd-tongZhi">
+            <a href="#" class="clearfix">
+                <div class="news-bd-tongZhi-left floatL"></div>
+                <div class="news-bd-tongZhi-right">
+                    <h4>您还未开启过纪念日提醒<span>星期一</span></h4>
+                    <p>去开启吧>></p>
+                </div>
+            </a>
+        </div>
+        <div class="news-bd-wuLiu show" style="padding: 0 0;text-align: left">
+            <div class="order-detail">
+                <div class="detail-title">
+                    <span class="indent">包裹信息</span>
+                </div>
+                <div class="detail-complaint" id="complaintDiv"></div>
+                <div class="detail-content">
+
+                    <div id="progressbar">
+                        <ul class="detail-progressbar">
+                            <li class="step-1-done"></li>
+                            <li class="step-2-done"></li>
+                            <li class="step-3-done"></li>
+                            <li class="last step-4-current">
+                                <div class="arrow"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="detail-panel">
+                        <div class="panel-package">
+                            <div class="package-title">
+                                <h3 class="title-text">
+                                    已签收
+                                </h3>
+                                <div class="title-en">
+                                </div>
+                            </div>
+                            <div class="package-status">
+                                <div class="status-box" id="status_list">
+                                    <ul id="J_listtext2" class="status-list">
+                                        <li>
+                                            <span class="date">2018-10-14</span>
+                                            <span class="week">周日</span>
+                                            <span class="time">14:17:57</span>
+                                            <span class="text">卖家发货</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">2018-10-15</span>
+                                            <span class="week">周一</span>
+                                            <span class="time">18:19:55</span>
+                                            <span class="text">在浙江永康市公司进行揽件扫描</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-15</span>
+                                            <span class="week hidden">周一</span>
+                                            <span class="time">18:35:24</span>
+                                            <span class="text">在浙江永康市公司进行下级地点扫描，发往：四川成都网点包</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">2018-10-17</span>
+                                            <span class="week">周三</span>
+                                            <span class="time">07:26:43</span>
+                                            <span class="text">在分拨中心四川成都分拨中心进行卸车扫描</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-17</span>
+                                            <span class="week hidden">周三</span>
+                                            <span class="time">07:42:30</span>
+                                            <span class="text">从四川成都分拨中心发出，本次转运目的地：四川成都国际广场公司</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-17</span>
+                                            <span class="week hidden">周三</span>
+                                            <span class="time">13:11:33</span>
+                                            <span class="text">到达目的地网点四川成都国际广场公司，快件很快进行派送</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-17</span>
+                                            <span class="week hidden">周三</span>
+                                            <span class="time">14:02:24</span>
+                                            <span class="text">【成都市】四川成都国际广场公司派件员 刘建建 18428334075正在为您派件</span>
+                                        </li>
+                                        <li class="latest">
+                                            <span class="date hidden">2018-10-17</span>
+                                            <span class="week hidden">周三</span>
+                                            <span class="time">16:37:14</span>
+                                            <span class="text">快件已被  36号院友邻有家(合作便利店)  代签收,如有问题请电联业务员：刘建建【18428334075】,。相逢是缘,如果您对我的服务感到满意,给个五星好不好?【请在评价小件员处给予五星好评】。</span>
+                                        </li>
+                                    </ul>
+                                    <ul id="J_listtext1" style="display:none" class="status-list">
+                                        <li>
+                                            <span class="date">2018-10-14</span>
+                                            <span class="week">周日</span>
+                                            <span class="time">14:17:57</span>
+                                            <span class="text">卖家发货</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">2018-10-15</span>
+                                            <span class="week">周一</span>
+                                            <span class="time">18:19:55</span>
+                                            <span class="text">在浙江永康市公司进行揽件扫描</span>
+                                        </li>
+                                        <li>
+                                            <span class="date hidden">2018-10-15</span>
+                                            <span class="week hidden">周一</span>
+                                            <span class="time">18:35:24</span>
+                                            <span class="text">在浙江永康市公司进行下级地点扫描，发往：四川成都网点包</span>
+                                        </li>
+                                        <li>
+                                            <span class="date">2018-10-17</span>
+                                            <span class="week">周三</span>
+                                            <span class="time">07:26:43</span>
+                                            <span class="text">在分拨中心四川成都分拨中心进行卸车扫描</span>
+                                        </li>
+                                        <li><span class="date hidden">2018-10-17</span><span
+                                                class="week hidden">周三</span><span class="time">07:42:30</span><span
+                                                class="text">从四川成都分拨中心发出，本次转运目的地：四川成都国际广场公司</span></li>
+                                        <li><span class="date hidden">2018-10-17</span><span
+                                                class="week hidden">周三</span><span class="time">13:11:33</span><span
+                                                class="text">到达目的地网点四川成都国际广场公司，快件很快进行派送</span></li>
+                                        <li><span class="date hidden">2018-10-17</span><span
+                                                class="week hidden">周三</span><span class="time">14:02:24</span><span
+                                                class="text">在四川成都国际广场公司进行派件扫描；派送业务员：刘建建；联系电话：<em>18428334075</em></span>
+                                        </li>
+                                        <li class="latest"><span class="date hidden">2018-10-17</span><span
+                                                class="week hidden">周三</span><span class="time">16:37:14</span><span
+                                                class="text">快件已被  36号院友邻有家(合作便利店)  代签收,如有问题请电联业务员：刘建建【18428334075】,。相逢是缘,如果您对我的服务感到满意,给个五星好不好?【请在评价小件员处给予五星好评】。</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="status-info">
+                                <div class="info-inner" id="J_tipinfo">
+                                    以上信息已经过优化处理，如需查看快递公司原文信息
+                                    <a class="J_textchage" data-text="J_listtext1" href="javascript:void(0)">请点击</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!--/内容区-->
+
+<footer id="footer">
+    <div class="footer">
+        <img class="footer-logo" src="../images/footer-logo.png" height="36" width="96" alt="">
+        <div class="footer-nav">
+            <a href="../pages/contact.html">联系我们</a>
+            <span>|</span>
+            <a href="../pages/order.html">订购帮助</a>
+            <span>|</span>
+            <a href="../pages/cooperate.html">企业合作</a>
+            <span>|</span>
+            <a href="../pages/product.html">生产经营资质</a>
+            <span>|</span>
+            <a href="../pages/bulletin.html">公告专区</a>
+        </div>
+        <div class="footer-icon">
+            <a href="http://weibo.com/21cake" target="_blank">
+                <img src="../images/footericon-01.png">
+            </a>
+            <a class="footer-weixin" onmouseover="move1()" onmouseout="out1()">
+                <div class="footer-erweima footer-weixin-erweima">
+                    <img src="../images/erweima.png">
+                </div>
+                <img src="../images/footericon-02.png">
+            </a>
+            <a class="footer-app" onmouseover="move2()" onmouseout="out2()">
+                <div class="footer-erweima footer-app-erweima">
+                    <img src="../images/footer-erweima.png">
+                </div>
+                APP
+            </a>
+        </div>
+
+        <div class="footer-text">
+            <span>订购专线：400 650 2121（服务时间 08:00–22:00）</span>
+            <span>客服电话：021-23099721（全国） | kefu@21cake.com（邮箱）</span>
+            <span>杭州/广州：提前5小时预订；北京：提前6小时预订；上海：提前5.5-6小时预订；天津/苏州/无锡/深圳：提前8小时预订（部分偏远地区除外，当日22点以后订单，于次日8点开始审核） </span>
+            <span>当日蛋糕配送截止下单时间：北京：16:50；上海：16:30；杭州/广州：13:50；天津：10:30；苏州/无锡/深圳：11:00</span>
+            <span>网站注册公司名称: 北京廿一客食品有限公司 地址: 北京市北京经济技术开发区兴海二街5号院3号楼 </span><br>
+        </div>
+        <div class="footer-copyright">
+        <span>
+            Copyright© 21Cake蛋糕官网商城 2007-2018, 版权所有
+            <a style="color: #9a9a9a" target="_blank" href="http://www.miitbeian.gov.cn/">
+                京ICP备14006254号-1
+            </a>
+        </span>
+        </div>
+    </div>
+</footer>
+
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/loginSuccess-news.js"></script>
+</body>
+</html>

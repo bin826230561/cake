@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ejs</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--<style>-->
+        <!--/*===============这里可以写ejs中的元素的样式，和HTML中一样，可以在public中css中引入==========*/-->
+        <!--header {-->
+            <!--background-color: pink;-->
+        <!--}-->
+    <!--</style>-->
+</head>
+<body>
+<%-include('common/header.ejs')%>
+
+<!--快速将ejs文件生成HTML的方式：！=>tab
+变量写法《%=变量%》
+-->
+<!--简单案例---怎么获取后台传来的数据-->
+<h1>欢迎登陆本网站,<%=username%></h1>
+
+<!--<script src="js/index.js"></script>&lt;!&ndash;可以这样直接引入js文件，后台会自动解析&ndash;&gt;-->
+<!--<script>后台数据的js只能在这里写</script>-->
+</body>
+</html>

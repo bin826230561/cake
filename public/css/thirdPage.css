@@ -1,0 +1,136 @@
+.word-state{
+    width: 100%;
+    font-size: 16px;
+    font-family: \\82F9\65B9;
+    color: #915028;
+    text-align: center;
+    line-height: 3.2rem;
+}
+.title{
+    width: 1200px;
+    height: 128px;
+    text-align: center;
+    line-height: 128px;
+}
+.jiajia{
+    color: #915029;
+    font-size: 26px;
+    margin: auto 43px;
+}
+.title .xian{
+    display: inline-block;
+    width: 256px;
+    height: 2px;
+    border-top: 1px solid #915029;
+    margin-bottom: 5px;
+}
+.cakezone{
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    line-height: 170px;
+    font-size: 24px;
+    font-family: \\82F9\65B9;
+    color: #915028;
+}
+.goods-list{
+    margin-top: 50px;
+}
+.goods-list>li{
+    float: left;
+    width: 300px;
+    text-align: center;
+    height: 512px;
+    margin-bottom: 68px;
+}
+.goods-list>li>img{
+    width: 170px;
+    height: 170px;
+}
+.goodsName>span{
+    display: inline-block;
+    width: 100%;
+    height: 51px;
+    text-align: center;
+    line-height: 51px;
+    color: #915029;
+}
+.goodsPrice{
+    color: #915029;
+    width: 100%;
+    margin: 26px 0;
+}
+/*=====================================活动规则================================================*/
+.rule-state{
+    margin: 8px 25px 25px;
+}
+.rule-state>h3{
+    color: #915029;
+    font-size: 16px;
+    margin-bottom: 17px;
+    font-weight: normal;
+}
+.rule-state>p{
+    color: #915029;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: PingFang SC,STHeitisc-light,Helvetica-light,arial,sans-serif;
+    line-height: 51px;
+}
+
+.m-bottom{
+    margin-bottom: 170px;
+}
+/*=====================================/活动规则================================================*/
+
+li img:hover{
+    transform: scale(1.2);
+    transition: .3s linear all;
+}
+
+/*=====================================页脚支付================================================*/
+
+.bottom{
+    position: fixed;
+    box-shadow: 0 -4px 2px #e1e1e1;
+    width: 1349px;
+    height: 104px;
+    bottom: 0px;
+    z-index: 999;
+    left: 50%;
+    margin-left: -675px;
+    background-color: white;
+}
+.bottom-left{
+    margin-left: 85px;
+}
+.bottom-left>h1{
+    font-size: 20px;
+    font-weight: normal;
+    color: #915029;
+    margin-top: 30px;
+}
+.bottom-left>span{
+    display: block;
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.bottom-right{
+    width: 102px;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    bottom: 37px;
+}
+/*=====================================/页脚支付================================================*/
+.check-box-Dad>span{
+   display: inline-block;
+    margin: auto 20px;
+}
+.check-box-Dad{
+    color: #915029;
+}
+#tiaojian{
+    display: none;
+}

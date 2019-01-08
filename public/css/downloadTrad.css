@@ -1,0 +1,17 @@
+.content-box {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.page-find {
+    text-align: center;
+    margin: 10% 0 7% 0;
+}
+
+.page-find img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>年货买赠_标签_生日蛋糕网上订购_生日蛋糕预订_心仪蛋糕官网</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/xinPin.css">
+
+</head>
+<body>
+<!--=========================================页头=======================================-->
+    <%-include('common/header.ejs')%>
+<!--=========================================中间内容=======================================-->
+<!--=============内容大图==================-->
+<section class="nianhuo"></section>
+<!--=============内容新品标题================-->
+<div class="xinpinBiaoTi xinpinBiaoTi3">
+    <h2>
+        年货买赠
+        <!--下划线-->
+        <i></i>
+        <span>「参与赠品数量有限,赠完即止；不与其他优惠券同享」</span>
+    </h2>
+</div>
+<!--=============内容蛋糕区==================-->
+<section>
+    <div class="center clearfix neiRong">
+        <!--======蛋糕展示=====-->
+        <div>
+            <ul class="zhanShi">
+                <!--======展示图1======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/haizeiwang.do">
+                                <img src="../<%=mydata[19].goods_img%>" alt="">
+                                <!--布朗尼-->
+                                <h3><%=mydata[19].goods_name%></h3>
+                            </a>
+                        </div>
+                        <span>¥<%=mydata[19].goods_price*2*0.75%>.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/qingLv">情侣 ></a>
+                            <a href="/nianhuomaizeng">年货买赠 ></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                    </div>
+                    <!--===============================加入购物车=========================-->
+                    <!--<div class="inner-addBuy">-->
+                    <!--<div class="inner-addBuy-title">￥298.00</div>-->
+                    <!--<p class="inner-addBuy-title2">商品规格</p>-->
+                    <!--<div class="inner-addBuy-chose clearfix">-->
+                    <!--<a href="javascript:void(0);" class="border btn1">-->
+                    <!--<i></i>1.0磅-->
+                    <!--</a>-->
+                    <!--<a href="javascript:void(0);" class="border btn2">-->
+                    <!--<i></i>1.5磅-->
+                    <!--</a>-->
+                    <!--<a href="javascript:void(0);" class="border btn3">-->
+                    <!--<i></i>2.0磅-->
+                    <!--&lt;!&ndash;<i class="iconfont showI">&#xe615;</i>&ndash;&gt;-->
+                    <!--</a>-->
+                    <!--<a href="javascript:void(0);" class="border btn4">-->
+                    <!--<i></i>3.0磅-->
+                    <!--&lt;!&ndash;<i class="iconfont">&#xe615;</i>&ndash;&gt;-->
+                    <!--</a>-->
+                    <!--<a href="javascript:void(0);" class="border btn5">-->
+                    <!--<i></i>5.0磅-->
+                    <!--&lt;!&ndash;<i class="iconfont">&#xe615;</i>&ndash;&gt;-->
+                    <!--</a>-->
+                    <!--</div>-->
+                    <!--<div class="inner-addBuy-btn">-->
+                    <!--<button type="button">-->
+                    <!--<a href="javascript:void(0);">立即购买</a>-->
+                    <!--</button>-->
+                    <!--<button type="button" class="addGoods"><a href="javascript:void(0);">加入购物车</a></button>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;加入购物车成功&ndash;&gt;-->
+                    <!--<div class="inner-addBuySuccess">-->
+                    <!--<div>-->
+                    <!--<p><i class="iconfont"></i>成功加入购物车</p>-->
+                    <!--</div>-->
+                    <!--<button>查看购物车</button>-->
+                    <!--</div>-->
+                </li>
+                <!--======展示图2======-->
+                <li>
+                    <div class="dangao-li">
+                        <div class="fangda">
+                            <a href="/qiancao.do">
+                                <img src="../images/cake-22.jpg" alt="">
+                                <h3>核桃斯诺</h3>
+                            </a>
+                        </div>
+                        <span>¥297.00/2.0磅</span>
+                        <!--新品儿童标签-->
+                        <div class="biaoqian">
+                            <a href="/senior">长辈 ></a>
+                            <a href="/nianhuomaizeng">年货买赠 ></a>
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <!--加入购物车-->
+                        <a class="xin-gouWuChe">
+                            <i></i>
+                            加入购物车
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--=========================================页尾=======================================-->
+<%-include('common/footer.ejs')%>
+
+<!--jq插件-->
+<script src="../lib/jquery-1.12.4.js"></script>
+<script>
+    // 浅草
+    var qiancao="<%=mydata[0].goods_price%>"
+
+    /*=============================首页商品加入购物车==========================*/
+        $("body").on("click",".addGoods",function () {
+            var clickTime=1;
+            if ($(this).attr("done") == undefined) {
+                $(this).attr("done", "true");
+                var $index ="<%=mydata[19].goods_id%>";
+                var $price =$(this).parent().parent().children(".inner-addBuy-title").text();
+                var $bang = $(this).parent().parent().children(".inner-addBuy-chose").children(".quan").text().trim();
+                var $allPrice=$price;
+                console.log($price)
+                $.ajax({
+                    type: "post",
+                    url: "/addGoods.do",
+                    data: {
+                        goods_id: $index,//商品ID
+                        goods_bang: $bang,//商品规格
+                        goods_price: $price,//商品单价
+                        goods_num: clickTime,//商品数量
+                        goods_count: $allPrice,//商品总价
+                    },
+                    success: function (data) {
+                        /*这是为了刷新购物车的商品数量(无需刷新)*/
+                        $.ajax({
+                            url: "/getCount.do",
+                            success: function (data) {
+                                var goodsCount = data[0].num;
+                                if (goodsCount > 0) {
+                                    $("#header .nav-function li .num").css({
+                                        transform: "scale(1)"
+                                    })
+                                    $(".buy-cart").children("span").show();
+                                    $(".buy-cart").children("span").children("span").text(goodsCount);
+                                } else {
+                                    $(".buy-cart").children("span").hide();
+                                }
+                            }
+                        })
+                    }
+                })
+            } else {
+                clickTime++;
+                console.log(clickTime);
+                var $index ="<%=mydata[19].goods_id%>";
+                var $price = $(this).parent().parent().children(".inner-addBuy-title").text().split("￥")[1];
+                var $allPrice=parseInt($price)*clickTime;
+                var $allPrice="￥"+$price*clickTime+".00";
+                console.log($index,$price,$allPrice)
+                $.ajax({
+                    type: "post",
+                    url: "/changeGoodsNum.do",
+                    data: {
+                        goods_id: $index,//商品ID
+                        goods_num: clickTime,//商品数量
+                        goods_count: $allPrice,//商品总价
+                    },
+                    success: function (data) {
+                        // cosnole.log(data)
+                    }
+                })
+            }
+        })
+    // /*=============================查看购物车===================================*/
+    // console.log($(".inner-addBuySuccess button"))
+    // $(".inner-addBuySuccess button").each(function (index,element) {
+    //     $(element).click(function () {
+    //         alert(111)
+    //         $.ajax({
+    //             url:"/shopCar",
+    //             success:function (data) {
+    //
+    //             }
+    //         })
+    //     })
+    // })
+
+</script>
+<script src="dengluZT.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/xinPin.js"></script>
+<script src="../js/footer.js"></script>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/*头部*/
+.centerM{
+    width: 1300px;
+    margin: 0 auto;
+}
+#section .dingDan-hd ul .bothUse {
+    width: 120px;
+    height: 22px;
+    border-left: 2px solid #EFEFEF;
+    float: left;
+    text-align: center;
+    line-height: 22px;
+    color: #D5BFA7;
+    font-size: 15px;
+    margin: 44px auto 0;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}
+#section .dingDan-hd ul li span {
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -9px;
+
+}
+
+/*内容区*/
+
+#section .none {
+    display: none;
+}
+
+#section .show {
+    display: block;
+    color: #684029;
+    font-size: 12px;
+    text-align: center;
+    line-height: 190px;
+    height: 285px;
+}
+
+#section .dingDan-hd ul li.colorLi {
+    color: #71442A;
+    border-color: #71442A;: ;
+}
+
+
+/*下拉框设置*/
+.bothUse>ul{
+    box-shadow: 0 2px 4px 0 rgba(237,237,237,0.50);
+    width: 110px;
+    /*margin-top: 10px;*/
+    background: #FFF;
+    border: 1px solid #EDEDED;
+    text-align: center;
+    padding: 12px 0 12px 0;
+    transition: all .3s;
+    position: relative;
+    z-index: 999;
+}
+
+.bothUse>ul>li{
+    line-height: 18px;
+    font-size: 13px;
+    color: #D5BFA7;
+    margin: 6px 0;
+    transition: all .6s;
+}
+.bothUse>ul>li:hover{
+    color: #684029;
+}
+
+.hiddenUl{
+    overflow: hidden;
+    position: relative;
+}
+.hiddenUl:hover{
+    overflow: visible;
+    transition: all 1s;
+}
+
+.dataLength>span{
+    display: inline-block;
+    margin-top: -9px;
+}
+
+/*优惠券设置*/
+.bgcHeight{
+    height: 300px;
+    padding-bottom: 300px;
+    border-radius: 10px;
+}
+/*优惠券宽度*/
+.coupan{
+    width: 282px;
+    float: left;
+    margin: 30px 21px;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    /*box-shadow: 0 0 0 3px rgba(237,237,237,0.50);*/
+}
+
+/*查看信息设置*/
+.lookMessage{
+    left: 3px;
+    top: 3px;
+    width: 276px;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    /*overflow: hidden;*/
+    box-shadow: 0 0 0 3px rgba(237,237,237,0.50);
+}
+
+/*最上面文字设置*/
+.lookMessage p:nth-of-type(1){
+    font-size: 16px;
+    color: #442818;
+    padding: 20px 25px 0;
+    line-height: 22px;
+    height: 44px;
+    overflow: hidden;
+    background-color: #faf6f2;
+}
+
+/*查看a标签设置*/
+.lookMessage a{
+    color: #D5BFA7;
+    display: inline-block;
+    line-height: 22px;
+    padding-top: 5px;
+    width: 100%;
+    font-size: 12px;
+    background-color: #faf6f2;
+}
+
+/*虚线设置*/
+.lookMessage div{
+    height: 10px;
+    border-bottom: 2px dashed #d1d0d1;
+    background-color: #faf6f2;
+    /*margin: 0 5px;*/
+}
+
+/*虚线下面的文字设置*/
+.lookMessage p:nth-of-type(2){
+    font-size: 12px;
+    color: #442818;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+    display: none;
+}
+
+.lookMessage p:nth-of-type(3){
+    font-size: 12px;
+    color: #442818;
+    margin-top: 2px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+
+/*图片设置*/
+.lookMessage img{
+    float: left;
+    margin-left: 10px;
+    display: none;
+}
+
+
+/*span设置*/
+
+.lookMessage span{
+    font-size: 12px;
+    color: #442818;
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    float: left;
+}
+
+/*转赠和使用按钮的设置*/
+
+.lookMessage button{
+    border-radius: 95px;
+    display: inline-block;
+    height: 22px;
+    width: 44px;
+    text-align: center;
+    color: #fff;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-top: 20px;
+    border: none;
+     float: right;
+    /*margin-top: -30px;*/
+}
+
+.lookMessage button:nth-of-type(1){
+    margin-right: 10px;
+    background-color: #442818;
+}
+
+/*圆角的设置*/
+.lookMessage strong{
+    background-color: white;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 999;
+    /*border: 1px solid #ccc;*/
+    box-shadow: 0 0 0 3px rgba(237,237,237,0.50);
+}
+.lookMessage strong:nth-of-type(1){
+    left: -11px;
+    top: 92px;
+}
+
+.lookMessage strong:nth-of-type(2){
+    right: -11px;
+    top: 92px;
+}
+
+

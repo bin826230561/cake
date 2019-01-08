@@ -1,0 +1,26 @@
+.bottom{
+    top: 245px;
+}
+.divide{
+    margin: 925px auto 0;
+}
+.sec3 p{
+    font-size: 12px;
+    line-height: 2em;
+    color: #684029;
+}
+.sec3 {
+    margin-top: 35px;
+}
+.sec5{
+    margin: 65px auto 100px;
+}
+.shopMall{
+    top: 107px;
+}
+.shopMall2{
+    top: 70px;
+}
+.sec1-right li:nth-of-type(1) {
+    margin-top: 408px;
+}

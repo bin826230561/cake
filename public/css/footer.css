@@ -1,0 +1,343 @@
+/*页脚*/
+.footer{
+    background: #333;
+    padding: 50px 0 0 0;
+    position: relative;
+}
+
+.footer-logo{
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    text-align: center;
+    color: #fff;
+    margin: 25px 0;
+    font-size: 12px;
+}
+
+.footer-nav a {
+    color: #fff;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+
+a:link a{
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer-icon {
+    text-align: center;
+}
+
+.footer-icon a {
+    display: inline-block;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    background: #494949;
+    margin: 0 25px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-icon a>img {
+    height: 30px;
+    margin: 10px;
+}
+
+.footer-weixin,.footer-app{
+    cursor: pointer;
+}
+
+.footer-weixin-erweima {
+    margin-left: -64px;
+}
+
+.footer-app-erweima {
+    margin-left: 42px;
+}
+
+.footer-erweima {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    left: 50%;
+    /*top: 20px;*/
+    bottom:240px;
+    display: none;
+}
+
+.footer-erweima img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    border: 10px solid #fff;
+}
+
+.footer-text {
+    color: #9a9a9a;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+.footer-text span:first-child {
+    font-weight: bold;
+}
+
+.footer-text span {
+    display: block;
+}
+
+.footer-copyright {
+    margin: 0 auto;
+    border-top: 1px solid #616161;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 10px;
+    padding-top: 12px;
+}
+
+.footer-copyright span {
+    color: #9a9a9a;
+    line-height: 1.5em;
+}
+
+/*头部留白*/
+.header{
+    height: 80px;
+    border-bottom: 2px solid gainsboro;
+}
+/*联系我们 订购帮助 企业合作 生产经营资质 公告专区*/
+.content-box {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.article .bread-crumbs {
+    padding: 10px 0;
+}
+
+.content-list a,.bread-crumbs a{
+    color: #684029;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.article .bread-crumbs .now {
+    color: #dacbc3;
+}
+
+.article-main {
+    line-height: 2;
+}
+
+.article-main .article-left {
+    background: #f9f6f1 none repeat scroll 0 0;
+    float: left;
+    width: 180px;
+}
+
+.article-main dl.content-list dt {
+    border-bottom: 1px solid #f4efea;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.article-main dl.content-list dd {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.article-main dl.content-list dd {
+    border-bottom: 1px solid #f4efea;
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.article-main .article-right {
+    overflow: hidden;
+    background: #fff none repeat scroll 0 0;
+    float: right;
+    width: 1020px;
+}
+
+.article-main .article-title {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #f4efea;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.article-main .article-title h2 {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #f4efea;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.article-main .article-time {
+    color: #999;
+    line-height: 1.5;
+    margin: 5px;
+    text-align: right;
+}
+
+.article-main .article-body {
+    padding: 5px 0 10px 20px;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+element.style {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+}
+
+.article-main .article-time {
+    color: #999;
+    line-height: 1.5;
+    margin: 5px;
+    text-align: right;
+}
+
+p{
+    font-size: 12px;
+}
+
+.first{
+    font-family: verdana Tahoma, Arial, 宋体, sans-serif;
+    font-size: 14px;
+    color: #684029;
+}
+
+.product p>span>a{
+    font-family: verdana, Tahoma, Arial, 宋体, sans-serif;
+    font-size: 14px;
+    color: #684029;
+}
+
+.product span>a{
+    font-family: verdana, Tahoma, Arial, 宋体, sans-serif;
+    font-size: 14px;
+    color: #684029;
+}
+
+.notice-box {
+    width: 1200px;
+    margin: 0 auto;
+    background: #F9F9F9;
+    padding-bottom: 60px;
+}
+
+.notice-box h1 {
+    padding-top: 64px;
+    text-align: center;
+    padding-bottom: 76px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+.notice-box li:last-child {
+    margin-bottom: 0;
+}
+
+ice-box li {
+    width: 1060px;
+    margin: 0 auto;
+    padding-top: 35px;
+    background: url(../images/hill1.png) no-repeat 28px 0, url(../images/hill2.png) no-repeat 933px 0;
+}
+
+.notice-box .notice-list {
+    padding: 40px 35px;
+    background: #FFFCF9;
+    box-shadow: 0px 1px 5px 0px rgba(108,87,69,0.24);
+    margin: 0 auto 60px;
+    color: #6f5b42;
+    width: 1000px;
+}
+
+.notice-box .notice-list h3 {
+    font-size: 14px;
+    line-height: 30px;
+    background: url(../images/name.png) left center no-repeat;
+    background-size: 30px;
+    padding-left: 35px;
+}
+
+.notice-box .notice-list div {
+    background: url(../images/bottton-bj.png) no-repeat right bottom;
+    background-size: 80px;
+    padding: 24px 40px 16px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.notice-box .notice-list div>span {
+    display: block;
+    text-align: right;
+    margin-top: 25px;
+}
+
+.page-box {
+    height: 30px;
+    margin-top: 36px;
+}
+.page-box {
+    text-align: right;
+}
+
+.M-box, .M-box1, .M-box2, .M-box3, .M-box4 {
+    position: relative;
+    text-align: center;
+    zoom: 1;
+    float: right;
+    margin-right: 70px;
+}
+
+.M-box .active, .M-box1 .active, .M-box2 .active, .M-box3 .active, .M-box4 .active {
+    float: left;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #D2B8A1;
+    color: #fff;
+    font-size: 14px;
+}
+
+

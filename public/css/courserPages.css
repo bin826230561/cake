@@ -1,0 +1,333 @@
+div{
+    overflow: hidden;
+}
+
+body {
+    height: 0;
+}
+
+section{
+    height: 650px;
+    width: 100%;
+    background-color: rgba(204, 204, 204, 0.76);
+    background-image: url(../images/bg12345.png);
+    background-size: cover;
+    position: relative;
+    top: -80px;
+    margin-bottom: -80px;
+    z-index: -1;
+}
+/*左上角小标*/
+.leftTop{
+    position: absolute;
+    top: 130px;
+    height: 20px;
+    width: 20px;
+    left: 100px;
+    border-top: 8px solid #ad814b;
+    border-left: 8px solid #ad814b;
+}
+/*文字设置*/
+#class{
+    color: #ad814b;
+    position: absolute;
+    top: 145px;
+    left: 128px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+#hongBei{
+    color: #ad814b;
+    position: absolute;
+    top: 136px;
+    left: 325px;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+#happy{
+    color: #ad814b;
+    position: absolute;
+    top: 190px;
+    left: 128px;
+    font-size: 32px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+#share{
+    color: #ad814b;
+    position: absolute;
+    top: 240px;
+    left: 128px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+#rightBottom{
+    position: absolute;
+    top: 270px;
+    height: 20px;
+    width: 20px;
+    left: 530px;
+    border-bottom: 8px solid #ad814b;
+    border-right: 8px solid #ad814b;
+}
+
+
+
+
+/*旋转特效*/
+#postion{
+    position: relative;
+    top: 310px;
+    height: 200px;
+}
+
+/*背景图变换*/
+section>#postion>div>#div{
+    height: 157px;
+    width: 157px;
+    border-radius: 170px;
+    position: absolute;
+    /*top: 0;*/
+    /*left: 0;*/
+    overflow: hidden;
+    /*background-color: palevioletred;*/
+    background-image: url("../images/word1.png");
+    background-repeat: no-repeat;
+    /*transition: all .3s;*/
+}
+
+/*溢出隐藏*/
+section>#postion>div{
+    overflow: hidden;
+}
+
+/*文字图片设置*/
+#text{
+    /*background: palevioletred;*/
+    background-image: url("../images/word001.png");
+    height: 336px;
+    width: 170px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
+    transition: all .3s;
+}
+
+#rotate1{
+    /*background-color: palevioletred;*/
+    height: 167px;
+    width: 167px;
+    position: relative;
+    left: 100px;
+    border-radius: 167px;
+}
+
+#rotate1:hover #div{
+    animation: moveTop .3s forwards;
+}
+
+#rotate1:hover{
+    cursor: pointer;
+}
+#rotate2:hover{
+    cursor: pointer;
+}
+
+#rotate3:hover{
+    cursor: pointer;
+}
+#rotate1:hover #text{
+   top: -180px;
+    z-index: 999;
+}
+
+
+@-webkit-keyframes moveTop {
+   0%{
+       transform: rotate(0deg);
+   }20%{
+        transform: rotate(-20deg);
+    transform-origin: center center;
+    }30%{
+      transform: rotate(-30deg);
+      transform-origin: center center;
+      background-image: url("../images/word03.png");
+      z-index: 100;
+     }
+    40%{
+        background-image: url("../images/word03.png");
+        z-index: 100;
+        transform: rotate(-50deg);
+        transform-origin: center center;
+    }
+    50%{
+        background-image: url("../images/word03.png");
+        z-index: 100;
+        transform: rotate(-90deg);
+        transform-origin: center center;
+    }
+    75%{
+        background-image: url("../images/word03.png");
+        z-index: 100;
+        transform: rotate(-130deg);
+        transform-origin: center center;
+    }
+    100%{
+        background-image: url("../images/word03.png");
+        z-index: 100;
+        transform: rotate(-170deg);
+        transform-origin: center center;
+    }
+}
+
+
+/*=========================================第二个系统学*/
+/*背景图变换*/
+#div2{
+    height: 157px;
+    width: 157px;
+    border-radius: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /*background-color: palevioletred;*/
+    background-image: url("../images/word2.png");
+    background-repeat: no-repeat;
+    /*transition: all .3s;*/
+}
+
+
+/*文字图片设置*/
+#text2{
+    /*background: palevioletred;*/
+    background-image: url("../images/word002.png");
+    height: 336px;
+    width: 157px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
+    transition: all .3s;
+}
+
+#rotate2{
+    /*background-color: palevioletred;*/
+    height: 157px;
+    width: 157px;
+    position: relative;
+    top: -167px;
+    left: 290px;
+    border-radius: 167px;
+}
+
+#rotate2:hover #div2{
+    animation: moveTop1 .3s forwards;
+}
+
+#rotate2:hover #text2{
+    top: -180px;
+    z-index: 999;
+}
+
+
+
+@-webkit-keyframes moveTop1{
+    0%{
+        transform: rotate(0deg);
+    }20%{
+         transform: rotate(-20deg);
+         transform-origin: center center;
+     }30%{
+          transform: rotate(-30deg);
+          transform-origin: center center;
+          background-image: url("../images/word02.png");
+          z-index: 100;
+      }
+    40%{
+        background-image: url("../images/word02.png");
+        z-index: 100;
+        transform: rotate(-50deg);
+        transform-origin: center center;
+    }
+    50%{
+        background-image: url("../images/word02.png");
+        z-index: 100;
+        transform: rotate(-90deg);
+        transform-origin: center center;
+    }
+    75%{
+        background-image: url("../images/word02.png");
+        z-index: 100;
+        transform: rotate(-130deg);
+        transform-origin: center center;
+    }
+    100%{
+        background-image: url("../images/word02.png");
+        z-index: 100;
+        transform: rotate(-170deg);
+        transform-origin: center center;
+    }
+}
+
+
+
+/*=========================================第三个我们的故事*/
+/*背景图变换*/
+#div3{
+    height: 157px;
+    width: 157px;
+    border-radius: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    /*background-color: palevioletred;*/
+    background-image: url("../images/word3.png");
+    background-repeat: no-repeat;
+    /*transition: all .3s;*/
+}
+
+
+/*文字图片设置*/
+#text3{
+    /*background: palevioletred;*/
+    background-image: url("../images/word003.png");
+    height: 336px;
+    width: 157px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    z-index: 999;
+    transition: all .3s;
+}
+
+#rotate3{
+    /*background-color: palevioletred;*/
+    height: 157px;
+    width: 157px;
+    position: relative;
+    top: -322px;
+    left: 480px;
+    border-radius: 167px;
+}
+
+#rotate3:hover #div3{
+    animation: moveTop .3s forwards;
+}
+
+#rotate3:hover #text3{
+    top: -180px;
+    z-index: 999;
+}
+
+

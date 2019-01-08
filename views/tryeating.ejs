@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>七夜试吃_心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/tryEatimg.css">
+    <link rel="stylesheet" href="../css/qiYe_model.css">
+</head>
+<body>
+<!--头部导航-->
+<%-include("common/header.ejs")%>
+<!--头部导航结束-->
+
+<!--中间内容区-->
+<section>
+    <div class="center1">
+        <div>
+            <img src="../images/tryeating.jpg" alt="" width="100%">
+        </div>
+        <div class="bgColor">
+
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <p>如果有意进行企业采购合作,想要了解更多的信息,请您填写以下基本信息,我们会及时与您联系.
+                            </p>
+
+                            <form action="#">
+                                <span> <i>*</i>您的姓名 :</span>
+                                <input type="text">
+
+                                <br>
+                                <span> <i>*</i>您的手机 :</span>
+                                <input type="text">
+
+                                <br>
+                                <span> <i>*</i>公司名称 :</span>
+                                <input type="text">
+
+                                <br>
+                                <span> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<i>*</i>城市 :</span>
+                                <select id="">
+                                    <option value="0">成都市</option>
+                                    <option value="1">上海市</option>
+                                    <option value="2">北京市</option>
+                                    <option value="3">广州市</option>
+                                    <option value="4">天津市</option>
+                                    <option value="5">重庆市</option>
+                                </select>
+                                <br>
+                                <span> <i>*</i>公司证明 :</span>
+                                <input type="text" id="texts">
+                                <a class="filess">
+                                    浏览
+                                    <input type="file" id="input">
+                                </a>
+                                <!--========服务器返回数据===========-->
+                                <span class="fanHui">
+
+                               </span>
+                                <button type="button" class="submit" onclick="textAndPwd_prompt_model()">确定</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <h5>蛋糕卡购买</h5>
+                            <p>
+                                定额（198元、298元、458元）实物蛋糕卡，可用于员工福利、送客户、送领导等。批量购买，享受更多优惠！
+                            </p>
+
+                            <h5>储值卡购买</h5>
+                            <p>
+                                实体储值卡，可充值1000以内任意金额。可用于员工福利、送客户、送领导等。批量购买，享受更多优惠！ 预付卡章程>>
+                            </p>
+
+                            <h5>其他服务</h5>
+                            <p>
+                                我们还提供很多个性化的服务，企业员工团购，预付系统服务，月结系统服务，烘焙教室服务等。
+                                如有具体需求，请电话联系或留言咨询。
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <img src="../images/buliding.png" alt="" width="100%">
+        </div>
+    </div>
+</section>
+<!--中间内容区结束-->
+
+<!--页尾-->
+<%-include("common/footer.ejs")%>
+
+
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/qiYe_model.js"></script>
+<script src="../js/tryeating.js"></script>
+<script src="dengluZT.js"></script>
+
+</body>
+</html>

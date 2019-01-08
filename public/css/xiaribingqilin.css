@@ -1,0 +1,15 @@
+.sec1-right li:nth-of-type(1) {
+    margin-top: 467px;
+}
+.divide{
+    margin-top: 860px;
+}
+.sec3 img{
+    margin-top: 0;
+}
+.sec2-left,.sec2-right{
+    height: auto;
+}
+.center10{
+    background: rgba(248,248,248);
+}

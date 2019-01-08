@@ -1,0 +1,36 @@
+/*大标签处*/
+.tag-list-title h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.tag-list-title i {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: #E6C5B8;
+    margin: 8px auto 14px;
+}
+
+.tag-list-title span {
+    display: block;
+    font-size: 14px;
+}
+
+.pro-list-pr .pro-list-su .label img {
+    width: 65px;
+    height: 23px;
+}
+
+.pro-list-pr .pro-list-su .label {
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 100%;
+}
+
+h3:hover{
+    color: grey;
+}

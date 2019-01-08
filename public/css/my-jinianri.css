@@ -1,0 +1,163 @@
+/*头部*/
+#section .important_day_title {
+    margin: 40px auto 20px;
+}
+
+#section .important_day_title span:nth-child(1) {
+    font-size: 16px;
+    color: #383838;
+}
+
+#section .important_day_title span:nth-child(2) {
+    font-size: 12px;
+    color: #383838;
+    margin-left: 15px;
+}
+
+#section .important_day_title span:nth-child(3) {
+    color: #d5bfa7;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+#section .important_day_button {
+    height: 115px;
+    border: 1px dashed #e1e1e1;
+    text-align: center;
+    line-height: 115px;
+    cursor: pointer;
+    color: #d5bfa7;
+}
+
+#section .important_day_tiShi {
+    text-align: center;
+    margin: 120px auto 170px;
+}
+
+#section .center {
+    position: relative;
+}
+
+#section .important_day_title-button {
+    font-size: 12px;
+    width: 65px;
+    height: 24px;
+    line-height: 24px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    border: 0;
+
+    display: none;
+
+}
+
+
+#footer {
+    margin-top: 50px;
+}
+
+
+/*表格样式*/
+#myJiNian {
+    width: 100%;
+    border-collapse: collapse;
+    display: none;
+}
+
+#myJiNian thead {
+    border: 1px solid #E1E1E1;
+    background: #FBFBFB;
+
+}
+
+#myJiNian thead tr th {
+    width: 20%;
+    color: #684029;
+    font-size: 14px;
+    font-weight: normal;
+    height: 44px;
+    line-height: 44px;
+}
+
+#myJiNian tbody tr {
+    border: 1px solid #E1E1E1;
+    height: 80px;
+    margin-top: 20px;
+}
+
+#myJiNian tbody tr td {
+    text-align: center;
+    color: #684029;
+    font-size: 14px;
+}
+
+#myJiNian .noContent tr {
+    height: 20px;
+}
+
+#myJiNian tbody tr td span {
+    color: #D5BFA7;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#myJiNian tbody tr td span:hover {
+    color: #684029;
+}
+#myJiNian tbody tr td span input {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+#myJiNian .small_model_parent_td {
+    position: relative;
+}
+#myJiNian .small_model {
+    width: 160px;
+    height: 80px;
+    background-color: rgba(104, 64, 41, 1);
+    box-shadow: 0 2px 4px 0 rgba(237,237,237,0.7);
+    border-radius: 2px;
+    position: absolute;
+    top: -60px;
+    right: 100px;
+    display: none;
+}
+
+#myJiNian .small_model p {
+    color: #fff;
+    text-align: left;
+    font-size: 13px;
+    padding : 12px 0 0 12px;
+}
+
+
+
+#myJiNian .small_model button {
+    width: 56px;
+    height: 26px;
+    outline: none;
+    border: 0;
+    margin-top: 10px;
+}
+#myJiNian .small_model button:nth-of-type(1){
+    background-color: #D5BFA7;
+    margin-right: 18px;
+
+}
+#myJiNian .small_model button:nth-of-type(2){
+    background-color: #fff;
+}
+
+#myJiNian .small_model i {
+    position: absolute;
+    bottom: -5px;
+    right: 30px;
+
+    width: 10px;
+    height: 10px;
+    background-color: rgba(104, 64, 41, 1);
+    transform: rotate(45deg);
+}
+

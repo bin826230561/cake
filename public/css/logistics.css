@@ -1,0 +1,441 @@
+.news-bd-wuLiu-1{
+    border: 1px solid #ececec;
+}
+
+.news-table-wuLiu{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #3c3c3c;
+    table-layout: fixed;
+}
+
+.tbody1 tr{
+    height: 42px;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+col {
+    display: table-column;
+}
+
+.bought-table-mod__col1{
+    width: 38%;
+}
+
+.bought-table-mod__col2{
+    width: 10%;
+}
+
+.bought-table-mod__col3{
+    width: 5%;
+}
+
+.bought-table-mod__col4,.bought-table-mod__col5,.bought-table-mod__col7{
+    width: 12%;
+}
+
+.bought-table-mod__col6{
+    width: 11%;
+}
+
+.tbody1 {
+    background: #f1f1f1;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.heade-info{
+    text-align: left;
+}
+
+.heade-info-checkbox{
+    margin-left: 20px;
+}
+
+.heade-info-checkbox1{
+    margin-right: 3px;
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.create-time{
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.news-bd-wuLiu-logo{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+img {
+    border-style: none;
+}
+
+.news-bd-wuLiu-a{
+    color: #3c3c3c;
+    text-decoration: none;
+    display: inline-block;
+    width: 75px;
+    height: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    word-break: break-all;
+    font-size: 16px;
+}
+
+.ww-light {
+    overflow: hidden;
+}
+
+.ww-large a {
+    width: 67px;
+}
+
+.heade-info3{
+    padding-right: 20px;
+    text-align: right;
+}
+
+.heade-info3 a{
+    margin-left: 20px;
+    visibility: hidden;
+}
+
+.goods-img span:first-child{
+    margin-top: 10px;
+}
+
+.goods-img-1{
+    border: none;
+    float: left;
+    margin-left: 15px
+}
+
+.goods-img-2{
+    display: inline-block;
+    margin-top: 25px;
+    line-height:16px;
+    color:#684029;
+    font-size: 14px;
+}
+
+.goods-spec{
+    display: inline-block;
+    color: #D5BFA7;
+    font-size: 13px;
+    margin-left: -150px;
+}
+
+.goods-laid{
+    display: block;
+    color: #CECECE;
+    height: 35px;
+    margin-top: 10px;
+    font-size: 12px;
+    /*width: 250px;*/
+    margin-left: -10px;
+}
+
+.goods-laid i {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background: url(../images/icon.png);
+    background-position: -44px -63px;
+    background-size: 310px 120px;
+    margin-right: 1px;
+    margin-bottom: -6px;
+    margin-left: -95px;
+}
+
+.text-mod__link___1dpU2{
+    color: #333333;
+    cursor: pointer;
+}
+
+.price-mod__price___157jz {
+    font-family: verdana;
+    font-style: normal;
+}
+
+.yunnfei{
+    display: inline-block;
+    color:#6c6c6c;
+    font-family:verdana;
+    margin-top: 5px;
+}
+
+.phoneOrder{
+    margin-right:5px;
+    margin-top: 5px;
+}
+
+.order-detail .detail-content {
+    padding: 0 58px;
+}
+
+#progressbar {
+    position: relative;
+}
+
+#progressbar {
+    min-height: 122px;
+}
+
+#progressbar .detail-progressbar {
+    padding-bottom: 22px;
+}
+
+.order-detail {
+    position: relative;
+}
+
+.order-detail {
+    border: 1px solid #e2e2e2;
+    width: 990px;
+    margin: 0 auto;
+    font: 12px/1.5 tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+    color: #333;
+}
+
+.order-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-progressbar {
+    width: 852px;
+    margin: 35px auto 0 auto;
+    overflow: hidden;
+    background: url(../images/TB1jUjxIpXXXXbXXpXXXXXXXXXX.png) no-repeat 4px -110px;
+}
+
+.detail-progressbar .step-1-done {
+    background-position: 4px 3px;
+}
+
+.detail-progressbar .step-2-done {
+    background-position: -253px 3px;
+}
+
+.detail-progressbar .step-3-done {
+    background-position: -515px 3px;
+}
+
+.detail-progressbar .step-4-current {
+    background: url(../images/TB1sepYHpXXXXX6aXXXw5AoUXXX-172-100.gif) no-repeat 0 0;
+}
+
+.order-detail .detail-title {
+    font-size: 16px;
+    background-color: #f7f7f7;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+.detail-progressbar .last, .detail-progressbar .last .text {
+    width: 80px;
+}
+
+.detail-progressbar .arrow {
+    position: absolute;
+    left: 28px;
+    bottom: -22px;
+    width: 0;
+    height: 0;
+    border: 13px solid #fff;
+    z-index: -1;
+    border-bottom-width: 13px;
+    border-bottom-color: #f3f3f3;
+}
+
+.detail-progressbar .step-1-done, .detail-progressbar .step-2-done, .detail-progressbar .step-3-done, .detail-progressbar .step-4-done {
+    background: url(../images/TB1jUjxIpXXXXbXXpXXXXXXXXXX.png) no-repeat 4px 3px;
+    color: #ff5a00;
+}
+
+.detail-progressbar li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    height: 100px;
+    width: 257px;
+    text-align: left;
+}
+
+.detail-panel .panel-package {
+    background-color: #f3f3f3;
+    margin-bottom: 32px;
+    position: relative;
+    border-radius: 3px;
+}
+
+.detail-panel .panel-package .package-title {
+    margin: 0;
+    padding: 14px 0 14px 20px;
+    position: relative;
+}
+
+.complain-box {
+    font-size: 14px;
+}
+
+.complain-box {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.title-text {
+    font-weight: 400;
+    font-family: "Microsoft Yahei";
+    font-size: 16px;
+}
+
+.title-en {
+    font-size: 12px;
+    color: #999;
+    line-height: 1em;
+}
+
+.detail-panel .panel-package .package-title {
+    padding: 14px 0 14px 12px;
+    font-size: 18px;
+    border-bottom: 1px solid #e7e7e7;
+    font-family: "Hiragino Sans GB","Microsoft YaHei";
+}
+
+.package-status {
+    padding: 18px 0 0 0;
+}
+
+.package-status .status-box {
+    position: relative;
+}
+
+.package-status .status-box {
+    overflow: hidden;
+}
+
+.package-status .status-box:before {
+    content: " ";
+    background-color: #f3f3f3;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 20px;
+    width: 10px;
+    height: 4px;
+}
+
+.package-status .status-list {
+    margin-top: 0;
+}
+
+.package-status .status-list {
+    margin: 0;
+    padding: 0;
+    margin-left: 12px;
+    padding-left: 10px;
+    list-style: none;
+    font-size: 12px;
+}
+
+.package-status .status-list li {
+    margin-bottom: -2px;
+}
+
+.package-status .status-list li {
+    height: auto;
+    min-height: 30px;
+}
+
+.package-status .status-list .date {
+    width: 78px;
+}
+
+.package-status .status-list .date, .package-status .status-list .week, .package-status .status-list .time {
+    display: inline-block;
+}
+
+.package-status .status-list .week {
+    width: 32px;
+}
+
+.package-status .status-list .time {
+    width: 48px;
+}
+
+.package-status .status-list .time {
+    margin-right: 28px;
+    margin-left: 5px;
+}
+
+.package-status .status-list .text {
+    width: 635px;
+}
+
+.package-status .status-info {
+    background: 0 0;
+}
+
+.package-status .status-info {
+    position: relative;
+    z-index: 10;
+}
+
+.package-status .status-info {
+    margin-top: -10px;
+    margin-left: 22px;
+    margin-right: 10px;
+    overflow: hidden;
+    line-height: 28px;
+    color: #959595;
+    text-align: right;
+}
+
+.order-detail .detail-title .indent {
+    text-indent: 88px;
+    display: block;
+}
+
+.package-status .status-info .info-inner {
+    margin-top: 20px;
+    margin-left: 18px;
+    border-top: 1px solid #e8e8e8;
+    height: 28px;
+}
+
+div {
+    display: block;
+}
+
+.order-detail a {
+    color: #0077c9;
+    cursor: pointer;
+}
+

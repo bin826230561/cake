@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*版心宽度*/
+.center {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*第一个板块*/
+header{
+    background-image: url("../images/bg01.jpg");
+    background-size: cover;
+    height: 650px;
+    position: relative;
+}
+
+/*第一个板块*/
+section{
+    background-image: url("../images/bg02.jpg");
+    background-size: cover;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+/*对h1的设置*/
+.center h1{
+    color: #ffda81;
+    font-size: 36px;
+     font-weight: 800;
+}
+
+/*第一个板块下的h1*/
+header>.center>h1{
+    margin: 100px 50px 0 0;
+    float: right;
+}
+
+/*第二个板块下的h1*/
+section>.center>h1{
+    margin: 120px 0 45px 0;
+}
+
+
+/*对span的设置*/
+.center span{
+    color: #ffda81;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/*第一个板块下的p*/
+header>.center>span{
+    position: absolute;
+    top: 170px;
+    right: 260px;
+}
+
+
+/*对button的设置*/
+.center button{
+    color: #ffda81;
+    font-size: 24px;
+    border: 2px solid #ffda81;
+    width: 200px;
+    height: 50px;
+    background-color: inherit;
+}
+
+/*第一个板块下的p*/
+header>.center>button{
+    position: absolute;
+    top: 230px;
+    right: 430px;
+}
+
+section>.center>button{
+    margin-top: 45px;
+}

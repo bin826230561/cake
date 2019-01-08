@@ -1,0 +1,385 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+/*==============================页头背景========================================*/
+.nav-box{
+    background:url("../images/qiyebg.png") no-repeat;
+    width: 100%;
+    height: 290px;
+    position: relative;
+}
+.table-box{
+    display: inline-block;
+    width: 133px;
+    height: 95px;
+    background-color: rgb(238,235,233);
+    border-radius: 5px;
+    text-align: center;
+}
+.table-box:hover{
+    background-color: rgb(217,209,204);
+}
+.table-box>img{
+    margin-top: 19px;
+}
+.table-cell{
+    width: 203px;
+    height: 95px;
+    text-align: center;
+    float: left;
+}
+.table{
+    padding: 97px 12.37%;
+    text-align: center;
+    /*margin-left: 13%;*/
+    width: 1015px;
+    height: 100px;
+    /*margin: 97px 167px;*/
+
+}
+/*==============================/页头背景========================================*/
+
+
+
+/*==================================尊享企业兑换===========================================*/
+.title{
+    text-align: center;
+    padding-top: 66px;
+    padding-bottom: 20px;
+}
+.logoes{
+    text-align: center;
+    width: 1200px;
+    height: 400px;
+    position: relative;
+}
+.logoes-a1{
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 30px 20px;
+    /*text-align: center;*/
+    color: #73472E;
+    /*float: left;*/
+}
+/*.tuoyuan{*/
+    /*background-color: yellow;*/
+    /*width: 250px;*/
+    /*height: 106px;*/
+    /*margin: 0;*/
+    /*margin-left: 22px;*/
+/*}*/
+.logoes-a1 img{
+    height: 116px;width: 116px
+}
+.shangyao{
+    display: inline-block;
+    width: 294px;
+    height: 160px;
+    margin: 30px 20px 0;
+    color: #73472E;
+    /*float: left;*/
+    /*text-align: center;*/
+
+}
+.shangyao img{
+    width:224px;
+    padding-bottom: 30px;
+}
+.yuan{
+    width: 274px;
+    height: 116px;
+    border-radius: 53px;
+    background-color: #faf8f7;
+    position: absolute;
+    left: 455px;
+    bottom: 255px;
+    z-index: -1;
+}
+/*.leftyuan{*/
+    /*height: 106px;*/
+    /*width: 53px;*/
+/*}*/
+.logoes-a1 i{   /*三个小点：其他机构*/
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background: #73472E;
+    margin: auto 4px;
+    line-height: 120px;
+    margin-top: 55px;
+}
+.dian{  /*三个小点：其他机构*/
+    height: 116px;
+    width: 116px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5px;
+    background: #faf8f7;
+    border-radius: 100px;
+    overflow: hidden;
+}
+/*==================================/尊享企业兑换===========================================*/
+
+/*===========================普通企业礼品卡兑换=================================*/
+.div2{
+    padding-top: 100px;
+}
+.qusetion{
+    vertical-align: middle;
+}
+.seeFAQ{
+    color: rgb(187,164,114);
+    font-size: 12px;
+    cursor: pointer;
+}
+.yinying{
+    width: 100%;
+    height: 100%;
+    background-color: #737373;
+    position: fixed;
+    top: 0;
+    opacity: 0.8;
+    display: none;
+    z-index: 999998;
+}
+.close{
+    cursor: pointer;
+}
+.tankuang{
+    width: 650px;
+    height: 350px;
+    top: 175px;
+    left: 325px;
+    background-color: white;
+    z-index: 999999;
+    position: fixed;
+    display: none;
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 18px;
+    width: 18px;
+}
+.tankuang-1{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 25px 0 40px;
+    color: #684029;
+}
+.tankuang>p{
+    font-family: 'PingFang SC','Heiti SC','微软雅黑',Helvetica,Arial;
+    font-size: 12px;
+    color: #684029;
+    padding: 0 56px;
+    margin-bottom: 15px;
+}
+.div2-type{
+    width: 486px;
+    display: inline-block;
+    text-align: center;
+}
+.div2-type>img:first-child{
+    width: 486px;
+    height: 221px;
+}
+.cards{
+    text-align: center;
+}
+.div2-type2>img:first-child{
+    width: 316px;
+    height: 213px;
+}
+.div2-type3>img:first-child{
+    width: 438px;
+    height: 220px;
+}
+
+/*===========================/普通企业礼品卡兑换=================================*/
+
+/*===========================企业试吃=================================*/
+.div3{
+    padding-top: 80px;
+    text-align: center;
+}
+.div3 .title>span{
+     font-size: 24px;
+     color: rgb(115,71,46);
+     font-family: 宋体,Serif;
+     font-weight: 900;
+     border-bottom: rgb(115,71,46) solid 2px;
+     padding-bottom: 6px;
+ }
+.dingzhi{
+    width: 700px;
+    height: 30px;
+    margin-top: 17px;
+    margin-left: 230px;
+    /*background-color: yellow;*/
+}
+.dingzhi a{
+    float: right;
+    color: rgb(187,164,114);
+    font-size: small;
+}
+
+
+/*===========================/企业试吃================================*/
+
+/*===========================如何购买=================================*/
+.div3 select{
+    width: 67px;
+    height: 27px;
+    color: rgb(115,71,46);
+    margin-bottom: 10px;
+    outline: none;
+    /*padding: 0 0 0 10px;*/
+}
+
+option{
+    text-align: center;
+    text-align-last:center;
+}
+
+.div3 p{
+    height: 30px;
+    line-height: 30px;
+    color: rgb(115,71,46);
+    font-size: 14px;
+}
+/*===========================/如何购买=================================*/
+
+hr{
+    border-top: 1px #A68A7A dashed;
+    margin-top: 120px;
+    width: 880px;
+    margin-left: 17%;
+}
+/*==============================留言======================================*/
+
+/*==========城市选择下拉框==================*/
+#cityli{
+    z-index: 999;
+    position:absolute;
+    background-color: #fff;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+    width: 516px;
+    left: 342px;
+    top: 252px;
+    display: none;
+}
+#ding{
+    margin-top: 28px;
+}
+#di{
+    margin-bottom: 15px;
+}
+#cityli li{
+    padding: auto 50px;
+
+}
+#cityli li p:hover{
+    background-color: #f4f0ed;
+    cursor: pointer;
+}
+#cityli li p{
+    width: 200px;
+    height: auto;
+    text-align: center;
+    margin-left: 30%;
+    font-size: 14px;
+}
+#city-1{
+    cursor: pointer;
+}
+/*==============/城市选择下拉框==============*/
+
+.liuyan{
+    position: relative;
+}
+#citySelect{
+    transform: scale(0.2);
+    position: absolute;
+    right: 270px;
+    top: 135px;
+}
+.city{
+    width: 498px;
+    height: 36px;
+    border: 1px solid #AA8F80;
+    line-height: 36px;
+    margin-left: 342px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-top: 10px;
+}
+
+textarea{
+    width: 494px;
+    border: 1px solid #AA8F80;
+    padding: 5px 10px;
+    line-height: 18px;
+    font-size: 14px;
+    height: 95px;
+    margin-top: 10px;
+    outline: none;
+    font-family: 微软雅黑,Serif;
+    resize:none
+}
+input{
+    width: 503px;
+    height: 36px;
+    border: 1px solid #AA8F80;
+    margin-top: 10px;
+    padding-left: 10px;
+    outline: none;
+    font-size: 14px;
+
+}
+button{
+    width: 110px;
+    height: 30px;
+    background: #73472E;
+    color: #fff;
+    border: none;
+    margin-left: 619px;
+}
+.error{
+    line-height: 26px;
+    height: 26px;
+    width: 515px;
+    color: #FF714D;
+    margin-top: 0;
+    margin-left: 341px;
+    text-align: left;
+}
+.error span{
+    display: none;
+}
+#over{
+    margin-bottom: 130px;
+}
+.overshow{
+    width: 320px;
+    height: 60px;
+    background-color: #73472E;
+    text-align: center;
+    /*padding: auto 10px;*/
+    color: white;
+    z-index: 999;
+    line-height: 60px;
+    position: fixed;
+    top: 50%;
+    left: 38.8%;
+    display: none;
+}
+/*==============================/留言======================================*/

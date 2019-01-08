@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="passpore.css">
+</head>
+<body>
+<!--头部导航-->
+<%-include("common/header.ejs")%>
+<!--头部导航结束-->
+<!--找回密码部分-->
+<div class="body">
+    <img src="../images/password.png" alt="" class="search">
+    <p>
+        <input type="radio" name="radio" id="telPhone" checked="checked">
+        <span>手机</span>
+    </p>
+    <p>
+        <input type="radio" name="radio" id="emailClick">
+        <span>邮箱</span>
+    </p>
+    <div class="clear"></div>
+    <form action="#" id="phone">
+        <input type="text" placeholder="请输入手机号" id="passport">
+        <br>
+        <input type="text" placeholder="填写图片验证码" id="passImg">
+        <img  id="image">
+        <img  id="image1">
+        <a id="refresh">看不清？换一张</a>
+        <br>
+          <p id="append"></p>
+        <a href="#" id="aaaa">
+            <button type="button" id="next">下一步</button>
+        </a>
+
+    </form>
+    <form action="#" id="email">
+        <input type="text" placeholder="请填写邮箱">
+        <button type="button">下一步</button>
+    </form>
+</div>
+
+
+<!--/找回密码部分-->
+<!--页尾-->
+<%-include("common/footer.ejs")%>
+
+<script src="//cdn1.lncld.net/static/js/2.3.2/av-min.js"></script>
+<script src="jquery-1.12.4.js"></script>
+<script src="home-page.js"></script>
+<script src="passpore.js"></script>
+<script src="footer.js"></script>
+<script src="dengluZT.js"></script>
+
+
+</body>
+</html>

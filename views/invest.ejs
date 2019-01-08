@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/invest.css">
+</head>
+<body>
+<!--导航栏部分-->
+<%-include("common/header.ejs")%>
+<!--/导航栏部分-->
+
+<!--内容区-->
+<div class="content-box" style="min-height: 80px;">
+    <div class="balance-title">
+        果实币余
+        <span>
+            额果实币余额为：
+        </span>
+        <span class="money">
+            ￥0.00
+        </span>
+        <div class="tips-box">
+            <i></i>
+            <i></i>
+            <i></i>
+            <p>充值成功！</p>
+            <p>本次充值金额<span class="recharge-advance"></span>。</p>
+            <p>充值后余额为<span class="advance"></span>。</p>
+        </div>
+        <a href="/records.do" target="_blank">果实币交易查询 &gt;</a>
+    </div>
+    <div class="recharge-box">
+        <div class="recharge-title">储值卡充值</div>
+        <div class="recharge-form">
+            <div><label>卡号：</label><input type="text" placeholder="请输入卡号" name="card_number"></div>
+            <div class="password-box"><label>卡密：</label><input type="text" placeholder="请输入卡密" name="card_password"><i class="eye-box"></i></div>
+            <div class="text-red"><span></span></div>
+        </div>
+    </div>
+    <div class="button-box">
+        <button class="action-confirm">去充值</button>
+    </div>
+    <div class="recharge-box">
+        <div class="recharge-title">在线充值</div>
+        <form action="//pay.21cake.com/recharge.do" id="paycenter_form" method="post" target="_blank">
+            <input type="hidden" name="memberId" value="13084261">
+            <input type="hidden" name="time" value="1541125030">
+            <input type="hidden" name="sign" value="C504006DFC303D0EB7E7CBDABAF78B91">
+            <input type="hidden" name="platform" value="pc_web">
+            <div class="recharge-form line-recharge">
+                <div class="addcount">
+                    <label>输入购买果实币的数量：</label>
+                    <input id="recharge-money" type="number" name="money" placeholder="请输入金额" min="1" max="100000" value="1">
+                    <div class="change-box">
+                        <i class="plus active" data-number="100"></i>
+                        <i class="minus" data-number="-100"></i>
+                    </div>
+
+                </div>
+                <div><label>实际获得金额：</label><span class="money-num">￥1</span></div>
+            </div>
+            <div class="pay-way">
+                <div>支付方式</div>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="radio" name="channel" value="alipay_pc_direct">
+
+                            <img src="../images/pay-zhifubao.png" alt="支付宝">
+                            <span>支付宝</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="channel" value="wx_pub_qr">
+
+                            <img src="../images/login-weixin.png" alt="微信">
+                            <span>微信</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="channel" value="jdpay_wap">
+
+                            <img src="../images/pay-jdonline.png" alt="京东支付">
+                            <span>京东支付</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <div id="wx_pub_qr"></div>
+
+    <div class="button-box">
+        <button id="pay-direct">去充值</button>
+    </div>
+</div>
+
+<!--页脚-->
+<%-include("common/footer.ejs")%>
+
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../js/success-home-page.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/invest.js"></script>
+<script src="dengluZT.js"></script>
+
+</body>
+</html>

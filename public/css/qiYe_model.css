@@ -1,0 +1,71 @@
+.pop-box {
+    z-index: 9999999;
+    margin-bottom: 3px;
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    /*border-radius: 1rem;*/
+    padding: 20px 60px;
+    box-sizing: border-box;
+    /*padding: 0.134rem;*/
+}
+
+#bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: #322e28;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=50);
+}
+
+.contentText {
+    width: 100%;
+    overflow: hidden;
+    /*padding: 23% 0px;*/
+    text-align: center;
+    font-size: 16px;
+    color: #ad0814;
+}
+
+#buttonPanel {
+    padding-bottom: 20px;
+}
+
+#cancel {
+    width: 20%;
+    padding: 1.8%;
+    font-size: 16px;
+    background: #fff;
+    border: 1px solid rgb(204, 204, 204);
+    color: #000;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#confirm {
+    width: 20%;
+    padding: 1.8%;
+    font-size: 16px;
+    background: rgb(91, 155, 209);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+input::-webkit-inner-spin-button {
+    visibility: hidden;
+}
+

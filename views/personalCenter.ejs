@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心_心仪Cake蛋糕官网_24小时蛋糕网上订购_5小时新鲜送达！</title>
+    <link rel="stylesheet" href="../css/home-page.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/personalCenter.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+</head>
+<body>
+<!--头部导航-->
+<%-include("common/header.ejs")%>
+<!--头部导航结束-->
+
+<!--中间内容区-->
+<section>
+    <div class="center">
+        <div id="personal">
+            <div id="personal1">
+                <div>
+
+                    <div class="divImgP" id="divImgP">
+                        <p class="iconfont touXiang" >&#xe6f2;
+                        </p>
+                        <img src="" alt="" width="120" height="120" id="touXiangImg">
+                    </div>
+                    <span id="replace">
+                            <input type="file" id="inputFile" name="file">
+                        更换头像
+                    </span>
+
+                </div>
+
+                <div>
+                    <p class="numberPhone" id="phoneTab">
+
+                    </p>
+                    <span class="spanText" id="spanText"></span>
+                    <a href="/xgmima.do" class="editPassword">修改密码</a>
+                    <br>
+                    <a href="/Personnal-center.do" class="editData">
+                        <i class="iconfont">&#xe629;</i>&ensp;编辑个人资料
+                    </a>
+
+                    <br>
+                    <a href="/address" class="editData">
+                        <i class="iconfont">&#xe66a;</i>&ensp;地址管理
+                    </a>
+                    <br>
+
+                    <a href="/my-dingDan.do" class="iconfont editData">
+                        <i class="iconfont">&#xe730;</i>&ensp;订单管理
+                    </a>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div id="personal2">
+                <div>
+                    <a href="/records.do">
+                        <img src="../images/moneymoney.png" alt="" id="moneyMoney">
+                    </a>
+                    <br>
+                    <a href="/records.do" class="zhangNumber">果实币余额：￥0</a>
+                    <br>
+
+                    <a href="/invest.do" class="new_r">卡券充值</a>
+                    <a href="/invest.do" class="new_r">在线购买果实币</a>
+                </div>
+                <div>
+                    <a href="/liucoupan.do">
+                        <img src="../images/quanquan.png" alt="" id="quanQuan">
+                    </a>
+                    <br>
+                    <a href="/liucoupan.do" class="zhangNumber">优惠券：2张可用</a>
+                </div>
+                <div>
+                    <a href="/goldCode.do">
+                        <img src="../images/shoushou.png" alt="" id="shouShou">
+                    </a>
+
+                    <br>
+                    <a href="/goldCode.do" class="zhangNumber">代金券：0张已用</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+        <div id="imgText">
+            <h4>会员中心</h4>
+            <p>你当前的身份是：<span>注册会员</span></p>
+            <img src="../images/new_membership.png" alt="">
+
+            <br>
+            <p>果实规则：</p>
+            <p>
+                1、订单实际支付金额每满100元，则将自动获得1颗果实，以此类推。累积果实可升级，并享受各级会员权益。订单中使用优惠券、订单促销等优惠抵扣的金额不参与消费金额的累积。
+            </p>
+
+            <p>
+                2、每90天内未产生购买，果实减一颗，若果实减少为下一等级数量时，等级相应降低，上一级别的固定权益失效。
+            </p>
+            <p>
+                3、所获得的权益自获得日起，一年内有效。
+            </p>
+            <a href="/21cakeBulletin.do">
+                了解更多>>
+            </a>
+        </div>
+    </div>
+</section>
+<!--中间内容区-->
+
+<!--页尾部分-->
+<%-include("common/footer.ejs")%>
+<!--页尾部分-->
+
+
+<script src="../lib/jquery-1.12.4.js"></script>
+<script src="../js/home-page.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/personalCenter.js"></script>
+<script src="dengluZT.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>
